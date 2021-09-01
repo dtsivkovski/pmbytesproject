@@ -1,11 +1,11 @@
 ## [Flask Portfolio Starter](https://nighthawkcodingsociety.com/projectsearch/details/Flask%20Portfolio%20Starter)
 Runtime link: https://portfolio.nighthawkcodingsociety.com/
 ### Idea
-Starter code should be fun and practical.
+Website that brings up random animal pictures on command with categories for specific types of animals
 ### Visual thoughts
-#### Organize with Bootstrap menu 
-#### Add some color and fun through VANTA Visuals (birds, halo, solar, net)
-#### Show some practical and fun links (hrefs) like Twitter, Git, Youtube
+#### Organize animal categories with Bootstrap menu 
+#### Add some color
+#### Have various methods to share (copy, download, media share buttons)
 #### Show project specific links (hrefs) per page
 
 ### Implementation progress (August 13th, 2021)
