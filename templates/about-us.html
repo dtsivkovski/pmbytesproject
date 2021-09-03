@@ -1,0 +1,24 @@
+{% extends "layouts/base.html" %}
+
+<!- This variable sets name of browser tab  -->
+{% set project = "About Us" %}
+
+{% block body %}
+
+    <div>
+        <p>
+            <center style="color: orange; font-family: Georgia; font-size: larger; margin: 5% 10% 0% 10%">
+                    We are Pac-Man Bytes, and we're creating a project to randomly generate images of different animals.
+            </center>
+        </p>
+        <center>
+            <img src="/static/assets/pacman.png" style="height: 480px" alt="Pac-man Image">
+        </center>
+    </div>
+
+{% endblock %}
+
+<!- This is turning off birds background from base.html -->
+{% block background %}
+{% endblock %}
+

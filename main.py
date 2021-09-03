@@ -17,19 +17,23 @@ def kangaroos():
     return render_template("kangaroos.html")
 
 
-@app.route('/walruses/')
+@app.route('/daniel/')
 def walruses():
-    return render_template("walruses.html")
+    return render_template("daniel.html")
 
 
-@app.route('/hawkers/')
+@app.route('/chris/')
 def hawkers():
-    return render_template("hawkers.html")
+    return render_template("chris.html")
 
 
 @app.route('/stub/')
 def stub():
     return render_template("stub.html")
+
+@app.route('/about-us/')
+def aboutus():
+    return render_template("about-us.html")
 
 @app.route('/greet', methods=['GET', 'POST'])
 def greet():
