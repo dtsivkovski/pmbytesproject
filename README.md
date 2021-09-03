@@ -2,18 +2,19 @@
 
 # PBL 1-2 Table of Contents
 ## Peer Review Grading
-### PBL(Team): 3.5/4 points 
+### PBL(Team): 
 #### - [Scrum Board](https://github.com/dtsivkovski/flask_portfolio/projects/1): The scrum master has defined all tasks on the scrum board, designer has started creating a wire frame, and technical lead has helped coordinate a brain write where we discussed our animations 
-#### - [GitHub Assets](): Navigators have started testing any new additions, developers have started work on dropdown menu (though integrating the code has been a challenge), and other developers have integrated Greet and Video Journal 0 functionality into a mini-lab page.
-#### - [TPT Points](https://padlet.com/amv7668/5dauht31raq9w168)(see Group #6 on the Padlet): The group has created a visual proof-of-concept in the padlet during the TPT and explained the basic idea of the project.
+#### - GitHub Assets: Navigators have started testing any new additions, developers have started work on dropdown menu (though integrating the code has been a challenge), and other developers have integrated Greet and Video Journal 0 functionality into a [mini-lab page](https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/greet.html).
+#### - [TPT Points](https://padlet.com/amv7668/5dauht31raq9w168) (see Group #6 on the Padlet): The group has created a visual proof-of-concept in the padlet during the TPT and explained the basic idea of the project.
 
 ### PBL(Individual): 
-#### - Daniel -/4 points -
-#### - Timmy -/4 points - 
-#### - Armaan -/4 points -
-#### - Chris -/4 points -
+- Daniel 4/4 points individual, 4/4 points team - Here is my [starter page](https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/daniel.html) as of right now. I have mainly been working on the mini-lab items and the organizational side of things (see the [github commits](https://github.com/dtsivkovski/flask_portfolio/commits/main) page for more detail). Here are my [video notes](https://docs.google.com/document/d/1UUWRIzZNDamJkkeBQQRPgkicyssI-7nxXZHEvshCFeU/edit?usp=sharing) for the collegeboard videos. Finally, my personal work/computer plan is to always bring and use my own laptop with all the proper utilities and tools installed.
+- Timmy 4/4 points individual, 4/4 points team - Timmy has been mainly planning and envisioning the project. [Here](TIMMY INSERT A LINK TO YOUR IMAGE/DESIGN IDEA FOR THE WEBSITE) is timmy's concept and his description/idea for the project is written below. Timmy's [video notes](TIMMY INSERT YOUR VIDEO NOTES HERE). 
+- Armaan 4/4 points individual, 4/4 points team- Armaan has been working on the [navbar dropdown menu](https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/layouts/navbar.html), here are armaan's [video notes](ARMAAN INSERT VIDEO NOTES HERE). He has been very focused this week on attempting to get the dropdown menu to work.
+- Chris 4/4 points individual, 4/4 points team.- Chris has worked on getting [greet functionality](https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/greet.html) to work on the mini-lab page. He has also organized [brain write](https://docs.google.com/document/d/19p4wA_jviMpx37dnjZIglBBraUFBfghGIdqMk1AFd0s/edit?usp=sharing) times, where we discussed our website so far and ideas for the future. Here are Chris's [video notes]().
 
-
+### Project Ideation
+Timmy's idea goes here
 
 -----
 ### Idea
