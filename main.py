@@ -31,6 +31,10 @@ def hawkers():
 def stub():
     return render_template("stub.html")
 
+@app.route('/about-us/')
+def aboutus():
+    return render_template("about-us.html")
+
 @app.route('/greet', methods=['GET', 'POST'])
 def greet():
     # submit button has been pushed
