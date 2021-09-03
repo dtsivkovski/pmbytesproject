@@ -1,5 +1,21 @@
 ## [Flask Portfolio Starter](https://nighthawkcodingsociety.com/projectsearch/details/Flask%20Portfolio%20Starter)
-Runtime link: https://portfolio.nighthawkcodingsociety.com/
+
+# PBL 1-2 Table of Contents
+## Peer Review Grading
+### PBL(Team): 3.5/4 points 
+#### - [Scrum Board](https://github.com/dtsivkovski/flask_portfolio/projects/1): The scrum master has defined all tasks on the scrum board, designer has started creating a wire frame, and technical lead has helped coordinate a brain write where we discussed our animations 
+#### - [GitHub Assets](): Navigators have started testing any new additions, developers have started work on dropdown menu (though integrating the code has been a challenge), and other developers have integrated Greet and Video Journal 0 functionality into a mini-lab page.
+#### - [TPT Points](https://padlet.com/amv7668/5dauht31raq9w168)(see Group #6 on the Padlet): The group has created a visual proof-of-concept in the padlet during the TPT and explained the basic idea of the project.
+
+### PBL(Individual): 
+#### - Daniel -/4 points -
+#### - Timmy -/4 points - 
+#### - Armaan -/4 points -
+#### - Chris -/4 points -
+
+
+
+-----
 ### Idea
 Starter code should be fun and practical.
 ### Visual thoughts
