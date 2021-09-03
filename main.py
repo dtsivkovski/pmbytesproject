@@ -17,9 +17,9 @@ def kangaroos():
     return render_template("kangaroos.html")
 
 
-@app.route('/daniel/')
+@app.route('/armaan/')
 def walruses():
-    return render_template("daniel.html")
+    return render_template("armaan.html")
 
 
 @app.route('/chris/')
@@ -30,6 +30,10 @@ def hawkers():
 @app.route('/stub/')
 def stub():
     return render_template("stub.html")
+
+@app.route('/daniel/')
+def daniel():
+    return render_template("daniel.html")
 
 @app.route('/about-us/')
 def aboutus():
