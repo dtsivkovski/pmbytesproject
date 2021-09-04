@@ -11,10 +11,10 @@ def index():
     return render_template("index.html")
 
 
-# connects /kangaroos path to render kangaroos.html
-@app.route('/kangaroos/')
+# connects /kangaroos path to render timmy.html
+@app.route('/timmy/')
 def kangaroos():
-    return render_template("kangaroos.html")
+    return render_template("timmy.html")
 
 
 @app.route('/armaan/')
