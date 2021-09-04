@@ -10,13 +10,13 @@
 ### PBL(Individual): 
 Each name has a link to their mini-lab page that will be completed in the future.
 - [Daniel](https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/daniel.html) 4/4 points individual, 4/4 points team - Here is my [starter page](https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/daniel.html) as of right now. I have mainly been working on the mini-lab items and the organizational side of things (see the [github commits](https://github.com/dtsivkovski/flask_portfolio/commits/main) page for more detail). Here are my [video notes](https://docs.google.com/document/d/1UUWRIzZNDamJkkeBQQRPgkicyssI-7nxXZHEvshCFeU/edit?usp=sharing) for the collegeboard videos. Finally, my personal work/computer plan is to always bring and use my own laptop with all the proper utilities and tools installed.
-- [Timmy](https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/timmy.html) 4/4 points individual, 4/4 points team - Timmy has been mainly planning and envisioning the project. [Here](TIMMY INSERT A LINK TO YOUR IMAGE DESIGN IDEA FOR THE WEBSITE) is timmy's concept and his description/idea for the project is written below the peer grading. Timmy's [video notes](TIMMY INSERT YOUR VIDEO NOTES HERE). 
+- [Timmy](https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/timmy.html) 4/4 points individual, 4/4 points team - Timmy has been mainly planning and envisioning the project. [Here](https://docs.google.com/presentation/d/1S0I6ti23otpBITORbiepFlUCE-R13--DvuZkvMKTQ-Q/edit?usp=sharing) is timmy's concept and his description/idea for the project is written below the peer grading. Timmy's [video notes](https://docs.google.com/document/d/1oc-Rg6rpiqZmCAweALGtEej1AtrMTRSh12mURUh4pTE/edit?usp=sharing). 
 - [Armaan](https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/armaan.html) 4/4 points individual, 4/4 points team- Armaan has been working on the [navbar dropdown menu](https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/layouts/navbar.html), here are armaan's [video notes](https://docs.google.com/document/d/1_E-37b3tbgJv0VcAcC7PU_7ytQ2aOs8SGIzu6B8oG5A/edit?usp=sharing). He has been very focused this week on attempting to get the dropdown menu to work.
 - [Chris](https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/chris.html) 4/4 points individual, 4/4 points team.- Chris has worked on getting [greet functionality](https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/greet.html) to work on the mini-lab page. He has also organized [brain write](https://docs.google.com/document/d/19p4wA_jviMpx37dnjZIglBBraUFBfghGIdqMk1AFd0s/edit?usp=sharing) times, where we discussed our website so far and ideas for the future. Here are Chris's [video notes](https://docs.google.com/document/d/1_4gal5lYJBBr_z2azGztMHgP4tvW4NGm25VmLYnUVMY/edit?usp=sharing).
 
 
 ### Project Ideation
-Timmy's idea goes here
+Form a website that generates a random animal picture on command. Then which you can share through various methods, or learn more about an animal of your choosing.
 
 -----
 ### Idea
