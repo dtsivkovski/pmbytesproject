@@ -39,6 +39,10 @@ def daniel():
 def aboutus():
     return render_template("about-us.html")
 
+@app.route('/minilabs/')
+def minilabs():
+    return render_template("minilabs.html")
+
 @app.route('/greet', methods=['GET', 'POST'])
 def greet():
     # submit button has been pushed
