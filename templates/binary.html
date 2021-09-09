@@ -23,7 +23,7 @@
 
 {% block body %}
     <body style="background-color: rebeccapurple">
-    <title>Binary page</title>
+    <title>Binary Bage</title>
     <script>
         const BITS = '{{ BITS }}'; let max = '{{ MAX }}'; let MAX = parseInt(max, 10);
         // return string with current value of each bit
@@ -122,7 +122,7 @@
 
             <div class="col-8">
                 <table class="table">
-                    <tr id="table">
+                    <tr id="table" style="color: white">
                         <th>Plus</th>
                         <th>Binary</th>
                         <th>Octal</th>
@@ -131,7 +131,7 @@
                         <!-- Hack: display ASCII label for printable character(s)  -->
                         <th>Minus</th>
                     </tr>
-                    <tr>
+                    <tr style="color: white">
                         <td><button type="button" id="add1" onclick="add(1)">+1</button></td>
                         <td id="binary">00000000</td>
                         <td id="octal">0</td>
