@@ -1,0 +1,38 @@
+{% extends "layouts/base.html" %}
+
+{% block background %}
+{% endblock %}
+
+{%  block body %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm" style="text-align: center; margin: 2% 0 1%">
+
+                <p>
+                    Column 1 Placeholder Text
+                </p>
+
+            </div>
+            <div class="col-sm" style="text-align: center; margin: 2% 0 1%">
+
+                <div>
+                    <form action="/minilabs/" id="minilabs" method="POST" >
+                        <label for="name">What is your name? </label>
+                        <input name="name" id="name">
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+                <p>
+                    Hello, {{ name }}! Feel free to explore our mini-lab page!
+                </p>
+
+            </div>
+            <div class="col-sm" style="text-align: center; margin: 2% 0 1%">
+                <p>
+                    Column 3 Placeholder Text
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
