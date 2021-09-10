@@ -1,22 +1,39 @@
 ## [Flask Portfolio Starter](https://nighthawkcodingsociety.com/projectsearch/details/Flask%20Portfolio%20Starter)
 
 #Pac-Man Bytes - [Scrum Board](https://github.com/dtsivkovski/flask_portfolio/projects/1)
-##Contributors - Daniel T, Armaan S, Timmy L, Chris H
+Contributors: Daniel T, Armaan S, Timmy L, Chris H
+
+Tags: @dtsivkovski, @xXAASXx, @TimL1n, @Chom642
 
 ##Pair 1 - Daniel and Chris
-> ###Daniel Tsivkovski (@dtsivkovski)
-> 
-> ###Chris Hom (@Chom642)
+
+Pair Journal: [Notes](https://docs.google.com/document/d/1jFLS5jeQhK12o_Rs_DI7AaXEJOB0in9GovtWKdRnumc/edit?usp=sharing)  
+
+Daniel Tsivkovski (@dtsivkovski): [Tasks](https://github.com/dtsivkovski/flask_portfolio/issues/assigned/dtsivkovski),
+[Scrumboard](https://github.com/dtsivkovski/flask_portfolio/projects/1?card_filter_query=assignee%3Adtsivkovski),
+[Commits](https://github.com/dtsivkovski/flask_portfolio/commits?author=dtsivkovski),
+[Profile](https://github.com/dtsivkovski)
+
+Chris Hom (@Chom642): [Tasks](https://github.com/dtsivkovski/flask_portfolio/issues/assigned/Chom642),
+[Scrumboard](https://github.com/dtsivkovski/flask_portfolio/projects/1?card_filter_query=assignee%3Achom642),
+[Commits](https://github.com/dtsivkovski/flask_portfolio/commits?author=Chom642),
+[Profile](https://github.com/Chom642)
+
 ##Pair 2 - Tim and Armaan
-> ###Timothy Lin (@TimL1n)
->[Tasks](https://github.com/dtsivkovski/flask_portfolio/issues?q=assignee%3ATimL1n+is%3Aopen),
->[Scrumboard](https://github.com/dtsivkovski/flask_portfolio/projects/1?card_filter_query=assignee%3Atiml1n),
->[Commits](https://github.com/dtsivkovski/flask_portfolio/commits?author=TimL1n),
->[Profile](https://github.com/TimL1n)
-> ###Armaan Shamsaasef (@)
 
+Pair Journal: [Notes](https://docs.google.com/document/d/1fukOykiaDJkifCWYpnb9TW87tAL4tNEVolnyMIwroBY/edit?usp=sharing)
 
+Timothy Lin (@TimL1n): [Tasks](https://github.com/dtsivkovski/flask_portfolio/issues?q=assignee%3ATimL1n+is%3Aopen),
+[Scrumboard](https://github.com/dtsivkovski/flask_portfolio/projects/1?card_filter_query=assignee%3Atiml1n),
+[Commits](https://github.com/dtsivkovski/flask_portfolio/commits?author=TimL1n),
+[Profile](https://github.com/TimL1n)
 
+Armaan Shamsaasef (@xXAASXx): [Commits](https://github.com/dtsivkovski/flask_portfolio/commits?author=xXAASXx),
+[Profile](https://github.com/xXAASXx), 
+[Scrum Board](https://github.com/dtsivkovski/flask_portfolio/projects/1?card_filter_query=assignee%3Axxaasxx), 
+[Tasks](https://github.com/dtsivkovski/flask_portfolio/issues/assigned/xXAASXx)
+
+-----
 
 
 
