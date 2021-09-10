@@ -1,7 +1,7 @@
 ## [Flask Portfolio Starter](https://nighthawkcodingsociety.com/projectsearch/details/Flask%20Portfolio%20Starter)
 
 # Pac-Man Bytes - [Scrum Board](https://github.com/dtsivkovski/flask_portfolio/projects/1)
-Contributors: Daniel T, Armaan S, Timmy L, Chris H
+Contributors: [Daniel T](https://github.com/dtsivkovski/flask_portfolio/commits?author=dtsivkovski), [Armaan S](https://github.com/dtsivkovski/flask_portfolio/commits?author=xXAASXx), [Timothy L](https://github.com/dtsivkovski/flask_portfolio/commits?author=TimL1n), [Chris H](https://github.com/dtsivkovski/flask_portfolio/commits?author=Chom642)
 
 Tags: @dtsivkovski, @xXAASXx, @TimL1n, @Chom642
 
