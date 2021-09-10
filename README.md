@@ -9,11 +9,10 @@
 > ###Chris Hom (@Chom642)
 ##Pair 2 - Tim and Armaan
 > ###Timothy Lin (@TimL1n)
-> <p>Tasks: https://github.com/dtsivkovski/flask_portfolio/issues?q=assignee%3ATimL1n+is%3Aopen</p>
-> <p>Scrumboard:https://github.com/dtsivkovski/flask_portfolio/projects/1?card_filter_query=assignee%3Atiml1n</p>
-> <p>Commits: https://github.com/dtsivkovski/flask_portfolio/commits?author=TimL1n</p>
-> <p>Profile: https://github.com/TimL1n</p>
-> 
+>[Tasks](https://github.com/dtsivkovski/flask_portfolio/issues?q=assignee%3ATimL1n+is%3Aopen),
+>[Scrumboard](https://github.com/dtsivkovski/flask_portfolio/projects/1?card_filter_query=assignee%3Atiml1n),
+>[Commits](https://github.com/dtsivkovski/flask_portfolio/commits?author=TimL1n),
+>[Profile](https://github.com/TimL1n)
 > ###Armaan Shamsaasef (@)
 
 
