@@ -1,5 +1,24 @@
 ## [Flask Portfolio Starter](https://nighthawkcodingsociety.com/projectsearch/details/Flask%20Portfolio%20Starter)
 
+#Pac-Man Bytes - [Scrum Board](https://github.com/dtsivkovski/flask_portfolio/projects/1)
+##Contributors - Daniel T, Armaan S, Timmy L, Chris H
+
+##Pair 1 - Daniel and Chris
+> Daniel Tsivkovski (@dtsivkovski)
+> 
+> Chris Hom (@Chom642)
+##Pair 2 - 
+> Timmy Lin (@)
+> 
+> Armaan Shamsaasef (@)
+
+
+
+
+
+
+
+
 # PBL 1-2 Table of Contents
 ## Peer Review Grading
 ### PBL(Team): 
