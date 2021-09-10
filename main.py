@@ -49,6 +49,10 @@ def minilabs():
     # starting and empty input default
     return render_template("minilabs.html", name="guest")
 
+@app.route('/binary/')
+def binary():
+    return render_template("binary.html")
+
 # runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)
