@@ -31,9 +31,15 @@ def hawkers():
 def stub():
     return render_template("stub.html")
 
-@app.route('/daniel/')
+@app.route('/daniel/', methods=('GET', 'POST'))
 def daniel():
-    return render_template("daniel.html")
+    # submit button has been pushed
+    if request.form:
+        name = request.form.get("name")
+        if len(name) != 0:  # input field has content
+            return render_template("daniel.html", name=name)
+    # starting and empty input default
+    return render_template("daniel.html", name="guest")
 
 @app.route('/about-us/')
 def aboutus():

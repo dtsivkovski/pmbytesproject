@@ -6,10 +6,21 @@
 
 {% block body %}
     <body style="background-color: darkslateblue">
-    <div style="color: coral; font-family: Georgia; font-size: larger; margin: 5% 10% 0 10%; text-align: center">
+    <div style="color: coral; font-family: Georgia; font-size: larger; margin: 2% 10% 0 10%; text-align: center">
 
         <div>
-            Hi, I am Daniel Tsivkovski!
+            <form action="/daniel/" id="daniel" method="POST" >
+                <div>
+                    <label for="name">What is your name? </label>
+                </div>
+                <div style="margin: 0 0 2% 0">
+                    <input name="name" id="name">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+        <div style="margin: 2% 0 0 0">
+            Hi, {{ name }}, I am Daniel Tsivkovski!
         </div>
 
         <img src="/static/assets/danielimg.png" style="height: 360px; margin: 2%" alt="Daniel Tsivkovski's Photo">
