@@ -28,7 +28,7 @@ Timothy Lin (@TimL1n): [Tasks](https://github.com/dtsivkovski/flask_portfolio/is
 [Profile](https://github.com/TimL1n)
 
 Armaan Shamsaasef (@xXAASXx): [Tasks](https://github.com/dtsivkovski/flask_portfolio/issues/assigned/xXAASXx),
-[Scrum Board](https://github.com/dtsivkovski/flask_portfolio/projects/1?card_filter_query=assignee%3Axxaasxx), 
+[Scrumboard](https://github.com/dtsivkovski/flask_portfolio/projects/1?card_filter_query=assignee%3Axxaasxx), 
 [Commits](https://github.com/dtsivkovski/flask_portfolio/commits?author=xXAASXx),
 [Profile](https://github.com/xXAASXx), 
 
