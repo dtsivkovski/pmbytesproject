@@ -4,13 +4,17 @@
 ##Contributors - Daniel T, Armaan S, Timmy L, Chris H
 
 ##Pair 1 - Daniel and Chris
-> Daniel Tsivkovski (@dtsivkovski)
+> ###Daniel Tsivkovski (@dtsivkovski)
 > 
-> Chris Hom (@Chom642)
-##Pair 2 - 
-> Timmy Lin (@)
+> ###Chris Hom (@Chom642)
+##Pair 2 - Tim and Armaan
+> ###Timothy Lin (@TimL1n)
+> <p>Tasks: https://github.com/dtsivkovski/flask_portfolio/issues?q=assignee%3ATimL1n+is%3Aopen</p>
+> <p>Scrumboard:https://github.com/dtsivkovski/flask_portfolio/projects/1?card_filter_query=assignee%3Atiml1n</p>
+> <p>Commits: https://github.com/dtsivkovski/flask_portfolio/commits?author=TimL1n</p>
+> <p>Profile: https://github.com/TimL1n</p>
 > 
-> Armaan Shamsaasef (@)
+> ###Armaan Shamsaasef (@)
 
 
 
