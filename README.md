@@ -2,8 +2,7 @@
 
 # Pac-Man Bytes - [Scrum Board](https://github.com/dtsivkovski/flask_portfolio/projects/1) and [Contributors](https://github.com/dtsivkovski/flask_portfolio/graphs/contributors)
 
-
-
+-----
 
 Pair 1 - Daniel and Chris: <a href="https://docs.google.com/document/d/1jFLS5jeQhK12o_Rs_DI7AaXEJOB0in9GovtWKdRnumc/edit?usp=sharing">Journal</a>
 <br>
@@ -76,9 +75,13 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
 
 </table>
 
------
 
 
+
+
+
+<!-- ALL OF THIS CODE IS COMMENTED OUT TO REDUCE CONFUSION BUT
+IT IS HERE IN CASE WE NEED IT IN THE FUTURE
 ## [Flask Portfolio Starter](https://nighthawkcodingsociety.com/projectsearch/details/Flask%20Portfolio%20Starter)
 
 ## Pair 1 - Daniel and Chris
@@ -159,3 +162,5 @@ Starter code should be fun and practical.
 ### IDE management (things that happened beyond plan)
 #### Recall on ".gitignore" solution to the pains of temporary files.  Start a ".gitignore" and avoid promoting temporary files to Git, for instance IDE xml files.
 #### A project needs to establish a "requirements.txt" to keep track of Python packages used by the project.  This help in other IDEs and Deployment.  IntelliJ has menu Tool -> Sync Python Requirements to start file. 
+
+-->
