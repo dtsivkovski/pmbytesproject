@@ -1,8 +1,85 @@
-## [Flask Portfolio Starter](https://nighthawkcodingsociety.com/projectsearch/details/Flask%20Portfolio%20Starter)
+
 
 # Pac-Man Bytes - [Scrum Board](https://github.com/dtsivkovski/flask_portfolio/projects/1) and [Contributors](https://github.com/dtsivkovski/flask_portfolio/graphs/contributors)
 
-Tags: @dtsivkovski, @xXAASXx, @TimL1n, @Chom642
+
+
+
+Pair 1 - Daniel and Chris: <a href="https://docs.google.com/document/d/1jFLS5jeQhK12o_Rs_DI7AaXEJOB0in9GovtWKdRnumc/edit?usp=sharing">Journal</a>
+<br>
+Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOykiaDJkifCWYpnb9TW87tAL4tNEVolnyMIwroBY/edit?usp=sharing">Journal</a>
+
+<table>
+<tr>
+<th>Daniel Tsivkovski</th>
+<td>
+<a href="https://github.com/dtsivkovski/flask_portfolio/issues/assigned/dtsivkovski">Tasks</a>
+</td>
+<td>
+<a href="https://github.com/dtsivkovski/flask_portfolio/projects/1?card_filter_query=assignee%3Adtsivkovski">Scrumboard</a>
+</td>
+<td>
+<a href="https://github.com/dtsivkovski/flask_portfolio/commits?author=dtsivkovski">Commits</a>
+</td>
+<td>
+<a href="https://github.com/dtsivkovski">Profile</a>
+</td>
+</tr>
+
+<tr>
+<th>Chris Hom</th>
+<td>
+<a href="https://github.com/dtsivkovski/flask_portfolio/issues/assigned/Chom642">Tasks</a>
+</td>
+<td>
+<a href="https://github.com/dtsivkovski/flask_portfolio/projects/1?card_filter_query=assignee%3Achom642">Scrumboard</a>
+</td>
+<td>
+<a href="https://github.com/dtsivkovski/flask_portfolio/commits?author=Chom642">Commits</a>
+</td>
+<td>
+<a href="https://github.com/Chom642">Profile</a>
+</td>
+</tr>
+
+<tr>
+<th>Timothy Lin</th>
+<td>
+<a href="https://github.com/dtsivkovski/flask_portfolio/issues?q=assignee%3ATimL1n+is%3Aopen">Tasks</a>
+</td>
+<td>
+<a href="https://github.com/dtsivkovski/flask_portfolio/projects/1?card_filter_query=assignee%3Atiml1n">Scrumboard</a>
+</td>
+<td>
+<a href="https://github.com/dtsivkovski/flask_portfolio/commits?author=TimL1n">Commits</a>
+</td>
+<td>
+<a href="https://github.com/TimL1n">Profile</a>
+</td>
+</tr>
+
+<tr>
+<th>Armaan Shamsaasef</th>
+<td>
+<a href="https://github.com/dtsivkovski/flask_portfolio/issues/assigned/xXAASXx">Tasks</a>
+</td>
+<td>
+<a href="https://github.com/dtsivkovski/flask_portfolio/projects/1?card_filter_query=assignee%3Axxaasxx">Scrumboard</a>
+</td>
+<td>
+<a href="https://github.com/dtsivkovski/flask_portfolio/commits?author=xXAASXx">Commits</a>
+</td>
+<td>
+<a href="https://github.com/xXAASXx">Profile</a>
+</td>
+</tr>
+
+</table>
+
+-----
+
+
+## [Flask Portfolio Starter](https://nighthawkcodingsociety.com/projectsearch/details/Flask%20Portfolio%20Starter)
 
 ## Pair 1 - Daniel and Chris
 
