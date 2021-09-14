@@ -4,7 +4,7 @@
 <!-- Setting up variables to customize "project" details to be specific to kangaroos -->
 {% set project = "Timmy's" %}
 {%  block body %}
-    <body style="background-image: url('/static/assets/backgrounds/jungle.jpg'); background-size: 100%">
+    <body style="background-image: url('/static/assets/backgrounds/jungle.jpg'); background-size: 200%">
     <div style="color: #FBEEC1; font-family: Georgia; font-size: larger; margin: 5% 20% 0% 20%; text-align: center; background-color: rgba(172, 209, 175,0.7)">
 
         <div>
@@ -12,14 +12,14 @@
                 <div>
                     <label for="name" style="padding-top: 2%">What is your name? </label>
                 </div>
-                <div style="padding: 0 0 1% 0">
+                <div>
                     <input name="name" id="name">
                     <input type="submit" value="Submit">
                 </div>
             </form>
         </div>
         <div style="margin: 2% 0 0 0">
-            Hi, {{ name }}, I am Timothy Lin!
+            Hi {{ name }}, I am Timothy Lin!
         </div>
 
             <img src="/static/assets/tim 2.jpg" style="height: 400px; margin: 2%" alt="Timothy Lin's Photo 2">
