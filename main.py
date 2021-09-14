@@ -17,8 +17,14 @@ def kangaroos():
     return render_template("timmy.html")
 
 
-@app.route('/armaan/')
+@app.route('/armaan/', methods=('GET', 'POST'))
 def walruses():
+    if request.form:
+        name = request.form.get("name")
+        if len(name) != 0:  # input field has content
+            return render_template("armaan.html", name=name)
+    # starting and empty input default
+    return render_template("armaan.html", name="guest")
     return render_template("armaan.html")
 
 
