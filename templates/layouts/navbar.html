@@ -2,23 +2,43 @@
 This HTML is setup as a fragment allowing it to be "included" by other HTML files via Jinja2
 -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="https://github.com/dtsivkovski/flask_portfolio">{{basename}}</a>
+    <img src="/static/assets/pacman.png" width="46" height="38" style="padding-right: 10px; padding-top: 5px" class="align-center" alt="">
+    <a class="navbar-brand" href="/">{{basename}}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto">
             <!-- url_for is a Jinja2 pre-processor that finds route from function name (def) -->
-            <a class="nav-link" href={{ url_for('index') }}>Portfolio</a>
-            <a class="nav-link" href={{ url_for('kangaroos') }}>Timmy</a>
-            <a class="nav-link" href={{ url_for('walruses') }}>Armaan</a>
-            <a class="nav-link" href={{ url_for('hawkers') }}>Chris</a>
-            <!-- stub is shown using the name of the route -->
-            <a class="nav-link" href="/daniel">Daniel</a>
+            <a class="nav-link" href="/">Home</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarStarters" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Team
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/armaan">Armaan</a>
+                    <a class="dropdown-item" href="/daniel">Daniel</a>
+                    <a class="dropdown-item" href="/chris">Chris</a>
+                    <a class="dropdown-item" href="/timmy">Timmy</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarStarters" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/minilabs">Mini-Labs</a>
+                    <a class="dropdown-item" href="/binary">Binary</a>
+                    <a class="dropdown-item" href="/stub">Stub</a>
+                    <a class="dropdown-item" href="/about-us">About Us</a>
+                </div>
+            </li>
+            <!-- this is left in in case we need ungrouped navbar references
+
             <a class="nav-link" href="/minilabs">Mini-Labs</a>
             <a class="nav-link" href="/binary">Binary</a>
             <a class="nav-link" href="/stub">Stub</a>
-            <a class="nav-link" href="/about-us">About Us</a>
+            -->
         </div>
     </div>
 </nav>

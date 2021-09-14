@@ -1,60 +1,151 @@
+<!DOCTYPE html>
 {% extends "layouts/base.html" %}
 
 {% block background %}
 {% endblock %}
 
+{% set project = "Mini-Labs" %}
+
 {%  block body %}
+
+        <style>
+            body, html {
+                height: 100%;
+            }
+
+            .parallax {
+                /* The image used */
+                background-image: url('/static/assets/backgrounds/forest1.jpg'); background-color: #f2cac4;
+
+                /* Full height */
+                height: 100%;
+
+                /* Create the parallax scrolling effect */
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
+
+<body>
+
+<div class="parallax">
+    <div class="frame" style="background-color: rgba(0,0,0, 0.5); height: max-content; width: 50%; margin: auto; transform: translateY(8%)">
+
+        <h1 style="text-align: center; padding: 5%;"> Mini-Lab Page </h1>
+
+
+        <div style="text-align: center; padding: 2%">
+
+            <div>
+                <form action="/minilabs/" id="minilabs" method="POST" >
+                    <label for="name" style="margin-bottom: 1.5%">What is your name? </label>
+                    <br>
+                    <input name="name" id="name" style="margin-bottom: 2%; text-align: center">
+                    <br>
+                    <input type="submit" value="Submit" style="margin-bottom: 10%">
+                </form>
+            </div>
+
+            <h2 style="text-align: center; padding: 1%; margin-bottom: 4%">
+                Hello, {{ name }}!
+                <br>
+                Scroll down to see our projects!</h2>
+
+
+        </div>
+
+    </div>
+</div>
+
+<div class="parallax" style="height:50%"></div>
+
+<div class="parallax" style="height:max-content">
+<div class="frame" style="background-color: rgba(0,0,0, 0.5); width: 80%; margin: auto;">
     <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-sm" style="text-align: center; padding-top: 2%">
+                <h2> We encourage you to take a look at these videos, {{ name }}. </h2>
+                <h4> These are part of Video Journal 0, our first journal. </h4>
+            </div>
+
+        </div>
         <div class="row">
             <div class="col-sm" style="text-align: center; margin: 2% 0 1%">
 
-                <div class="col-12" style="margin: 1% 5% 0">
+            </div>
+            <div class="col-sm" style="text-align: center; margin: 2% 0 1%">
+
+
+
+            </div>
+            <div class="col-sm" style="text-align: center; margin: 2% 0 1%">
+
+            </div>
+        </div>
+        <! Row 2 starts here>
+        <div class="row">
+            <div class="col-sm" style="text-align: center; margin: 2%">
+                <div>
                     <iframe
-                            src="https://drive.google.com/file/d/1PaiwvEkYpN_Ou37D_mVsXO_Qq9D7NVzX/preview" width="480" height="270" allow="autoplay">
+                            src="https://drive.google.com/file/d/1PaiwvEkYpN_Ou37D_mVsXO_Qq9D7NVzX/preview" width="320" height="180" allow="autoplay">
                     </iframe>
                     <p>
-                        Tech Talk 0 - Tools and Equipment, showing competency in IntelliJ
+                        Tech Talk 0 - Tools and Equipment
                     </p>
                 </div>
             </div>
-            <div class="col-sm" style="text-align: center; margin: 2% 0 1%">
-
+            <div class="col-sm" style="text-align: center; margin: 2%">
                 <div>
-                    <form action="/minilabs/" id="minilabs" method="POST" >
-                        <label for="name">What is your name? </label>
-                        <input name="name" id="name">
-                        <input type="submit" value="Submit">
-                    </form>
-                </div>
-                <p>
-                    Hello, {{ name }}! Feel free to explore our mini-lab page!
-                </p>
-
-            </div>
-            <div class="col-sm" style="text-align: center; margin: 2% 0 1%">
-                <div class="col-12" style="margin: 2% 5% 0">
                     <iframe
-                            src="https://drive.google.com/file/d/1eYcrAP2H9n01yU97vLMThkBOZR-QjEuU/preview" width="480" height="270" allow="autoplay">
+                            src="https://drive.google.com/file/d/1eYcrAP2H9n01yU97vLMThkBOZR-QjEuU/preview" width="320" height="180" allow="autoplay">
                     </iframe>
                     <p>
                         Tech Talk 0.1 - Vision and Student Leadership
                     </p>
                 </div>
             </div>
-            <div class="col-sm">
+            <div class="col-sm" style="text-align: center; margin: 2%">
                 <div>
-                    <div class="col-12" style="margin: 2% 5% 0">
-                        <iframe
-                                src="https://drive.google.com/file/d/1_KBAmAkU_GeBEwam90N-iYMJb9ZmOAv3/preview" width="480" height="270" allow="autoplay">
-                        </iframe>
-                        <p>
-                            Tech Talk 0.2 - Sprint and Scrum Board
-                        </p>
-                    </div>
+                    <iframe
+                            src="https://drive.google.com/file/d/1_KBAmAkU_GeBEwam90N-iYMJb9ZmOAv3/preview" width="320" height="180" allow="autoplay">
+                    </iframe>
+                    <p>
+                        Tech Talk 0.2 - Sprint and Scrum Board
+                    </p>
                 </div>
             </div>
+            <div class="col-sm" style="text-align: center; margin: 2%">
+                <div>
+                    <iframe
+                            src="https://drive.google.com/file/d/1W7Jv0jhkBvzn_ZfvVIqr_LP5KbB4XWte/preview" width="320" height="180" allow="autoplay">
+                    </iframe>
+                    <p>
+                        Tech Talk 0.3 - Project Deliverable
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm" style="text-align: center; margin: 2%">
+                <div>
+                    <iframe
+                            src="https://drive.google.com/file/d/141Hd0c3zduhdHmHP6WxkoxqWnI55JPJ2/preview" width="320" height="180" allow="autoplay">
+                    </iframe>
+                    <p>
+                        Tech Talk 0.4 - Tangible Artifacts
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!Row 3 starts here>
+        <div class="row">
 
         </div>
     </div>
+</div>
+</div>
+<div class="parallax" style="height: 20%"></div>
+</body>
 {% endblock %}
 
