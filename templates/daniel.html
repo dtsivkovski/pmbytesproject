@@ -5,15 +5,15 @@
 {% set project = "Daniel's Page" %}
 
 {% block body %}
-    <body style="background-color: darkslateblue">
-    <div style="color: coral; font-family: Georgia; font-size: larger; margin: 2% 10% 0 10%; text-align: center">
+    <body style="background-image: url('/static/assets/backgrounds/spacerock.jpg'); background-size: 100%">
+    <div style="color: white; font-family: Georgia; font-size: larger; margin: 2% 10% 0 10%; text-align: center; background-color: rgba(0,0,0,0.7)">
 
         <div>
             <form action="/daniel/" id="daniel" method="POST" >
                 <div>
-                    <label for="name">What is your name? </label>
+                    <label for="name" style="padding-top: 2%">What is your name? </label>
                 </div>
-                <div style="margin: 0 0 2% 0">
+                <div style="padding: 0 0 1% 0">
                     <input name="name" id="name">
                     <input type="submit" value="Submit">
                 </div>
@@ -23,11 +23,11 @@
             Hi, {{ name }}, I am Daniel Tsivkovski!
         </div>
 
-        <img src="/static/assets/danielimg.png" style="height: 360px; margin: 2%" alt="Daniel Tsivkovski's Photo">
+                <img src="/static/assets/danielimg.png" style="height: 300px; margin: 2%; border: 5px solid white;" alt="Daniel Tsivkovski's Photo">
 
-        <div style="margin: 2%">
+        <p style="padding: 3%">
             I am a junior at Del Norte High School taking AP Computer Science. I am part of the Pac-Man Bytes team working on this project.
-        </div>
+        </p>
 
     </div>
     <body/>
