@@ -4,34 +4,61 @@
 <!-- Setting up variables to customize "project" details to be specific to kangaroos -->
 {% set project = "Timmy's" %}
 {%  block body %}
-    <body style="background-image: url('/static/assets/backgrounds/jungle 2.jpg'); background-size: 100%; background-repeat: repeat">
-    <div style="color: #FBEEC1; font-family: Georgia; font-size: larger; margin: 5% 20% 0% 20%; text-align: center; background-color: rgba(172, 209, 175,0.7)">
+    <style>
+        body, html {
+            height: 100%;
+        }
 
-        <div>
-            <form action="/timmy/" id="timmy" method="POST" >
-                <div>
-                    <label for="name" style="padding-top: 2%">What is your name? </label>
-                </div>
-                <div>
-                    <input name="name" id="name">
-                    <input type="submit" value="Submit">
-                </div>
-            </form>
-        </div>
-        <div style="margin: 2% 0 0 0">
-            Hi {{ name }}, I am Timothy Lin!
-        </div>
+        .parallax {
+            /* The image used */
+            background-image: url('/static/assets/backgrounds/jungle 2.jpg'); background-color: #f2cac4;
+
+            /* Full height */
+            height: 100%;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    <div class="parallax"; style="height: 15%">
+
+    </div>
+    <div class="parallax">
+        <div style="color: #FBEEC1; font-family: Georgia; font-size: larger; width: 70%; margin: auto; text-align: center; background-color: rgba(172, 209, 175,0.7); padding: 2%">
+
+            <div>
+                <form action="/timmy/" id="timmy" method="POST" >
+                    <div>
+                        <label for="name" style="padding-top: 2%">What is your name? </label>
+                    </div>
+                    <div>
+                        <input name="name" id="name">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+            <div style="margin: 2% 0 0 0">
+                Hi {{ name }}, I am Timothy Lin!
+            </div>
 
             <img src="/static/assets/tim 2.jpg" style="height: 400px; margin: 2%" alt="Timothy Lin's Photo 2">
             <img src="/static/assets/tim 1.jpg" style="height: 400px; margin: 2%" alt="Timothy Lin's Photo 1">
             <img src="/static/assets/IMG_0739.jpg" style="height: 400px; margin: 2%" alt="Timothy Lin's Photo 3">
 
-        <p style="padding: 2%">
-        Hello, my name is Timothy Lin and I am a student of AP Computer Science Principles at Del Norte High School.
-        </p>
+            <p style="padding: 2%">
+                Hello, my name is Timothy Lin and I am a student of AP Computer Science Principles at Del Norte High School.
+            </p>
+
+        </div>
+    </div>
+
+
+    <div class="parallax" style="height: 20%">
 
     </div>
-    <body/>
 {% endblock %}
 {% block background %}
 <!-- Birds were here -->

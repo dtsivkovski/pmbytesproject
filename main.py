@@ -75,6 +75,10 @@ def minilabs():
 def binary():
     return render_template("binary.html")
 
+@app.route('/wireframe/')
+def wireframe():
+    return render_template("wireframe.html")
+
 # runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)
