@@ -6,12 +6,31 @@
 
 <!-- Setting up variables to customize "project" details to be specific to index page -->
 {% set project = "Home" %}
-{% set subheading = "Work in Progress" %}
+{% set subheading = "Welcome to the Pac-Man Bytes homepage!" %}
 <!-- Change "imageurl" to a directory or link -->
 {% set imageurl = "/static/assets/backgrounds/coloredclouds.jpg" %}
 
+
 <!-- Add code inside the "block under" to add items below the block -->
 {% block under %}
+
+    <!-- Uncomment the line below to leave gap between main title area and body -->
+    <!-- <div class="parallax" style="height:20%"></div> -->
+    <div class="parallax" style="height:max-content">
+        <div class="frame" style="background-color: rgba(0,0,0, 0.5); width: 50%; margin: auto; align-items: center; ">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm" style="text-align: center; padding-top: 0">
+                        <div class="img-wrap">
+                            <img src="/static/assets/minimg/pacman1.png" style="height: 100%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 {% endblock %}
 

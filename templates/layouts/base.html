@@ -139,8 +139,8 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
     </style>
 
 
-<div class="parallax" style="height: 15%"> </div>
-<div class="parallax">
+<div class="parallax" style="height: 20%"> </div>
+<div class="parallax" style="height: max-content">
     <!--<div class="container-fluid">
         <div class="row justify-content-end" style="padding: 2%;">
             <div class="col-2" style="text-align: right;">
@@ -172,11 +172,13 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
     </div>
 </div>
 
-<div class="parallax" style="height: 5%"> </div>
+
 
 {% block under %}
 
 {% endblock %}
+
+    <div class="parallax" style="height: 50%"> </div>
 
 {% endblock %}
 
