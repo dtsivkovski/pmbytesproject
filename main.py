@@ -47,6 +47,16 @@ def daniel():
     # starting and empty input default
     return render_template("daniel.html", name="guest")
 
+@app.route('/timmy/', methods=('GET', 'POST'))
+def timmy():
+    # submit button has been pushed
+    if request.form:
+        name = request.form.get("name")
+        if len(name) != 0:  # input field has content
+            return render_template("timmy.html", name=name)
+    # starting and empty input default
+    return render_template("timmy.html", name="guest")
+
 @app.route('/about-us/')
 def aboutus():
     return render_template("about-us.html")
