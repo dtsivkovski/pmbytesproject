@@ -1,0 +1,46 @@
+<!-- Extending the predefined project layout -->
+{% extends "layouts/base.html" %}
+
+{% set project = "Tech Test" %}
+{% set subheading = "Page to test new ideas or functionalities" %}
+
+<!-- Change "imageurl" to a directory or link
+    This is the background image, so if you add any new images,
+    make sure to add them to the backgrounds folder -->
+{% set imageurl = "/static/assets/backgrounds/deepwaterrock.jpg" %}
+
+<!-- Add code inside the "block under" to add items below the block -->
+{% block under %}
+
+    <style>
+        .container {
+            height: 200px;
+            position: relative;
+            border: 0;
+        }
+
+        .vertical-center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+    </style>
+
+    <div class="parallax">
+
+        <div class="container">
+            <div class="vertical-center">
+                <button> TEST </button>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}
+
+<!- This is turning off birds background from base.html -->
+{% block background %}
+{% endblock %}

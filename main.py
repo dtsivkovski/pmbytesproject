@@ -79,6 +79,10 @@ def binary():
 def wireframe():
     return render_template("wireframe.html")
 
+@app.route('/techtest/')
+def techtest():
+    return render_template("techtest.html")
+
 # runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)
