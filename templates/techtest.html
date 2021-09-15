@@ -13,29 +13,24 @@
 {% block under %}
 
     <style>
-        .container {
-            height: 200px;
-            position: relative;
-            border: 0;
-        }
 
-        .vertical-center {
-            margin: 0;
-            position: absolute;
-            top: 50%;
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 0;
+            padding: 5%
         }
 
     </style>
 
     <div class="parallax">
 
-        <div class="container">
-            <div class="vertical-center">
-                <button> TEST </button>
+            <div class="center">
+                <form action="https://github.com/dtsivkovski/flask_portfolio" method="get" target="_blank">
+                    <button type="submit">TEST BUTTON</button>
+                </form>
             </div>
-        </div>
 
     </div>
 

@@ -79,7 +79,7 @@ def binary():
 def wireframe():
     return render_template("wireframe.html")
 
-@app.route('/techtest/')
+@app.route('/techtest/', methods=['GET'])
 def techtest():
     return render_template("techtest.html")
 
