@@ -4,24 +4,22 @@
 <!-- Setting up variables to customize "project" details to be specific to hawkers -->
 {% set project = "Chris's" %}
 {% block body %}
-    <body style="background-image: url('/static/assets/backgrounds/forest1.jpg'); background-size: 100%">
-        <div style="color: white; font-family: Georgia; font-size: larger; margin: 2% 10% 0 10%; text-align: center; background-color: rgba(0,0,0,0.7)">
-            <div>
-                <form action="/chris/" id="chris" method="POST" >
-                    <div>
-                        <label for="name" style="padding-top: 2%">What is your name? </label>
-                    </div>
-                    <div style="padding: 0 0 1% 0">
-                        <input name="name" id="name">
-                        <input type="submit" value="Submit">
-                    </div>
-                </form>
-            </div>
-            <div style="margin: 2% 0 0 0">
-                Hi {{ name }}, I'm Christopher Hom!
-            </div>
-
+    <body style="background-image: url('/static/assets/backgrounds/deepwaterrock.jpg'); background-size: 100%">
+    <div style="color: white; font-family: Georgia; font-size: larger; margin: 2% 10% 0 10%; text-align: center; background-color: rgba(0,0,0,0.7)">
         <div>
+            <form action="/chris/" id="chris" method="POST" >
+                <div>
+                    <label for="name" style="padding-top: 2%">What is your name? </label>
+                </div>
+                <div style="padding: 0 0 1% 0">
+                    <input name="name" id="name">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+        <div style="margin: 2% 0 0 0">
+            Hi, {{ name }}, I am Christopher Hom!
+        </div>
             <img src="/static/assets/Chris.PNG" style="height:380px">
         </div>
     </div>
