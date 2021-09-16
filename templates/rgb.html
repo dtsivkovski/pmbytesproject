@@ -1,0 +1,21 @@
+<!-- Extending the predefined project layout -->
+{% extends "layouts/base.html" %}
+
+{% set project = "RGB Testing" %}
+{% set subheading = "Testing for RGB page integration" %}
+
+<!-- Change "image url" to a directory or link
+    This is the background image, so if you add any new images,
+    make sure to add them to the backgrounds folder -->
+{% set imageurl = "/static/assets/backgrounds/deepwaterrock.jpg" %}
+
+<!-- Add code inside the "block under" to add items below the block -->
+{% block under %}
+
+
+
+{% endblock %}
+
+<!- This is turning off birds background from base.html -->
+{% block background %}
+{% endblock %}
