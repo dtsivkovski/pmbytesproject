@@ -12,13 +12,10 @@ def index():
 
 
 # connects /kangaroos path to render timmy.html
-@app.route('/timmy/')
-def kangaroos():
-    return render_template("timmy.html")
 
 
 @app.route('/armaan/', methods=('GET', 'POST'))
-def walruses():
+def armaan():
     if request.form:
         name = request.form.get("name")
         if len(name) != 0:  # input field has content
