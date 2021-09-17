@@ -2,6 +2,8 @@
 from flask import Flask, render_template, request
 
 # create a Flask instance
+from algorithm.image import image_data
+
 app = Flask(__name__)
 
 
@@ -82,7 +84,7 @@ def techtest():
 
 @app.route('/rgb/')
 def rgb():
-    return render_template("rgb.html")
+    return render_template('rgb.html', images=image_data())
 
 # runs the application on the development server
 if __name__ == "__main__":
