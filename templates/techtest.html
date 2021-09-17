@@ -8,11 +8,24 @@
     This is the background image, so if you add any new images,
     make sure to add them to the backgrounds folder -->
 {% set imageurl = "/static/assets/backgrounds/deepwaterrock.jpg" %}
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- Add code inside the "block under" to add items below the block -->
 {% block under %}
 
     <style>
+        .btn {
+            background-color: #FBEEC1;
+            border: none;
+            color: black;
+            padding: 12px 30px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        /* Darker background on mouse-over */
+        .btn:hover {
+            background-color: rgba(218, 173, 134, 0.4);
+        }
 
         .center {
             display: flex;
@@ -27,11 +40,16 @@
     <div class="parallax">
 
             <div class="center">
-                <form action="https://github.com/dtsivkovski/flask_portfolio" method="get" target="_blank">
-                    <button type="submit">TEST BUTTON</button>
-                </form>
-            </div>
+                <p>
+                    <img src="/static/assets/minimg/pacman1.png" style="height: 100%;">
+                </p>
+                <div class="btn">
+                    <a download="pacman.png" href="/static/assets/pacman.png" title="Download">
+                        <img alt="Download">
+                    </a>
+                </div>
 
+            </div>
     </div>
 
 {% endblock %}
