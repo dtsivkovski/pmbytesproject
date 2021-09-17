@@ -85,7 +85,7 @@ def wireframe():
 def techtest():
     return render_template("techtest.html")
 
-@app.route('/rgb/', methods=['GET', 'POST'])
+@app.route('/rgb/')
 def rgb():
     return render_template('rgb.html', images=image_data())
 
