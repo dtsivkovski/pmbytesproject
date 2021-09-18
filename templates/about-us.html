@@ -4,17 +4,27 @@
 {% set project = "About Us" %}
 
 {% block body %}
-
+<div class="jumbotron">
     <div>
-        <p>
-            <center style="color: black; font-family: Georgia; font-size: larger; margin: 5% 10% 0% 10%">
-                    We are Pac-Man Bytes, and we're creating a project to randomly generate images of different animals.
-            </center>
-        </p>
-        <center>
-            <img src="/static/assets/pacman.png" style="height: 480px" alt="Pac-man Image">
-        </center>
+        <div>
+            <div style="color: black; font-size: larger; margin: 5% 10% 0 10%">
+                We are Pac-Man Bytes, and we're creating a project to randomly generate images of different animals.
+            </div>
+        </div>
     </div>
+</div>
+    <div>
+        <div>
+            <img src="/static/assets/pacman.png" style="height: 480px" alt="Pac-man Image">
+        </div>
+    </div>
+<div class="jumbotron">
+    <div>
+            <div style="color: black; font-size: larger; margin: 5% 10% 0 10%">
+                Currently, our project is planned to show random animal images with the press of a button, as well as the ability to let the user share or download the specific image.
+            </div>
+    </div>
+</div>
 
 {% endblock %}
 
