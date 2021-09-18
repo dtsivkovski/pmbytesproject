@@ -1,4 +1,4 @@
-from PIL import Image, ImageDraw
+from PIL import Image
 import numpy
 import base64
 from io import BytesIO

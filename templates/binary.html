@@ -10,7 +10,8 @@
            use HTML Input Form in Frontend, ie toward top of Page
            send initial value and updated values to form via Python render_template -->
 <!-- Hack: use 8 as default -->
-{% set BITS = 8 %}
+
+{% set BITS = bits %}
 {% set MAX = ((2 ** BITS) - 1) %}
 
 <!-- Hack: Set bulbs and pass as variables via Python render_template
@@ -25,7 +26,7 @@
     <body style="background-color: rebeccapurple">
     <title>Binary Bage</title>
     <script>
-        const BITS = '{{ BITS }}'; let max = '{{ MAX }}'; let MAX = parseInt(max, 10);
+        const BITS = '{{ BITS }}' = {{ bitadd }}; let max = '{{ MAX }}'; let MAX = parseInt(max, 10);
         // return string with current value of each bit
         function getBits() {
             let bits = "";
@@ -122,6 +123,12 @@
     <h1 class="text-center">Binary Math with Conversions</h1>
     <div class="container">
         <div class="row justify-content-md-center">
+
+            <form action="/binary/" id="bits" method="POST" >
+                <label for="bits"> How many bits? </label>
+                <input name="bits">
+                <input type="submit" value="Submit">
+            </form>
 
             <div class="col-8">
                 <table class="table">
