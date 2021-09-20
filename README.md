@@ -75,8 +75,27 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
 
 </table>
 
+-----
 
+## Time-Based Box for Grading
 
+#### Week 5 
+
+<p>
+<a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/README.md"> README.md</a> - Updated README.md (current page) to include a time-box for grading 
+</p>
+
+#### Week 4 - PBL
+
+<p>
+<a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/layouts/base.html"> Template Design </a> - Changing the base template using Jinja to fit out aesthetic theme of the page.
+<br>
+<a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/techtest.html"> Download Technical </a> - Creating a download button to download an image from the website.
+<br>
+<a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/about-us.html"> Jumbotron Bootstrap </a> - Displaying text and headers on a bigger screen.
+<br>
+<a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/minilabs.html"> Javascript ASCII Integration </a> - Integrating ASCII into the binary section of the mini-labs page.
+</p>
 
 
 
