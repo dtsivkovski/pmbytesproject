@@ -90,6 +90,17 @@ def techtest():
 def rgb():
     return render_template('rgb.html', images=image_data())
 
+@app.route('/danielvar/', methods=['GET', 'POST'])
+def danielvar():
+    # submit button has been pushed
+    if request.form:
+        name = request.form.get("var1")
+        if len(var1) != 0:
+            return render_template("danielvar.html", name=name, var1=var1, var2=var2, var3=var3, var4=var4, var5=var5)
+    return render_template("danielvar.html", var1="5", var2="2", var3="4", var4="1", var5="3")
+
 # runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)
+
+

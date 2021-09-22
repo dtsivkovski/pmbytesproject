@@ -1,0 +1,44 @@
+<!-- Extending the project layout, as this file will do minor customizations -->
+{% extends "layouts/base.html" %}
+
+{% block background %}
+{% endblock %}
+
+<!-- Setting up variables to customize "project" details to be specific to index page -->
+{% set project = "Daniel's Test Page" %}
+{% set subheading = "Variable Input Testing Page" %}
+<!-- Change "imageurl" to a directory or link -->
+{% set imageurl = "/static/assets/rgbimages/bluetree.jpg" %}
+
+
+<!-- Add code inside the "block under" to add items below the block -->
+{% block under %}
+
+    <!-- Uncomment the line below to leave gap between main title area and body -->
+    <div class="parallax" style="height:20%"></div>
+    <div class="parallax" style="height:max-content">
+        <div class="frame" style="background-color: rgba(0,0,0, 0.5); width: 80%; margin: auto; align-items: center; ">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm" style="text-align: center; padding-top: 0">
+                        <h4> +3 Average Algorithm </h4>
+                        <form action="/danielvar.html">
+                            <label for="var1">First Variable:</label>
+                            <input type="number" id="var1" name="var1" value="10"><br>
+                            <label for="var2">Second Variable:</label>
+                            <input type="number" id="var2" name="var2" value="20"><br><br>
+                            <input type="submit" value="Submit">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}
+
+{% set overview = "https://nighthawkcodingsociety.com/projectsearch/details/Flask%20Portfolio%20Starter" %}
+{% set repo = "https://github.com/nighthawkcoders/flask_portfolio/" %}
