@@ -94,10 +94,15 @@ def rgb():
 def danielvar():
     # submit button has been pushed
     if request.form:
-        name = request.form.get("var1")
-        if len(var1) != 0:
-            return render_template("danielvar.html", name=name, var1=var1, var2=var2, var3=var3, var4=var4, var5=var5)
-    return render_template("danielvar.html", var1="5", var2="2", var3="4", var4="1", var5="3")
+        var1 = request.form.get("var1")
+        var2 = request.form.get("var2")
+        var3 = request.form.get("var3")
+        var4 = request.form.get("var4")
+        var5 = request.form.get("var5")
+        var6 = request.form.get("var6")
+        average = ((int(var1) + 3) + (int(var2) + 3) + (int(var3) + 3) + (int(var4) + 3) + (int(var5) + 3) + (int(var6) + 3)) / 6
+        return render_template("danielvar.html", var1=var1, var2=var2, var3=var3, var4=var4, var5=var5, var6=var6, average=average)
+    return render_template("danielvar.html", var1="5", var2="2", var3="4", var4="1", var5="3", var6="0", average="2.5")
 
 # runs the application on the development server
 if __name__ == "__main__":
