@@ -23,25 +23,25 @@
                 <div class="row">
                     <div class="col-sm" style="text-align: center; padding-top: 0">
                         <h4> +3 Average Algorithm </h4>
-                        <form action="/danielvar/">
+                        <form action="/danielvar/" method="post">
                             <label for="var1">First Variable:</label>
-                            <input type="number" id="var1" name="var1" value="5"><br>
+                            <input type="number" id="var1" name="var1" value="{{ var1 }}"> +3 <br>
                             <label for="var2">Second Variable:</label>
-                            <input type="number" id="var2" name="var2" value="2"><br>
+                            <input type="number" id="var2" name="var2" value="{{ var2 }}"> +3 <br>
                             <label for="var1">Third Variable:</label>
-                            <input type="number" id="var3" name="var3" value="4"><br>
+                            <input type="number" id="var3" name="var3" value="{{ var3 }}"> +3 <br>
                             <label for="var1">Fourth Variable:</label>
-                            <input type="number" id="var4" name="var4" value="1"><br>
+                            <input type="number" id="var4" name="var4" value="{{ var4 }}"> +3 <br>
                             <label for="var1">Fifth Variable:</label>
-                            <input type="number" id="var5" name="var5" value="3"><br>
+                            <input type="number" id="var5" name="var5" value="{{ var5 }}"> +3<br>
                             <label for="var1">Sixth Variable:</label>
-                            <input type="number" id="var6" name="var6" value="0"><br><br>
+                            <input type="number" id="var6" name="var6" value="{{ var6 }}"> +3 <br><br>
                             <input type="submit" value="Submit">
                         </form>
 
                         <div>
                             <p>
-                                The average of {{ var1 }}, {{ var2 }}, {{ var3 }}, {{ var4 }}, {{ var5 }}, and {{ var6 }} is {{ average }}.
+                                The average of {{ var1 }}+3, {{ var2 }}+3, {{ var3 }}+3, {{ var4 }}+3, {{ var5 }}+3, and {{ var6 }}+3 is {{ average }}.
                             </p>
                         </div>
 

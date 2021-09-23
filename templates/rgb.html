@@ -12,13 +12,6 @@
 <!-- Add code inside the "block under" to add items below the block -->
 {% block under %}
 
-    <script>
-        function setImg(img, base64) {
-            // add button and rotate image from original to gray and back (toggle)
-            // document.getElementById(img). = base64;  //change img src to inner html on <p> tag
-        }
-    </script>
-
 <div class="parallax" style="height: 30%"></div>
 
 <div class="parallax">
@@ -45,14 +38,19 @@
                                 {% for image in images %}
                                     <tr>
                                         <td>
-                                            <div>{{image.file}}</div>
-                                            <div>{{image.format}}</div>
-                                            <div>{{image.size}}</div>
-                                            <div>{{image.label}}</div>
-                                            <div>{{image.source}}</div>
+                                            <div>{{ image.file }}</div>
+                                            <div>{{ image.format }}</div>
+                                            <div>{{ image.size }}</div>
+                                            <div>{{ image.label }}</div>
+                                            <div>{{ image.source }}</div>
                                         </td>
                                         <td>
                                             <img class="img-responsive py-3" id=img{{loop.index}} alt="" width="256" height="Auto" src="{{image.base64}}" >
+                                            <!-- Hack: create button (btn{{loop.index}} to  call java script function
+                                                   pass index to allow you to toggle images with hidden id's
+                                                   {{image.base64}}  original image
+                                                   {{image.base64_GRAY}}  gray scale image
+                                                -->
                                             <p hidden id="img_orig{{loop.index}}">{{image.base64}}</p>
                                             <p hidden id="img_gray{{loop.index}}">{{image.base64_GRAY}}</p>
                                         </td>
