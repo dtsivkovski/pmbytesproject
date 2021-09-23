@@ -1,0 +1,191 @@
+Index: templates/about-us.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{% extends \"layouts/base.html\" %}\n\n<!- This variable sets name of browser tab  -->\n{% set project = \"About Us\" %}\n\n{% block body %}\n<div class=\"jumbotron\">\n    <div>\n        <div>\n            <div style=\"color: black; font-size: larger; margin: 5% 10% 0 10%; text-align: center\">\n                We are Pac-Man Bytes, and we're creating a project to randomly generate images of different animals.\n            </div>\n        </div>\n    </div>\n</div>\n    <div>\n        <div>\n            <img src=\"/static/assets/pacman.png\" style=\"height: 480px\" alt=\"Pac-man Image\">\n        </div>\n    </div>\n<div class=\"jumbotron\">\n    <div>\n            <div style=\"color: black; font-size: larger; margin: 5% 10% 0 10%;text-align: center\">\n                Currently, our project is planned to show random animal images with the press of a button, as well as the ability to let the user share or download the specific image.\n            </div>\n    </div>\n</div>\n\n{% endblock %}\n\n<!- This is turning off birds background from base.html -->\n{% block background %}\n{% endblock %}\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/templates/about-us.html b/templates/about-us.html
+--- a/templates/about-us.html	(revision 3b2ec11aa843ba0b8648e8e38d4dd7ee63e5aab6)
++++ b/templates/about-us.html	(date 1632168024323)
+@@ -4,7 +4,21 @@
+ {% set project = "About Us" %}
+ 
+ {% block body %}
+-<div class="jumbotron">
++    <style>
++        .main {
++            display: flex;
++            alight-item: center;
++            justify-content: center;
++        }
++        .center {
++            color: black;
++            font-size: larger;
++            margin: 5% 10% 0 10%;
++            text-align: center
++        }
++
++    </style>
++<div class="jumbotron" style="width: 60%; margin: auto">
+     <div>
+         <div>
+             <div style="color: black; font-size: larger; margin: 5% 10% 0 10%; text-align: center">
+@@ -14,7 +28,7 @@
+     </div>
+ </div>
+     <div>
+-        <div>
++        <div class="main">
+             <img src="/static/assets/pacman.png" style="height: 480px" alt="Pac-man Image">
+         </div>
+     </div>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"9f71b4af-9a59-4ba8-9b3d-0c25b134229d\" name=\"Changes\" comment=\"Integrated jumbotron onto About Us page\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FlaskConsoleOptions\" custom-start-script=\"import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\\nApp: %s [%s]\\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))\">\n    <envs>\n      <env key=\"FLASK_APP\" value=\"app\" />\n    </envs>\n    <option name=\"myCustomStartScript\" value=\"import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\\nApp: %s [%s]\\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))\" />\n    <option name=\"myEnvs\">\n      <map>\n        <entry key=\"FLASK_APP\" value=\"app\" />\n      </map>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectId\" id=\"1yHay4epKMtrIOR1fHdee3wEzRJ\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\n    <property name=\"project.structure.last.edited\" value=\"SDKs\" />\n    <property name=\"project.structure.proportion\" value=\"0.0\" />\n    <property name=\"project.structure.side.proportion\" value=\"0.0\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"configurable.group.tools\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/.idea\" />\n    </key>\n  </component>\n  <component name=\"RunManager\">\n    <configuration name=\"main\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"flask_portfolio\" />\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\n      <option name=\"PARENT_ENVS\" value=\"true\" />\n      <envs>\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\n      </envs>\n      <option name=\"SDK_HOME\" value=\"\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/main.py\" />\n      <option name=\"PARAMETERS\" value=\"\" />\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\n      <option name=\"MODULE_MODE\" value=\"false\" />\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\n      <option name=\"INPUT_FILE\" value=\"\" />\n      <method v=\"2\" />\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Python.main\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"9f71b4af-9a59-4ba8-9b3d-0c25b134229d\" name=\"Changes\" comment=\"\" />\n      <created>1631911218904</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1631911218904</updated>\n      <workItem from=\"1631911222608\" duration=\"432000\" />\n      <workItem from=\"1631911698607\" duration=\"116000\" />\n      <workItem from=\"1631911882401\" duration=\"116000\" />\n      <workItem from=\"1631912202921\" duration=\"3793000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Integrated jumbotron onto About Us page\">\n      <created>1631942022221</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1631942022221</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"2\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Integrated jumbotron onto About Us page\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Integrated jumbotron onto About Us page\" />\n  </component>\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\n    <SUITE FILE_PATH=\"coverage/flask_portfolio$flask_portfolio.coverage\" NAME=\"flask_portfolio Coverage Results\" MODIFIED=\"1631911119107\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"\" />\n    <SUITE FILE_PATH=\"coverage/flask_portfolio$main.coverage\" NAME=\"main Coverage Results\" MODIFIED=\"1631942170787\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 3b2ec11aa843ba0b8648e8e38d4dd7ee63e5aab6)
++++ b/.idea/workspace.xml	(date 1632338983633)
+@@ -1,12 +1,23 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="9f71b4af-9a59-4ba8-9b3d-0c25b134229d" name="Changes" comment="Integrated jumbotron onto About Us page" />
++    <list default="true" id="9f71b4af-9a59-4ba8-9b3d-0c25b134229d" name="Changes" comment="Integrated jumbotron onto About Us page">
++      <change afterPath="$PROJECT_DIR$/chrisvariablelist.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about-us.html" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+   </component>
++  <component name="FileTemplateManagerImpl">
++    <option name="RECENT_TEMPLATES">
++      <list>
++        <option value="Python Script" />
++      </list>
++    </option>
++  </component>
+   <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+     <envs>
+       <env key="FLASK_APP" value="app" />
+@@ -41,7 +52,29 @@
+       <recent name="$PROJECT_DIR$/.idea" />
+     </key>
+   </component>
+-  <component name="RunManager">
++  <component name="RunManager" selected="Python.chrisvariablelist">
++    <configuration name="chrisvariablelist" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
++      <module name="flask_portfolio" />
++      <option name="INTERPRETER_OPTIONS" value="" />
++      <option name="PARENT_ENVS" value="true" />
++      <envs>
++        <env name="PYTHONUNBUFFERED" value="1" />
++      </envs>
++      <option name="SDK_HOME" value="" />
++      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
++      <option name="IS_MODULE_SDK" value="true" />
++      <option name="ADD_CONTENT_ROOTS" value="true" />
++      <option name="ADD_SOURCE_ROOTS" value="true" />
++      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
++      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chrisvariablelist.py" />
++      <option name="PARAMETERS" value="" />
++      <option name="SHOW_COMMAND_LINE" value="false" />
++      <option name="EMULATE_TERMINAL" value="false" />
++      <option name="MODULE_MODE" value="false" />
++      <option name="REDIRECT_INPUT" value="false" />
++      <option name="INPUT_FILE" value="" />
++      <method v="2" />
++    </configuration>
+     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+       <module name="flask_portfolio" />
+       <option name="INTERPRETER_OPTIONS" value="" />
+@@ -66,6 +99,7 @@
+     </configuration>
+     <recent_temporary>
+       <list>
++        <item itemvalue="Python.chrisvariablelist" />
+         <item itemvalue="Python.main" />
+       </list>
+     </recent_temporary>
+@@ -81,7 +115,8 @@
+       <workItem from="1631911222608" duration="432000" />
+       <workItem from="1631911698607" duration="116000" />
+       <workItem from="1631911882401" duration="116000" />
+-      <workItem from="1631912202921" duration="3793000" />
++      <workItem from="1631912202921" duration="10325000" />
++      <workItem from="1632337575954" duration="1085000" />
+     </task>
+     <task id="LOCAL-00001" summary="Integrated jumbotron onto About Us page">
+       <created>1631942022221</created>
+@@ -90,7 +125,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1631942022221</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="Integrated jumbotron onto About Us page">
++      <created>1631942354992</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1631942354992</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -114,6 +156,7 @@
+   </component>
+   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+     <SUITE FILE_PATH="coverage/flask_portfolio$flask_portfolio.coverage" NAME="flask_portfolio Coverage Results" MODIFIED="1631911119107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+-    <SUITE FILE_PATH="coverage/flask_portfolio$main.coverage" NAME="main Coverage Results" MODIFIED="1631942170787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
++    <SUITE FILE_PATH="coverage/flask_portfolio$main.coverage" NAME="main Coverage Results" MODIFIED="1632255579686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
++    <SUITE FILE_PATH="coverage/flask_portfolio$chrisvariablelist.coverage" NAME="chrisvariablelist Coverage Results" MODIFIED="1632338976514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: chrisvariablelist.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/chrisvariablelist.py b/chrisvariablelist.py
+new file mode 100644
+--- /dev/null	(date 1632338976495)
++++ b/chrisvariablelist.py	(date 1632338976495)
+@@ -0,0 +1,28 @@
++# Challenge 1: Name the variable types of the following variables. Print them out into console in the format "Variable: Variable Type" (might have to google "how to print variables in python")
++print('challenge 1')
++var1 = 3
++var2 = "Mr. Mortensen"
++var3 = 'f'
++var4 = 0.4
++print(var1, 'is a integer')
++print(var2, 'is a string')
++print(var3, 'is a character')
++print(var4, 'is a float')
++
++# Challenge 2: Pass list1 into list2. However, list2 must contain the elements of list1 in order. Print list2. +0.3 if you can create a function to order a list and can display it on your website
++print('Challenge 2')
++list1 = [5, 3, 4, 1, 2]
++# list2 = ?
++# def orderList (list):
++#	?
++list2 = [1, 2, 3, 4, 5]
++print(list1, 'is now', list2)
++# Challenge 3: Find a way to add 3 to each element in the array. Then, take the average of the array and put it into the variable avg. +0.2 if you can turn this into a function and display it on your website.
++print('Challenge 3')
++
++averageList = [23, 41, 90, 55, 71, 83]
++avg= ((averageList(0)) + (averageList(1)) + (averageList(3)) + (averageList(4)) + (averageList(5)) /6
++print(averageList, 'average is', avg)
++# avg = ?
++# def averageList (list):
++#	?
+\ No newline at end of file
