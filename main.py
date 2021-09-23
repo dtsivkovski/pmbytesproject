@@ -74,9 +74,10 @@ def minilabs():
 def binary():
     if request.form:
         bits = request.form.get("bits")
-        if input(bits) != 0:  # input field has content
+        if bits is not None:  # input field has content
             return render_template("binary.html", bits=int(bits))
-    return render_template("binary.html", bits=8)
+    else:
+        return render_template("binary.html", bits=8)
 
 @app.route('/wireframe/')
 def wireframe():
