@@ -3,7 +3,6 @@ from flask import Flask, render_template, request
 
 # create a Flask instance
 from algorithm.image import image_data
-
 app = Flask(__name__)
 
 
@@ -13,8 +12,9 @@ def index():
     return render_template("index.html")
 
 
-# connects /kangaroos path to render timmy.html
-
+@app.route('/rgb/')
+def rgb():
+    return render_template("rgb.html", images=image_data())
 
 @app.route('/armaan/', methods=('GET', 'POST'))
 def armaan():
@@ -81,10 +81,6 @@ def wireframe():
 @app.route('/techtest/', methods=['GET'])
 def techtest():
     return render_template("techtest.html")
-
-@app.route('/rgb/')
-def rgb():
-    return render_template('rgb.html', images=image_data())
 
 # runs the application on the development server
 if __name__ == "__main__":

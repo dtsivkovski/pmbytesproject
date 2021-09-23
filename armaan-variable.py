@@ -1,5 +1,3 @@
-# Challenge 1: Name the variable types of the following variables. Print them out into console in the format "Variable: Variable Type" (might have to google "how to print variables in python")
-
 print('--------Challenge 1!--------')
 var1 = 3
 var2 = "Mr. Mortensen"
