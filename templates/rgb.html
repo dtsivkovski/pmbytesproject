@@ -1,39 +1,55 @@
 <!-- Extending the predefined project layout -->
 {% extends "layouts/base.html" %}
 
-{% set project = "RGB Testing" %}
+{% set project = "RGB Integration" %}
 {% set subheading = "Testing for RGB page integration" %}
 
 <!-- Change "image url" to a directory or link
     This is the background image, so if you add any new images,
     make sure to add them to the backgrounds folder -->
-{% set imageurl = "/static/assets/backgrounds/deepwaterrock.jpg" %}
+{% set imageurl = "/static/assets/backgrounds/spacerock.jpg" %}
+
+{% block meta %}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+
+        var imageType = 0;
+
+        function togglegray() {
+            if (imageType == 0) {
+                $('#colored').hide()
+                $('#grayscale').show()
+                imageType = 1;
+            } else {
+                $('#grayscale').hide()
+                $('#colored').show()
+                imageType = 0;
+            }
+        }
+
+    </script>
+
+{% endblock %}
 
 <!-- Add code inside the "block under" to add items below the block -->
 {% block under %}
-
-    <script>
-        function setImg(img, base64) {
-            // add button and rotate image from original to gray and back (toggle)
-            // document.getElementById(img). = base64;  //change img src to inner html on <p> tag
-        }
-    </script>
-
-<div class="parallax" style="height: 30%"></div>
-
-<div class="parallax">
-    <div class="frame" style="background-color: rgba(0,0,0, 0.5); width: 80%; margin: auto; align-items: center; ">
-        <div class="container-fluid">
+<div class="parallax" style="height: 20%"></div>
+<div class="parallax" style="height: max-content">
+    <div class="frame" style="background-color: rgba(0,0,0, 0.5); height: fit-content; width: 80%; margin: auto; padding: 5%; color: white">
+        <div class="container-fluid" style="height: max-content">
             <div class="row">
                 <div class="col-sm" style="text-align: center; padding-top: 0">
 
 
                     <title>RGB starter</title>
 
-                    <h1 class="text-center">RGB values within an Image</h1>
-                    <div class="container">
-                        <div class="row justify-content-md-center">
-                            <table class="table">
+                    <h2 class="text-center">RGB values within an Image</h2>
+                    <div class="container" style="height: max-content">
+                        <button onclick="togglegray()"> Grayscale On/Off </button>
+                        <div class="row justify-content-md-center" id="colored">
+                            <table class="table" style="height: max-content">
                                 <thead>
                                 <tr>
                                     <th style="color: whitesmoke">Meta Data</th>
@@ -41,34 +57,33 @@
                                     <th style="color: whitesmoke">Data</th>
                                 </tr>
                                 </thead>
-                                <tbody>
+                                <tbody style="color: whitesmoke">
                                 {% for image in images %}
                                     <tr>
                                         <td>
-                                            <div>{{image.file}}</div>
-                                            <div>{{image.format}}</div>
-                                            <div>{{image.size}}</div>
-                                            <div>{{image.label}}</div>
-                                            <div>{{image.source}}</div>
+                                            <div>{{ image.file }}</div>
+                                            <div>{{ image.format }}</div>
+                                            <div>{{ image.size }}</div>
+                                            <div>{{ image.label }}</div>
+                                            <div>{{ image.source }}</div>
                                         </td>
                                         <td>
                                             <img class="img-responsive py-3" id=img{{loop.index}} alt="" width="256" height="Auto" src="{{image.base64}}" >
-                                            <p hidden id="img_orig{{loop.index}}">{{image.base64}}</p>
-                                            <p hidden id="img_gray{{loop.index}}">{{image.base64_GRAY}}</p>
+                                            <p hidden id="img_orig{{ loop.index }}">{{ image.base64 }}</p>
                                         </td>
                                         <td>
-                                            <div class="overflow-auto" style="height: 256px">
+                                            <div class="overflow-auto" style="height: 256px; color: whitesmoke">
                                                 <table class="table">
-                                                    <thead>
-                                                    <tr>
+                                                    <thead style="color: whitesmoke">
+                                                    <tr style="color: whitesmoke">
                                                         <th>#</th>
                                                         <th>{{image.mode}}</th>
                                                         <th>Hex Code</th>
                                                         <th>Binary</th>
                                                     </tr>
                                                     </thead>
-                                                    <tbody>
-                                                    {% for row in image.data[:256+1] %}
+                                                    <tbody style="color: whitesmoke">
+                                                    {% for row in image.data[:256 + 1] %}
                                                         <tr>
                                                             <td>{{loop.index}}</td>
                                                             <td>{{row}}</td>
@@ -87,16 +102,77 @@
                                 {% endfor %}
                                 </tbody>
                             </table>
+                        </div>
 
+                        <div class="row justify-content-md-center" id="grayscale">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Meta Data</th>
+                                    <th>Image</th>
+                                    <th>Data</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for image in images %}
+                                    <tr>
+                                        <td>
+                                            <div>{{image.file}}</div>
+                                            <div>{{image.format}}</div>
+                                            <div>{{image.size}}</div>
+                                            <div>{{image.label}}</div>
+                                            <div>{{image.source}}</div>
+                                        </td>
+                                        <td>
+                                            <img class="img-responsive py-3" id=img{{loop.index}} alt="" width="256" height="Auto" src="{{image.base64_GRAY}}" >
+                                            <p hidden id="img_gray{{loop.index}}">{{image.base64_GRAY}}</p>
+                                        </td>
+                                        <td>
+                                            <div class="overflow-auto" style="height: 256px">
+                                                <table class="table">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>{{image.mode}}</th>
+                                                        <th>Hex Code</th>
+                                                        <th>Binary</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    {% for row in image.gray_data[:256+1] %}
+                                                        <tr>
+                                                            <td>{{loop.index}}</td>
+                                                            <td>{{row}}</td>
+                                                            <td>{{image.hex_array_GRAY[loop.index - 1]}}</td>
+                                                            <td>{{image.binary_array_GRAY[loop.index - 1]}}
+                                                        </tr>
+                                                        {% if loop.index > 256 %}
+                                                            <tr><td>...</td><td>truncated</td><td>...</td><td>...</td></tr>
+                                                        {% endif %}
+                                                    {% endfor %}
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
     </div>
 </div>
+<div class="parallax" style="height: 30%"></div>
+
+<script>
+    $( document ).ready(function() {
+        $('#grayscale').hide()
+    })
+</script>
+
 {% endblock %}
 
 <!- This is turning off birds background from base.html -->

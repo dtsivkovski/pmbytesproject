@@ -75,8 +75,38 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
 
 </table>
 
+-----
 
+## Time-Based Box for Grading
 
+#### Week 5 
+<p>
+<a href="https://docs.google.com/document/d/1jFLS5jeQhK12o_Rs_DI7AaXEJOB0in9GovtWKdRnumc/edit#bookmark=id.f78a04kz5que"> Quiz Results and Corrections </a> - By Daniel Tsivkovski and Chris Hom
+<br>
+<a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/binary.html"> Binary Page </a> - Binary page dynamic bit amount using a submission form.
+<br>
+  <a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/rgb.html"> RGB Page </a> - RGB html page integration with greyscale toggle (WIP when this was written).
+<br>
+<a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/chrishackathon.py"> Chris's Hackathon File </a> - Successful print
+<br>
+<a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/danieltesting.py"> Daniel's Hackathon File </a> - Also included a html integration for part 3 on <a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/danielvar.html"> danielvar.html</a>
+<br>
+<a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/README.md"> README.md</a> - Updated README.md (current page) to include a time-box for grading 
+</p>
+
+##### Hackathon code and print results are also visible on the Pair Journals linked above the table.
+
+#### Week 4 - PBL
+
+<p>
+<a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/layouts/base.html"> Template Design </a> - Changing the base template using Jinja to fit out aesthetic theme of the page.
+<br>
+<a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/techtest.html"> Download Technical </a> - Creating a download button to download an image from the website.
+<br>
+<a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/about-us.html"> Jumbotron Bootstrap </a> - Displaying text and headers on a bigger screen.
+<br>
+<a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/minilabs.html"> Javascript ASCII Integration </a> - Integrating ASCII into the binary section of the mini-labs page.
+</p>
 
 
 
