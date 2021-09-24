@@ -82,21 +82,17 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
 #### Week 5 
 <p>
 <a href=https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/binary.html> Binary Page </a> - Binary page dynamic bit amount using a submission form.
-</p>
-<p>
+<br>
   <a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/rgb.html"> RGB Page </a> - RGB html page integration with greyscale toggle (WIP when this was written).
-</p>
-<p>
-<a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/chrishackathon.py"> Chris's Hackathon File </a> 
-</p>
-<p>
+<br>
+<a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/chrishackathon.py"> Chris's Hackathon File </a> - Successful print
+<br>
 <a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/danieltesting.py"> Daniel's Hackathon File </a> - Also included a html integration for part 3 on <a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/danielvar.html"> danielvar.html</a>
-</p>
-<p>
+<br>
 <a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/README.md"> README.md</a> - Updated README.md (current page) to include a time-box for grading 
 </p>
 
-##### Hackathon print results are visible on the Pair Journals linked above the table.
+##### Hackathon code and print results are also visible on the Pair Journals linked above the table.
 
 #### Week 4 - PBL
 
