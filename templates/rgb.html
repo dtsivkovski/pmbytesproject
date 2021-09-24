@@ -17,14 +17,14 @@
 
         var imageType = 0;
 
-        function toggle() {
+        function togglegray() {
             if (imageType == 0) {
-                $('#coloron').hide()
-                $('#greyscale').show()
+                $('#colored').hide()
+                $('#grayscale').show()
                 imageType = 1;
             } else {
-                $('#greyscale').hide()
-                $('#coloron').show()
+                $('#grayscale').hide()
+                $('#colored').show()
                 imageType = 0;
             }
         }
@@ -46,9 +46,9 @@
                     <title>RGB starter</title>
 
                     <h2 class="text-center">RGB values within an Image</h2>
-                    <button onclick="toggle()"> Greyscale On/Off </button>
                     <div class="container" style="height: max-content">
-                        <div class="row justify-content-md-center" id="coloron">
+                        <button onclick="togglegray()"> Grayscale On/Off </button>
+                        <div class="row justify-content-md-center" id="colored">
                             <table class="table" style="height: max-content">
                                 <thead>
                                 <tr>
@@ -102,9 +102,9 @@
                                 {% endfor %}
                                 </tbody>
                             </table>
-
                         </div>
-                        <div class="row justify-content-md-center" id="greyscale">
+
+                        <div class="row justify-content-md-center" id="grayscale">
                             <table class="table">
                                 <thead>
                                 <tr>
@@ -158,11 +158,8 @@
                                 {% endfor %}
                                 </tbody>
                             </table>
-
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
@@ -171,8 +168,8 @@
 <div class="parallax" style="height: 30%"></div>
 
 <script>
-    $(document).ready(function() {
-        $('#greyscale').hide()
+    $( document ).ready(function() {
+        $('#grayscale').hide()
     })
 </script>
 

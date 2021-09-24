@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f71b4af-9a59-4ba8-9b3d-0c25b134229d" name="Changes" comment="Updated rgb.html - more optimized images">
+    <list default="true" id="9f71b4af-9a59-4ba8-9b3d-0c25b134229d" name="Changes" comment="Updated rgb.html and README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/algorithm/image.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/image.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/rgb.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rgb.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +65,7 @@
       <recent name="C:\Users\danie\IdeaProjects\flask_portfolio\static\img" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.chrishackathon">
+  <component name="RunManager" selected="Python.main">
     <configuration name="chrishackathon" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="flask_portfolio" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -135,8 +134,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.chrishackathon" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.chrishackathon" />
         <item itemvalue="Python.danieltesting" />
       </list>
     </recent_temporary>
@@ -158,6 +157,8 @@
       <workItem from="1632330016524" duration="1376000" />
       <workItem from="1632429181603" duration="838000" />
       <workItem from="1632448837258" duration="3107000" />
+      <workItem from="1632506638377" duration="788000" />
+      <workItem from="1632514147973" duration="963000" />
     </task>
     <task id="LOCAL-00001" summary="Integrated jumbotron onto About Us page">
       <created>1631942022221</created>
@@ -208,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632449195291</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Updated rgb.html and README.md">
+      <created>1632506916971</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1632506916971</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,12 +241,14 @@
     <MESSAGE value="Fixed dynamic bit input for binary, changed navbar.html" />
     <MESSAGE value="rgb.html modification" />
     <MESSAGE value="Updated rgb.html - more optimized images" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated rgb.html - more optimized images" />
+    <MESSAGE value="Updated rgb.html and README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated rgb.html and README.md" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/flask_portfolio$image.coverage" NAME="image Coverage Results" MODIFIED="1631909379200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm" />
     <SUITE FILE_PATH="coverage/flask_portfolio$danieltesting.coverage" NAME="danieltesting Coverage Results" MODIFIED="1632284858117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flask_portfolio$flask_portfolio.coverage" NAME="flask_portfolio Coverage Results" MODIFIED="1631927392703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/flask_portfolio$main.coverage" NAME="main Coverage Results" MODIFIED="1632451789719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flask_portfolio$main.coverage" NAME="main Coverage Results" MODIFIED="1632514311287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flask_portfolio$chrishackathon.coverage" NAME="chrishackathon Coverage Results" MODIFIED="1632506789600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

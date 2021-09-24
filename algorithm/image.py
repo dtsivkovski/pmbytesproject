@@ -24,7 +24,6 @@ def image_data(path="static/img/", img_list=None):  # path of static images is d
             {'source': "Egor Vikhrev", 'label': "unsplash.com", 'file': "bluetree.jpg"},
             {'source': "Egor Vikhrev", 'label': "unsplash.com", 'file': "mustang.jpg"},
             {'source': "Toa Heftiba", 'label': "unsplash.com", 'file': "lanterns.jpg"},
-            # {'source': "Federico Rizzarelli", 'label': "unsplash.com", 'file': "cntower.jpg"}
         ]
     # gather analysis data and meta data for each image, adding attributes to each row in table
     for img_dict in img_list:
