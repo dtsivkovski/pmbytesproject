@@ -1,27 +1,30 @@
 <!-- Extending the predefined project layout -->
 {% extends "layouts/base.html" %}
 
-{% set project = "RGB Testing" %}
+{% set project = "RGB Integration" %}
 {% set subheading = "Testing for RGB page integration" %}
 
 <!-- Change "image url" to a directory or link
     This is the background image, so if you add any new images,
     make sure to add them to the backgrounds folder -->
-{% set imageurl = "/static/assets/backgrounds/deepwaterrock.jpg" %}
+{% set imageurl = "/static/assets/backgrounds/spacerock.jpg" %}
 
 <!-- Add code inside the "block under" to add items below the block -->
-{% block body %}
-        <div class="container-fluid">
+{% block under %}
+<div class="parallax" style="height: 20%"></div>
+<div class="parallax" style="height: max-content">
+    <div class="frame" style="background-color: rgba(0,0,0, 0.5); height: fit-content; width: 80%; margin: auto; padding: 5%; color: white">
+        <div class="container-fluid" style="height: max-content">
             <div class="row">
                 <div class="col-sm" style="text-align: center; padding-top: 0">
 
 
                     <title>RGB starter</title>
 
-                    <h1 class="text-center">RGB values within an Image</h1>
-                    <div class="container">
+                    <h2 class="text-center">RGB values within an Image</h2>
+                    <div class="container" style="height: max-content">
                         <div class="row justify-content-md-center">
-                            <table class="table">
+                            <table class="table" style="height: max-content">
                                 <thead>
                                 <tr>
                                     <th style="color: whitesmoke">Meta Data</th>
@@ -29,7 +32,7 @@
                                     <th style="color: whitesmoke">Data</th>
                                 </tr>
                                 </thead>
-                                <tbody>
+                                <tbody style="color: whitesmoke">
                                 {% for image in images %}
                                     <tr>
                                         <td>
@@ -50,25 +53,25 @@
                                             <p hidden id="img_gray{{loop.index}}">{{image.base64_GRAY}}</p>
                                         </td>
                                         <td>
-                                            <div class="overflow-auto" style="height: 256px">
+                                            <div class="overflow-auto" style="height: 256px; color: whitesmoke">
                                                 <table class="table">
-                                                    <thead>
-                                                    <tr>
+                                                    <thead style="color: whitesmoke">
+                                                    <tr style="color: whitesmoke">
                                                         <th>#</th>
                                                         <th>{{image.mode}}</th>
                                                         <th>Hex Code</th>
                                                         <th>Binary</th>
                                                     </tr>
                                                     </thead>
-                                                    <tbody>
-                                                    {% for row in image.data[:256+1] %}
+                                                    <tbody style="color: whitesmoke">
+                                                    {% for row in image.data[:256 + 1] %}
                                                         <tr>
                                                             <td>{{loop.index}}</td>
                                                             <td>{{row}}</td>
                                                             <td>{{image.hex_array[loop.index - 1]}}</td>
                                                             <td>{{image.binary_array[loop.index - 1]}}
                                                         </tr>
-                                                        {% if loop.index > 16 %}
+                                                        {% if loop.index > 256 %}
                                                             <tr><td>...</td><td>truncated</td><td>...</td><td>...</td></tr>
                                                         {% endif %}
                                                     {% endfor %}
@@ -88,6 +91,9 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+<div class="parallax" style="height: 30%"></div>
 {% endblock %}
 
 <!- This is turning off birds background from base.html -->

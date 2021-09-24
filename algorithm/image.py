@@ -20,12 +20,10 @@ def image_formatter(img, img_type):
 def image_data(path="static/img/", img_list=None):  # path of static images is defaulted
     if img_list is None:  # color_dict is defined with defaults
         img_list = [
-            {'source': "Andrew Haimerl", 'label': "unsplash.com", 'file': "city.jpg"},
-            # {'source': "Egor Vikhrev", 'label': "unsplash.com", 'file': "bluetree.jpg"},
-            # {'source': "Solen Feyissa", 'label': "unsplash.com", 'file': "fractal1.jpg"},
-            # {'source': "Andrew Haimerl", 'label': "unsplash.com", 'file': "lanterns.jpg"},
-            # {'source': "Rolf Schmidbauer", 'label': "unsplash.com", 'file': "butterfly.jpg"},
-            # {'source': "Shubham Dhage", 'label': "unsplash.com", 'file': "vase.jpg"},
+            {'source': "Andrew Haimerl", 'label': "unsplash.com", 'file': "citysmall.jpg"},
+            {'source': "Egor Vikhrev", 'label': "unsplash.com", 'file': "bluetree.jpg"},
+            {'source': "Egor Vikhrev", 'label': "unsplash.com", 'file': "mustang.jpg"},
+            {'source': "Toa Heftiba", 'label': "unsplash.com", 'file': "lanterns.jpg"},
             # {'source': "Federico Rizzarelli", 'label': "unsplash.com", 'file': "cntower.jpg"}
         ]
     # gather analysis data and meta data for each image, adding attributes to each row in table
