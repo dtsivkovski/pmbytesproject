@@ -34,7 +34,13 @@
             </div>
     </div>
 </div>
-
+<div>
+ img= Image.open(pacman.png)
+ d1 = ImageDraw.Draw(img)
+ d1.text((28,36), "test", fill-(255, 0, 0))
+ img.show()
+ img.save("images/pacman.png")
+</div>
 {% endblock %}
 
 <!- This is turning off birds background from base.html -->
