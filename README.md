@@ -81,7 +81,9 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
 
 #### Week 5 
 <p>
-<a href=https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/binary.html> Binary Page </a> - Binary page dynamic bit amount using a submission form.
+<a href="https://docs.google.com/document/d/1jFLS5jeQhK12o_Rs_DI7AaXEJOB0in9GovtWKdRnumc/edit#bookmark=id.f78a04kz5que"> Quiz Results and Corrections </a> Daniel Tsivkovski and Chris Hom
+<br>
+<a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/binary.html"> Binary Page </a> - Binary page dynamic bit amount using a submission form.
 <br>
   <a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/rgb.html"> RGB Page </a> - RGB html page integration with greyscale toggle (WIP when this was written).
 <br>
