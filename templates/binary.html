@@ -11,8 +11,13 @@
            send initial value and updated values to form via Python render_template -->
 <!-- Hack: use 8 as default -->
 
+{% set project = "Binary Lab" %}
+{% set subheading = "Binary Lab Experimentation" %}
+
 {% set BITS = bits %}
 {% set MAX = ((2 ** BITS) - 1) %}
+
+{% set imageurl = "/static/assets/backgrounds/ruan-richard-sand-unsplash.jpg" %}
 
 <!-- Hack: Set bulbs and pass as variables via Python render_template
            add new images (ie PNGs) to project -->
@@ -23,8 +28,28 @@
 {% set msgTurnOff = "Turn Off" %}
 
 {% block body %}
-    <body style="background-color: rebeccapurple">
-    <title>Binary Bage</title>
+
+    <style>
+        body, html {
+            height: 100%;
+        }
+
+        .parallax {
+            /* The image used */
+            background-image: url({{ imageurl }}); background-color: #f2cac4;
+
+            /* Full height */
+            height: 100%;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+    <body>
     <script>
         const BITS = {{ BITS }}; let max = '{{ MAX }}'; let MAX = parseInt(max, 10);
         // return string with current value of each bit
@@ -121,8 +146,14 @@
         }
     </script>
 
-    <h1 class="text-center">Binary Math with Conversions</h1>
+<div class="parallax" style="height:95%">
+<div class="frame" style="background-color: rgba(0,0,0, 0.5); padding: 5%; width: 100%; margin: auto; height: 100%">
     <div class="container">
+
+        <div class="row justify-content-md-center">
+            <h1> Binary Mini-Lab </h1>
+        </div>
+
         <div class="row justify-content-md-center">
 
             <form action="/binary/" id="bits" method="POST" >
@@ -158,23 +189,31 @@
             </div>
 
             <div class="col-12">
-                <table class="table">
-                    <tr>
-                        {% for i in range(BITS) %}
-                            <td><img class="img-responsive py-3" id="bulb{{i}}" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
-                                <button type="button" id="butt{{i}}" onclick="toggleBit('{{i}}')">{{ msgTurnOn }}</button>
-                            </td>
-                        {% endfor %}
-                    </tr>
-                    <tr>
-                        {% for i in range(BITS) %}
-                            <td><input type='text' id='digit{{i}}' Value="0" size="1" readonly></td>
-                        {% endfor %}
-                    </tr>
-                </table>
+                <div class="container-fluid" >
+                <div class="row">
+                <div class="col-sm">
+                    <table class="table">
+                        <tr>
+                            {% for i in range(BITS) %}
+                                <td><img class="img-responsive py-3" id="bulb{{i}}" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+                                    <button type="button" id="butt{{i}}" onclick="toggleBit('{{i}}')">{{ msgTurnOn }}</button>
+                                </td>
+                            {% endfor %}
+                        </tr>
+                        <tr>
+                            {% for i in range(BITS) %}
+                                <td><input type='text' id='digit{{i}}' Value="0" size="1" readonly></td>
+                            {% endfor %}
+                        </tr>
+                    </table>
+                </div>
+                </div>
+                </div>
             </div>
 
         </div>
     </div>
+</div>
+</div>
     </body>
 {% endblock %}
