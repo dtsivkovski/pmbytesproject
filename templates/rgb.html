@@ -9,7 +9,10 @@
     make sure to add them to the backgrounds folder -->
 {% set imageurl = "/static/assets/backgrounds/spacerock.jpg" %}
 
-{% block meta %}
+
+<!-- Add code inside the "block under" to add items below the block -->
+{% block under %}
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -17,24 +20,22 @@
 
         var imageType = 0;
 
-        function togglegray() {
-            if (imageType == 0) {
-                $('#colored').hide()
-                $('#grayscale').show()
-                imageType = 1;
-            } else {
-                $('#grayscale').hide()
-                $('#colored').show()
-                imageType = 0;
-            }
-        }
+        $(document).ready(function(){
+            $(".btn1").click(function(){
+                if (imageType == 0) {
+                    $('#colored').hide()
+                    $('#grayscale').show()
+                    imageType = 1;
+                } else {
+                    $('#grayscale').hide()
+                    $('#colored').show()
+                    imageType = 0;
+                }
+            });
+        });
 
     </script>
 
-{% endblock %}
-
-<!-- Add code inside the "block under" to add items below the block -->
-{% block under %}
 <div class="parallax" style="height: 20%"></div>
 <div class="parallax" style="height: max-content">
     <div class="frame" style="background-color: rgba(0,0,0, 0.5); height: fit-content; width: 80%; margin: auto; padding: 5%; color: white">
@@ -47,7 +48,7 @@
 
                     <h2 class="text-center">RGB values within an Image</h2>
                     <div class="container" style="height: max-content">
-                        <button onclick="togglegray()"> Grayscale On/Off </button>
+                        <button class="btn1" style="padding: 1%; margin: 1%"> Grayscale On/Off </button>
                         <div class="row justify-content-md-center" id="colored">
                             <table class="table" style="height: max-content">
                                 <thead>
@@ -105,7 +106,7 @@
                         </div>
 
                         <div class="row justify-content-md-center" id="grayscale">
-                            <table class="table">
+                            <table class="table" style="color: whitesmoke">
                                 <thead>
                                 <tr>
                                     <th>Meta Data</th>
@@ -128,8 +129,8 @@
                                             <p hidden id="img_gray{{loop.index}}">{{image.base64_GRAY}}</p>
                                         </td>
                                         <td>
-                                            <div class="overflow-auto" style="height: 256px">
-                                                <table class="table">
+                                            <div class="overflow-auto" style="height: 256px; color: whitesmoke">
+                                                <table class="table" style="color: whitesmoke">
                                                     <thead>
                                                     <tr>
                                                         <th>#</th>
@@ -138,8 +139,8 @@
                                                         <th>Binary</th>
                                                     </tr>
                                                     </thead>
-                                                    <tbody>
-                                                    {% for row in image.gray_data[:256+1] %}
+                                                    <tbody style="color: whitesmoke">
+                                                    {% for row in image.gray_data[:256 + 1] %}
                                                         <tr>
                                                             <td>{{loop.index}}</td>
                                                             <td>{{row}}</td>

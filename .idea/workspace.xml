@@ -4,10 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f71b4af-9a59-4ba8-9b3d-0c25b134229d" name="Changes" comment="Updated binary.html aesthetic">
+    <list default="true" id="9f71b4af-9a59-4ba8-9b3d-0c25b134229d" name="Changes" comment="binary.html with two bulb types and bit input">
+      <change afterPath="$PROJECT_DIR$/static/img/bluecity.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/binary.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/binary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm/image.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/rgbimages/bluetree.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/rgbimages/butterfly.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/rgbimages/city.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/rgbimages/cntower.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/rgbimages/fractal1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/rgbimages/lanterns.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/rgbimages/vase.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/bluetree.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/mustang.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/rgb.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rgb.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +61,8 @@
       <recent name="$PROJECT_DIR$/.idea" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\danie\IdeaProjects\flask_portfolio\static\img" />
+      <recent name="C:\Users\danie\IdeaProjects\flask_portfolio\static\assets" />
       <recent name="C:\Users\danie\IdeaProjects\flask_portfolio\static\assets\backgrounds" />
     </key>
   </component>
@@ -150,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631942022221</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="binary.html with two bulb types and bit input">
+      <created>1632686028090</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1632686028090</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,14 +189,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Integrated jumbotron onto About Us page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Integrated jumbotron onto About Us page" />
+    <MESSAGE value="binary.html with two bulb types and bit input" />
+    <option name="LAST_COMMIT_MESSAGE" value="binary.html with two bulb types and bit input" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/flask_portfolio$chrisvariablelist.coverage" NAME="chrisvariablelist Coverage Results" MODIFIED="1632517895739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flask_portfolio$image.coverage" NAME="image Coverage Results" MODIFIED="1631909379200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm" />
     <SUITE FILE_PATH="coverage/flask_portfolio$danieltesting.coverage" NAME="danieltesting Coverage Results" MODIFIED="1632284858117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flask_portfolio$flask_portfolio.coverage" NAME="flask_portfolio Coverage Results" MODIFIED="1631927392703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/flask_portfolio$main.coverage" NAME="main Coverage Results" MODIFIED="1632685788865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flask_portfolio$main.coverage" NAME="main Coverage Results" MODIFIED="1632688963549" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flask_portfolio$chrishackathon.coverage" NAME="chrishackathon Coverage Results" MODIFIED="1632506789600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
