@@ -17,11 +17,12 @@
 {% set BITS = bits %}
 {% set MAX = ((2 ** BITS) - 1) %}
 
-{% set imageurl = "/static/assets/backgrounds/ruan-richard-sand-unsplash.jpg" %}
+{% set imageurl = "/static/assets/backgrounds/patrick-schneider-mountains-unsplash.jpg" %}
 
 <!-- Hack: Set bulbs and pass as variables via Python render_template
            add new images (ie PNGs) to project -->
 <!-- use your PNGs as default -->
+
 {% set imgBulbOn = bulb_on %}
 {% set imgBulbOff = bulb_off %}
 {% set msgTurnOn = "Turn On" %}
@@ -90,8 +91,8 @@
             // loop to convert to base
             do {
                 let digit = decimal % base;
-                conversion = "" + digit + conversion; // what does this do?
-                decimal = ~~(decimal / base);         // what does this do?  what is ~~?
+                conversion = "" + digit + conversion; // what does this do? converts
+                decimal = ~~(decimal / base);         // what does this do?  what is ~~? Rounds down to integer
             } while (decimal > 0);                  // why while at the end?
             // loop to pad with zeros
             if (base === 2) {                        // only pad for binary conversions
@@ -153,14 +154,14 @@
 
 <div class="parallax" style="height:95%">
 <div class="frame" style="background-color: rgba(0,0,0, 0.5); padding: 5%; width: 100%; margin: auto; height: 100%">
-    <div class="container">
+    <div class="container" >
 
-        <div class="row justify-content-md-center">
+        <div class="row justify-content-md-center" style="background-color: rgba(0, 0, 0, 0.8)">
             <h1> Binary Mini-Lab </h1>
         </div>
 
-        <div class="row justify-content-md-center">
-
+        <div class="row justify-content-md-center" style="background-color: rgba(0, 0, 0, 0.8)">
+            <!-- Submission form for bits and checkbox for bulb type-->
             <form action="/binary/" method="POST" >
                 <label for="bits"> How many bits? </label>
                 <input type="number" id="bits" name="bits">
@@ -177,8 +178,8 @@
                         <th>Octal</th>
                         <th>Hexadecimal</th>
                         <th>Decimal</th>
+                        <!-- Hack: display ASCII label for printable character(s) - DONE -->
                         <th>Ascii</th>
-                        <!-- Hack: display ASCII label for printable character(s)  -->
                         <th>Minus</th>
                     </tr>
                     <tr style="color: white">
@@ -187,18 +188,19 @@
                         <td id="octal">0</td>
                         <td id="hexadecimal">0</td>
                         <td id="decimal">0</td>
+                        <!-- Hack: display ASCII printable character(s) - DONE -->
                         <td id="ascii">0</td>
-                        <!-- Hack: display ASCII printable character(s)  -->
                         <td><button type="button" id="sub1" onclick="add(-1)">-1</button></td>
 
                     </tr>
                 </table>
             </div>
 
-            <div class="col-12">
+            <div class="col-12" style="background-color: rgba(256, 256, 256, 0.75)">
                 <div class="container-fluid" >
                 <div class="row">
                 <div class="col-sm">
+                    <!-- On/off toggles for bulbs-->
                     <table class="table">
                         <tr>
                             {% for i in range(BITS) %}
