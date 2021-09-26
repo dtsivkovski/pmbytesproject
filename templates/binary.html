@@ -22,8 +22,8 @@
 <!-- Hack: Set bulbs and pass as variables via Python render_template
            add new images (ie PNGs) to project -->
 <!-- use your PNGs as default -->
-{% set imgBulbOn = "/static/assets/lighton.png" %}
-{% set imgBulbOff = "/static/assets/lightoff.png" %}
+{% set imgBulbOn = bulb_on %}
+{% set imgBulbOff = bulb_off %}
 {% set msgTurnOn = "Turn On" %}
 {% set msgTurnOff = "Turn Off" %}
 
@@ -46,6 +46,11 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+        }
+
+        input.checkboxBig {
+            width: 20px;
+            height: 20px;
         }
     </style>
 
@@ -156,9 +161,11 @@
 
         <div class="row justify-content-md-center">
 
-            <form action="/binary/" id="bits" method="POST" >
+            <form action="/binary/" method="POST" >
                 <label for="bits"> How many bits? </label>
-                <input type="number" name="bits">
+                <input type="number" id="bits" name="bits">
+                <label for="bulb" value="Lizards"> with lizard bulbs? </label>
+                <input type="checkbox" name="bulbs" value="Lizards" class="checkboxBig">
                 <input type="submit" value="Submit">
             </form>
 

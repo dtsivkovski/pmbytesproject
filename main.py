@@ -74,10 +74,18 @@ def minilabs():
 def binary():
     if request.form:
         bits = request.form.get("bits")
-        if bits is not None:  # input field has content
-            return render_template("binary.html", bits=int(bits))
+        try:
+            if request.form.get("bulbs") == "Lizards":
+                return render_template("binary.html", bits=int(bits), bulb_on='/static/assets/lighton.png', bulb_off='/static/assets/lightoff.png')
+            else:
+                return render_template("binary.html", bits=int(bits), bulb_on='/static/assets/bulbon.png', bulb_off='/static/assets/bulboff.png')
+        except:
+            if request.form.get("bulbs") == "Lizards":
+                return render_template("binary.html", bits=8, bulb_on='/static/assets/lighton.png', bulb_off='/static/assets/lightoff.png')
+            else:
+                return render_template("binary.html", bits=8, bulb_on='/static/assets/bulbon.png', bulb_off='/static/assets/bulboff.png')
     else:
-        return render_template("binary.html", bits=8)
+        return render_template("binary.html", bits=8, bulb_on='/static/assets/bulbon.png', bulb_off='/static/assets/bulboff.png')
 
 @app.route('/wireframe/')
 def wireframe():
