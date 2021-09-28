@@ -79,6 +79,11 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
 
 ## Time-Based Box for Grading
 
+#### Week 6
+<p>
+<a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/rgb.html"> Grayscale RGB Integration </a> - A toggle for grayscale images and data (<a href="https://github.com/dtsivkovski/pac_man_bytes_portfolio/commit/125ebe8c729c54a056fd09ab2c36081c1b3e3218#diff-c572c36df719bfab4b556c2a0204bc30744c1b0340fbe77f0fd280b5ab6d66c3">Daniel's commit<a/>)
+</p>
+
 #### Week 5 
 <p>
 <a href="https://docs.google.com/document/d/1jFLS5jeQhK12o_Rs_DI7AaXEJOB0in9GovtWKdRnumc/edit#bookmark=id.f78a04kz5que"> Quiz Results and Corrections </a> - By Daniel Tsivkovski and Chris Hom

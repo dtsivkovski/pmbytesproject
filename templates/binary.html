@@ -11,20 +11,51 @@
            send initial value and updated values to form via Python render_template -->
 <!-- Hack: use 8 as default -->
 
+{% set project = "Binary Lab" %}
+{% set subheading = "Binary Lab Experimentation" %}
+
 {% set BITS = bits %}
 {% set MAX = ((2 ** BITS) - 1) %}
+
+{% set imageurl = "/static/assets/backgrounds/patrick-schneider-mountains-unsplash.jpg" %}
 
 <!-- Hack: Set bulbs and pass as variables via Python render_template
            add new images (ie PNGs) to project -->
 <!-- use your PNGs as default -->
-{% set imgBulbOn = "/static/assets/lighton.png" %}
-{% set imgBulbOff = "/static/assets/lightoff.png" %}
+
+{% set imgBulbOn = bulb_on %}
+{% set imgBulbOff = bulb_off %}
 {% set msgTurnOn = "Turn On" %}
 {% set msgTurnOff = "Turn Off" %}
 
 {% block body %}
-    <body style="background-color: rebeccapurple">
-    <title>Binary Bage</title>
+
+    <style>
+        body, html {
+            height: 100%;
+        }
+
+        .parallax {
+            /* The image used */
+            background-image: url({{ imageurl }}); background-color: #f2cac4;
+
+            /* Full height */
+            height: 100%;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        input.checkboxBig {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+
+    <body>
     <script>
         const BITS = {{ BITS }}; let max = '{{ MAX }}'; let MAX = parseInt(max, 10);
         // return string with current value of each bit
@@ -60,8 +91,8 @@
             // loop to convert to base
             do {
                 let digit = decimal % base;
-                conversion = "" + digit + conversion; // what does this do?
-                decimal = ~~(decimal / base);         // what does this do?  what is ~~?
+                conversion = "" + digit + conversion; // what does this do? converts
+                decimal = ~~(decimal / base);         // what does this do?  what is ~~? Rounds down to integer
             } while (decimal > 0);                  // why while at the end?
             // loop to pad with zeros
             if (base === 2) {                        // only pad for binary conversions
@@ -121,13 +152,21 @@
         }
     </script>
 
-    <h1 class="text-center">Binary Math with Conversions</h1>
-    <div class="container">
-        <div class="row justify-content-md-center">
+<div class="parallax" style="height:95%">
+<div class="frame" style="background-color: rgba(0,0,0, 0.5); padding: 5%; width: 100%; margin: auto; height: 100%">
+    <div class="container" >
 
-            <form action="/binary/" id="bits" method="POST" >
+        <div class="row justify-content-md-center" style="background-color: rgba(0, 0, 0, 0.8)">
+            <h1> Binary Mini-Lab </h1>
+        </div>
+
+        <div class="row justify-content-md-center" style="background-color: rgba(0, 0, 0, 0.8)">
+            <!-- Submission form for bits and checkbox for bulb type-->
+            <form action="/binary/" method="POST" >
                 <label for="bits"> How many bits? </label>
-                <input type="number" name="bits">
+                <input type="number" id="bits" name="bits">
+                <label for="bulb" value="Lizards"> with lizard bulbs? </label>
+                <input type="checkbox" name="bulbs" value="Lizards" class="checkboxBig">
                 <input type="submit" value="Submit">
             </form>
 
@@ -139,8 +178,8 @@
                         <th>Octal</th>
                         <th>Hexadecimal</th>
                         <th>Decimal</th>
+                        <!-- Hack: display ASCII label for printable character(s) - DONE -->
                         <th>Ascii</th>
-                        <!-- Hack: display ASCII label for printable character(s)  -->
                         <th>Minus</th>
                     </tr>
                     <tr style="color: white">
@@ -149,32 +188,41 @@
                         <td id="octal">0</td>
                         <td id="hexadecimal">0</td>
                         <td id="decimal">0</td>
+                        <!-- Hack: display ASCII printable character(s) - DONE -->
                         <td id="ascii">0</td>
-                        <!-- Hack: display ASCII printable character(s)  -->
                         <td><button type="button" id="sub1" onclick="add(-1)">-1</button></td>
 
                     </tr>
                 </table>
             </div>
 
-            <div class="col-12">
-                <table class="table">
-                    <tr>
-                        {% for i in range(BITS) %}
-                            <td><img class="img-responsive py-3" id="bulb{{i}}" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
-                                <button type="button" id="butt{{i}}" onclick="toggleBit('{{i}}')">{{ msgTurnOn }}</button>
-                            </td>
-                        {% endfor %}
-                    </tr>
-                    <tr>
-                        {% for i in range(BITS) %}
-                            <td><input type='text' id='digit{{i}}' Value="0" size="1" readonly></td>
-                        {% endfor %}
-                    </tr>
-                </table>
+            <div class="col-12" style="background-color: rgba(256, 256, 256, 0.75)">
+                <div class="container-fluid" >
+                <div class="row">
+                <div class="col-sm">
+                    <!-- On/off toggles for bulbs-->
+                    <table class="table">
+                        <tr>
+                            {% for i in range(BITS) %}
+                                <td><img class="img-responsive py-3" id="bulb{{i}}" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+                                    <button type="button" id="butt{{i}}" onclick="toggleBit('{{i}}')">{{ msgTurnOn }}</button>
+                                </td>
+                            {% endfor %}
+                        </tr>
+                        <tr>
+                            {% for i in range(BITS) %}
+                                <td><input type='text' id='digit{{i}}' Value="0" size="1" readonly></td>
+                            {% endfor %}
+                        </tr>
+                    </table>
+                </div>
+                </div>
+                </div>
             </div>
 
         </div>
     </div>
+</div>
+</div>
     </body>
 {% endblock %}
