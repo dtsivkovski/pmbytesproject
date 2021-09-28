@@ -81,7 +81,7 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
 
 #### Week 6
 <p>
-<a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/rgb.html"> Grayscale RGB Integration </a> - A toggle for grayscale images and data (<a href="https://github.com/dtsivkovski/pac_man_bytes_portfolio/commit/125ebe8c729c54a056fd09ab2c36081c1b3e3218#diff-c572c36df719bfab4b556c2a0204bc30744c1b0340fbe77f0fd280b5ab6d66c3">Daniel's commit<a/>)
+<a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/rgb.html"> Grayscale RGB Integration </a> - A toggle for grayscale images and data (<a href="https://github.com/dtsivkovski/PMB-Portfolio/commit/125ebe8c729c54a056fd09ab2c36081c1b3e3218#diff-c572c36df719bfab4b556c2a0204bc30744c1b0340fbe77f0fd280b5ab6d66c3">Daniel's commit<a/>)
 </p>
 
 #### Week 5 
