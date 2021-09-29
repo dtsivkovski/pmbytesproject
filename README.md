@@ -88,13 +88,17 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
 <p>
 <a href="https://docs.google.com/document/d/1jFLS5jeQhK12o_Rs_DI7AaXEJOB0in9GovtWKdRnumc/edit#bookmark=id.f78a04kz5que"> Quiz Results and Corrections </a> - By Daniel Tsivkovski and Chris Hom
 <br>
+<a href="https://docs.google.com/document/d/1fukOykiaDJkifCWYpnb9TW87tAL4tNEVolnyMIwroBY/edit"> Quiz Results and Corrections </a> - By Timothy Lin and Armaan Shamsaasef
+<br>
 <a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/binary.html"> Binary Page </a> - Binary page dynamic bit amount using a submission form.
 <br>
-  <a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/rgb.html"> RGB Page </a> - RGB html page integration with greyscale toggle (WIP when this was written).
+<a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/rgb.html"> RGB Page </a> - RGB html page integration with greyscale toggle (WIP when this was written).
 <br>
 <a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/chrishackathon.py"> Chris's Hackathon File </a> - Successful print
 <br>
 <a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/danieltesting.py"> Daniel's Hackathon File </a> - Also included a html integration for part 3 on <a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/danielvar.html"> danielvar.html</a>
+<br>
+<a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/timtest.py"> Tim's Hackathon File </a> - Successful print
 <br>
 <a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/README.md"> README.md</a> - Updated README.md (current page) to include a time-box for grading 
 </p>
