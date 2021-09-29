@@ -2,10 +2,8 @@
 from flask import Flask, render_template, request
 
 # create a Flask instance
-from algorithm.image import image_data
-
 app = Flask(__name__)
-
+from algorithm.image import image_data, ImageBlur
 
 # connects default URL to render index.html
 @app.route('/')
@@ -97,7 +95,7 @@ def techtest():
 
 @app.route('/rgb/', methods=['GET', 'POST'])
 def rgb():
-    return render_template('rgb.html', images=image_data())
+    return render_template('rgb.html', images=image_data(), blur=ImageBlur())
 
 @app.route('/danielvar/', methods=['GET', 'POST'])
 def danielvar():
