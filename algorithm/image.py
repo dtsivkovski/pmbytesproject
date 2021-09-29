@@ -74,10 +74,9 @@ def image_data(path="static/img/", img_list=None):  # path of static images is d
     return img_list  #
 def ImageBlur():
     OriImage = Image.open('static/img/bluecity.jpg')
-    OriImage.show()
 
     gaussImage = OriImage.filter(ImageFilter.GaussianBlur(5))
-    gaussImage.show()
+    gaussImage.save("static/Image-Testing/bluecityBlur.jpg")
 
 # run this as standalone tester to see data printed in terminal
 # if __name__ == "__main__":
