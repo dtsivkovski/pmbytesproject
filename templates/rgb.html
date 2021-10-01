@@ -128,8 +128,8 @@
                                             <div>Processing: {{image.processing }}</div>
                                         </td>
                                         <td>
-                                            <img class="img-responsive py-3" id=img{{loop.index}} alt="" width="256" height="Auto" src="{{image.base64_GRAY}}" >
-                                            <p hidden id="img_gray{{loop.index}}">{{image.base64_GRAY}}</p>
+                                            <img class="img-responsive py-3" id=img{{loop.index}} alt="" width="256" height="Auto" src="{{image.base64_gray}}" >
+                                            <p hidden id="img_gray{{loop.index}}">{{image.base64_gray}}</p>
                                         </td>
                                         <td>
                                             <div class="overflow-auto" style="height: 256px; color: whitesmoke">
@@ -147,8 +147,8 @@
                                                         <tr>
                                                             <td>{{loop.index}}</td>
                                                             <td>{{row}}</td>
-                                                            <td>{{image.hex_array_GRAY[loop.index - 1]}}</td>
-                                                            <td>{{image.binary_array_GRAY[loop.index - 1]}}
+                                                            <td>{{image.hex_array_gray[loop.index - 1]}}</td>
+                                                            <td>{{image.binary_array_gray[loop.index - 1]}}
                                                         </tr>
                                                         {% if loop.index > 256 %}
                                                             <tr><td>...</td><td>truncated</td><td>...</td><td>...</td></tr>

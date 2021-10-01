@@ -68,18 +68,18 @@ def image_data(path="static/img/", img_list=None):  # path of static images is d
             else:
                 img_dict['gray_data'].append((average, average, average))
         img_reference.putdata(img_dict['gray_data'])
-        img_dict['base64_GRAY'] = image_formatter(img_reference, img_dict['format'])
-        img_dict['hex_array_GRAY'] = []
-        img_dict['binary_array_GRAY'] = []
+        img_dict['base64_gray'] = image_formatter(img_reference, img_dict['format'])
+        img_dict['hex_array_gray'] = []
+        img_dict['binary_array_gray'] = []
         # 'data' = RGB data, 'gray_data' is grayscale data
         for pixel in img_dict['gray_data']:
             # hexadecimal
             hex_value = hex(pixel[0])[-2:] + hex(pixel[1])[-2:] + hex(pixel[2])[-2:]
             hex_value = hex_value.replace("x", "0")
-            img_dict['hex_array_GRAY'].append("#" + hex_value)
+            img_dict['hex_array_gray'].append("#" + hex_value)
             # binary
             bin_value = bin(pixel[0])[2:].zfill(8) + " " + bin(pixel[1])[2:].zfill(8) + " " + bin(pixel[2])[2:].zfill(8)
-            img_dict['binary_array_GRAY'].append(bin_value)
+            img_dict['binary_array_gray'].append(bin_value)
     return img_list  #
 
 
