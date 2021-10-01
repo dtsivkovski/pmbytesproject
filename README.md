@@ -82,6 +82,7 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
 #### Week 6
 <p>
 <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/algorithm/image.py"> Gaussian Blur Processing </a> - Enabling some images to be processed with a gaussian blur using Pillow filter module (<a href="https://github.com/dtsivkovski/PMB-Portfolio/commit/e5f9071dadf6f9dc40e0383030b282141316eb20#diff-1b6616aeadbe57b34f1800ff0cb9fb44032ba26d2d4b138546a9221f6fba3cbd">Armaan's commit<a/>)
+<br>
 <a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/rgb.html"> Grayscale RGB Integration </a> - A toggle for grayscale images and data (<a href="https://github.com/dtsivkovski/PMB-Portfolio/commit/125ebe8c729c54a056fd09ab2c36081c1b3e3218#diff-c572c36df719bfab4b556c2a0204bc30744c1b0340fbe77f0fd280b5ab6d66c3">Daniel's commit<a/>)
 </p>
 
