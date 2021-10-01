@@ -40,6 +40,7 @@ def image_data(path="static/img/", img_list=None):  # path of static images is d
             gaussFile = "static/TestImages/gaussian/" + img_dict['file']
             img_reference = Image.open(gaussFile)
         elif processing == "drawn":
+            # CIRCLE DRAWING IMAGE OPERATION
             origImage = Image.open(file)
             d1 = ImageDraw.Draw(origImage)
             d1.ellipse((28, 36, 300, 300), fill=(255, 0, 0))
@@ -47,6 +48,7 @@ def image_data(path="static/img/", img_list=None):  # path of static images is d
             drawnFile = "static/TestImages/drawn/" + img_dict['file']
             img_reference = Image.open(drawnFile)
         elif processing == "inverted":
+            # INVERTED COLOR IMAGE OPERATION
             origImage = Image.open(file)
             invert = PIL.ImageOps.invert(origImage)
             invert.save("static/TestImages/inverted/" + img_dict['file'])
