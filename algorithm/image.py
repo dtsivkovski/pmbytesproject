@@ -34,8 +34,8 @@ def image_data(path="static/img/", img_list=None):  # path of static images is d
         # Python Image Library operations
         if processing is "gaussian":
             # GAUSSIAN BLUR IMAGE OPERATION
-            gimFile = Image.open(file)
-            gaussImage = gimFile.filter(ImageFilter.GaussianBlur(5))
+            origImage = Image.open(file)
+            gaussImage = origImage.filter(ImageFilter.GaussianBlur(5))
             gaussImage.save("static/TestImages/gaussian/" + img_dict['file'])
             gaussFile = "static/TestImages/gaussian/" + img_dict['file']
             img_reference = Image.open(gaussFile)
