@@ -20,7 +20,7 @@ def image_formatter(img, img_type):
 def image_data(path="static/img/", img_list=None):  # path of static images is defaulted
     if img_list is None:  # color_dict is defined with defaults
         img_list = [
-            {'source': "Andrew Haimerl", 'label': "unsplash.com", 'file': "citysmall.jpg", 'processing': "gaussian"},
+            {'source': "Andrew Haimerl", 'label': "unsplash.com", 'file': "citysmall.jpg", 'processing': "drawn"},
             {'source': "Toa Heftiba", 'label': "unsplash.com", 'file': "lanterns.jpg", 'processing': "none"},
             {'source': "White", 'label': "unsplash.com", 'file': "bluecity.jpg", 'processing': "gaussian"},
             {'source': "Zishan Khan", 'label': "unsplash.com", 'file': "rgbleds.jpg", 'processing': "none"},
@@ -31,13 +31,20 @@ def image_data(path="static/img/", img_list=None):  # path of static images is d
         file = path + img_dict['file']  # file with path for local access (backend)
         processing = img_dict['processing']
         # Python Image Library operations
-        if processing is "gaussian":
+        if processing == "gaussian":
             # GAUSSIAN BLUR IMAGE OPERATION
             origImage = Image.open(file)
             gaussImage = origImage.filter(ImageFilter.GaussianBlur(5))
             gaussImage.save("static/TestImages/gaussian/" + img_dict['file'])
             gaussFile = "static/TestImages/gaussian/" + img_dict['file']
             img_reference = Image.open(gaussFile)
+        elif processing == "drawn":
+            origImage = Image.open(file)
+            d1 = ImageDraw.Draw(origImage)
+            d1.ellipse((28, 36, 300, 300), fill=(255, 0, 0))
+            origImage.save("static/TestImages/drawn/" + img_dict['file'])
+            drawnFile = "static/TestImages/drawn/" + img_dict['file']
+            img_reference = Image.open(drawnFile)
         else:
             # IMAGE REFERENCE IF NO PROCESSING TYPE
             img_reference = Image.open(file)
