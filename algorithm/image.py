@@ -31,7 +31,13 @@ def image_data(path="static/img/", img_list=None):  # path of static images is d
         img_dict['path'] = '/' + path  # path for HTML access (frontend)
         file = path + img_dict['file']  # file with path for local access (backend)
         # Python Image Library operations
-        img_reference = Image.open(file)  # PIL
+        # GAUSSIAN BLUR IMAGE OPERATION
+        gimFile = Image.open(file)
+        gaussImage = gimFile.filter(ImageFilter.GaussianBlur(5))
+        gaussImage.save("static/TestImages/" + img_dict['file'])
+        gaussFile = "static/TestImages/" + img_dict['file']
+        # IMAGE REFERENCE STARTS
+        img_reference = Image.open(gaussFile)
         img_data = img_reference.getdata()  # Reference https://www.geeksforgeeks.org/python-pil-image-getdata/
         img_dict['format'] = img_reference.format
         img_dict['mode'] = img_reference.mode
@@ -72,14 +78,11 @@ def image_data(path="static/img/", img_list=None):  # path of static images is d
             bin_value = bin(pixel[0])[2:].zfill(8) + " " + bin(pixel[1])[2:].zfill(8) + " " + bin(pixel[2])[2:].zfill(8)
             img_dict['binary_array_GRAY'].append(bin_value)
     return img_list  #
-def ImageBlur():
-    OriImage = Image.open('static/img/bluecity.jpg')
 
-    gaussImage = OriImage.filter(ImageFilter.GaussianBlur(5))
-    gaussImage.save("static/Image-Testing/bluecityBlur.jpg")
 
 # run this as standalone tester to see data printed in terminal
-# if __name__ == "__main__":
+if __name__ == "__main__":
+    ImageBlur()
 #     local_path = "../static/img/"
 #     img_test = [
 #         {'source': "iconsdb.com", 'label': "Blue square", 'file': "blue-square-16.png"},
