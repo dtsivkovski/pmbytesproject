@@ -21,23 +21,27 @@ def image_formatter(img, img_type):
 def image_data(path="static/img/", img_list=None):  # path of static images is defaulted
     if img_list is None:  # color_dict is defined with defaults
         img_list = [
-            {'source': "Andrew Haimerl", 'label': "unsplash.com", 'file': "citysmall.jpg"},
-            {'source': "Toa Heftiba", 'label': "unsplash.com", 'file': "lanterns.jpg"},
-            {'source': "White", 'label': "unsplash.com", 'file': "bluecity.jpg"},
-            {'source': "Zishan Khan", 'label': "unsplash.com", 'file': "rgbleds.jpg"},
+            {'source': "Andrew Haimerl", 'label': "unsplash.com", 'file': "citysmall.jpg", 'processing': "gaussian"},
+            {'source': "Toa Heftiba", 'label': "unsplash.com", 'file': "lanterns.jpg", 'processing': "none"},
+            {'source': "White", 'label': "unsplash.com", 'file': "bluecity.jpg", 'processing': "gaussian"},
+            {'source': "Zishan Khan", 'label': "unsplash.com", 'file': "rgbleds.jpg", 'processing': "none"},
         ]
     # gather analysis data and meta data for each image, adding attributes to each row in table
     for img_dict in img_list:
         img_dict['path'] = '/' + path  # path for HTML access (frontend)
         file = path + img_dict['file']  # file with path for local access (backend)
+        processing = img_dict['processing']
         # Python Image Library operations
-        # GAUSSIAN BLUR IMAGE OPERATION
-        gimFile = Image.open(file)
-        gaussImage = gimFile.filter(ImageFilter.GaussianBlur(5))
-        gaussImage.save("static/TestImages/" + img_dict['file'])
-        gaussFile = "static/TestImages/" + img_dict['file']
-        # IMAGE REFERENCE STARTS
-        img_reference = Image.open(gaussFile)
+        if processing is "gaussian":
+            # GAUSSIAN BLUR IMAGE OPERATION
+            gimFile = Image.open(file)
+            gaussImage = gimFile.filter(ImageFilter.GaussianBlur(5))
+            gaussImage.save("static/TestImages/gaussian/" + img_dict['file'])
+            gaussFile = "static/TestImages/gaussian/" + img_dict['file']
+            img_reference = Image.open(gaussFile)
+        else:
+            # IMAGE REFERENCE IF NO PROCESSING TYPE
+            img_reference = Image.open(file)
         img_data = img_reference.getdata()  # Reference https://www.geeksforgeeks.org/python-pil-image-getdata/
         img_dict['format'] = img_reference.format
         img_dict['mode'] = img_reference.mode
