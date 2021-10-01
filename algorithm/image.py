@@ -2,6 +2,7 @@ import numpy
 import base64
 from io import BytesIO
 from PIL import Image, ImageFilter, ImageDraw
+import PIL.ImageOps
 
 
 # image (PNG, JPG) to base64 conversion (string), learn about base64 on wikipedia https://en.wikipedia.org/wiki/Base64
@@ -21,7 +22,7 @@ def image_data(path="static/img/", img_list=None):  # path of static images is d
     if img_list is None:  # color_dict is defined with defaults
         img_list = [
             {'source': "Andrew Haimerl", 'label': "unsplash.com", 'file': "citysmall.jpg", 'processing': "drawn"},
-            {'source': "Toa Heftiba", 'label': "unsplash.com", 'file': "lanterns.jpg", 'processing': "none"},
+            {'source': "Toa Heftiba", 'label': "unsplash.com", 'file': "lanterns.jpg", 'processing': "inverted"},
             {'source': "White", 'label': "unsplash.com", 'file': "bluecity.jpg", 'processing': "gaussian"},
             {'source': "Zishan Khan", 'label': "unsplash.com", 'file': "rgbleds.jpg", 'processing': "none"},
         ]
@@ -45,6 +46,12 @@ def image_data(path="static/img/", img_list=None):  # path of static images is d
             origImage.save("static/TestImages/drawn/" + img_dict['file'])
             drawnFile = "static/TestImages/drawn/" + img_dict['file']
             img_reference = Image.open(drawnFile)
+        elif processing == "inverted":
+            origImage = Image.open(file)
+            invert = PIL.ImageOps.invert(origImage)
+            invert.save("static/TestImages/inverted/" + img_dict['file'])
+            invertFile = "static/TestImages/inverted/" + img_dict['file']
+            img_reference = Image.open(invertFile)
         else:
             # IMAGE REFERENCE IF NO PROCESSING TYPE
             img_reference = Image.open(file)
