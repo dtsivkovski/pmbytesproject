@@ -1,8 +1,7 @@
-from PIL import Image, ImageDraw
 import numpy
 import base64
 from io import BytesIO
-from PIL import Image, ImageFilter
+from PIL import Image, ImageFilter, ImageDraw
 
 
 # image (PNG, JPG) to base64 conversion (string), learn about base64 on wikipedia https://en.wikipedia.org/wiki/Base64
@@ -85,8 +84,7 @@ def image_data(path="static/img/", img_list=None):  # path of static images is d
 
 
 # run this as standalone tester to see data printed in terminal
-if __name__ == "__main__":
-    ImageBlur()
+#   if __name__ == "__main__":
 #     local_path = "../static/img/"
 #     img_test = [
 #         {'source': "iconsdb.com", 'label': "Blue square", 'file': "blue-square-16.png"},
