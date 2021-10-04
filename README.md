@@ -81,8 +81,9 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
 
 #### Week 6
 <p> 
-<a href="https://docs.google.com/document/d/1jFLS5jeQhK12o_Rs_DI7AaXEJOB0in9GovtWKdRnumc/edit#bookmark=id.85e720lyyk7x"> Organization/Document </a> - Small overview of organization of our project.
-<a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/algorithm/image.py"> ImageDraw on Image </a> - Drawing a circle on an image using ImageDraw from PIL module (<a href="https://github.com/dtsivkovski/PMB-Portfolio/commit/d68d8a85ce8abd6498cbd86420ae479ef297ba38"> Chris's Commit </a>)
+<a href="https://docs.google.com/document/d/1jFLS5jeQhK12o_Rs_DI7AaXEJOB0in9GovtWKdRnumc/edit#bookmark=id.85e720lyyk7x"> Organization/Documentation </a> - Small overview of organization of our project.
+<br>
+<a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/algorithm/image.py"> ImageDraw on Image </a> - Drawing a circle on an image using ImageDraw from PIL module (<a href="https://github.com/dtsivkovski/PMB-Portfolio/commit/d68d8a85ce8abd6498cbd86420ae479ef297ba38">Chris's Commit</a>)
 <br>
 <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/algorithm/image.py"> Inverted Image Processing </a> - Added inverted image processing (<a href="https://github.com/dtsivkovski/PMB-Portfolio/commit/b6722775a6a98f54ead154bbe497192f0e353632">Timothy's Commit</a>)
 <br>
