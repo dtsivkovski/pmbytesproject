@@ -81,6 +81,8 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
 
 #### Week 6
 <p> 
+<a href="https://docs.google.com/document/d/1jFLS5jeQhK12o_Rs_DI7AaXEJOB0in9GovtWKdRnumc/edit#bookmark=id.vzklzrgapv5l"> Base64 Research </a> - Research of Base64 compared to Base2, Base8, Base16.
+<br>
 <a href="https://docs.google.com/document/d/1jFLS5jeQhK12o_Rs_DI7AaXEJOB0in9GovtWKdRnumc/edit#bookmark=id.85e720lyyk7x"> Organization/Documentation </a> - Small overview of organization of our project.
 <br>
 <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/algorithm/image.py"> ImageDraw on Image </a> - Drawing a circle on an image using ImageDraw from PIL module (<a href="https://github.com/dtsivkovski/PMB-Portfolio/commit/d68d8a85ce8abd6498cbd86420ae479ef297ba38">Chris's Commit</a>)
