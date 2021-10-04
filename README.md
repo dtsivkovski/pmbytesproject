@@ -90,6 +90,8 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
 <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/algorithm/image.py"> Gaussian Blur Processing </a> - Enabling some images to be processed with a gaussian blur using Pillow filter module (<a href="https://github.com/dtsivkovski/PMB-Portfolio/commit/e5f9071dadf6f9dc40e0383030b282141316eb20#diff-1b6616aeadbe57b34f1800ff0cb9fb44032ba26d2d4b138546a9221f6fba3cbd">Armaan's commit<a/>)
 <br>
 <a href="https://github.com/dtsivkovski/flask_portfolio/blob/main/templates/rgb.html"> Grayscale RGB Integration </a> - A toggle for grayscale images and data (Completed by Daniel with <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/algorithm/image.py">image.py algorithm<a/>)
+  <br>
+  <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/algorithm/image.py"> Big O Notation </a> - We attempted this but we weren't exactly sure what we needed to do here. We attempted to reduce the amount of steps, but we are not sure if it 100% follow Big O Notation.
 </p>
 
 #### Week 5 
