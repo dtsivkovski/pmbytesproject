@@ -85,6 +85,10 @@ def binary():
     else:
         return render_template("binary.html", bits=8, bulb_on='/static/assets/bulbon.png', bulb_off='/static/assets/bulboff.png')
 
+@app.route('/unicodetest/')
+def unicodetest():
+    return render_template("unicodetest.html")
+
 @app.route('/wireframe/')
 def wireframe():
     return render_template("wireframe.html")
