@@ -153,7 +153,7 @@
             let binary = getBits();
             let decimal = parseInt(binary, 2);
             if (m > 0) {  // multiply
-                decimal = MAX === decimal ? 0 : decimal *= m; // OVERFLOW or MULTIPLY
+                decimal = MAX === decimal ? 0 : decimal << m; // OVERFLOW or MULTIPLY
             } else  {     // divide
                 decimal = decimal
             }
@@ -179,7 +179,7 @@
             let binary = getBits();
             let decimal = parseInt(binary, 2);
             if (m > 0) {  // multiply
-                decimal = MAX === decimal ? 0 : Math.round(decimal /= m); // OVERFLOW or DIVIDE
+                decimal = MAX === decimal ? 0 : decimal >> m; // OVERFLOW or DIVIDE
             } else  {     // divide
                 decimal = decimal
             }
@@ -236,7 +236,7 @@
                         <th>Shift Right</th>
                     </tr>
                     <tr style="color: white">
-                        <td><button type="button" id="multiply2" onclick="multiply(2)">*2</button></td>
+                        <td><button type="button" id="multiply2" onclick="multiply(1)">*2</button></td>
                         <td><button type="button" id="add1" onclick="add(1)">+1</button></td>
                         <td id="binary">00000000</td>
                         <td id="octal">0</td>
@@ -245,7 +245,7 @@
                         <!-- Hack: display ASCII printable character(s) - DONE -->
                         <td id="ascii">0</td>
                         <td><button type="button" id="sub1" onclick="add(-1)">-1</button></td>
-                        <td><button type="button" id="divide2" onclick="divide(2)">/2</button></td>
+                        <td><button type="button" id="divide2" onclick="divide(1)">/2</button></td>
                     </tr>
                 </table>
             </div>
