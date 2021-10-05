@@ -64,9 +64,9 @@ def minilabs():
     if request.form:
         name = request.form.get("name")
         if len(name) != 0:  # input field has content
-            return render_template("minilabs.html", name=name)
+            return render_template("minilabs/minilabs.html", name=name)
     # starting and empty input default
-    return render_template("minilabs.html", name="guest")
+    return render_template("minilabs/minilabs.html", name="guest")
 
 @app.route('/binary/', methods=['GET', 'POST'])
 def binary():
@@ -74,20 +74,24 @@ def binary():
         bits = request.form.get("bits")
         try:
             if request.form.get("bulbs") == "Lizards":
-                return render_template("binary.html", bits=int(bits), bulb_on='/static/assets/lighton.png', bulb_off='/static/assets/lightoff.png')
+                return render_template("minilabs/binary.html", bits=int(bits), bulb_on='/static/assets/lighton.png', bulb_off='/static/assets/lightoff.png')
             else:
-                return render_template("binary.html", bits=int(bits), bulb_on='/static/assets/bulbon.png', bulb_off='/static/assets/bulboff.png')
+                return render_template("minilabs/binary.html", bits=int(bits), bulb_on='/static/assets/bulbon.png', bulb_off='/static/assets/bulboff.png')
         except:
             if request.form.get("bulbs") == "Lizards":
-                return render_template("binary.html", bits=8, bulb_on='/static/assets/lighton.png', bulb_off='/static/assets/lightoff.png')
+                return render_template("minilabs/binary.html", bits=8, bulb_on='/static/assets/lighton.png', bulb_off='/static/assets/lightoff.png')
             else:
-                return render_template("binary.html", bits=8, bulb_on='/static/assets/bulbon.png', bulb_off='/static/assets/bulboff.png')
+                return render_template("minilabs/binary.html", bits=8, bulb_on='/static/assets/bulbon.png', bulb_off='/static/assets/bulboff.png')
     else:
-        return render_template("binary.html", bits=8, bulb_on='/static/assets/bulbon.png', bulb_off='/static/assets/bulboff.png')
+        return render_template("minilabs/binary.html", bits=8, bulb_on='/static/assets/bulbon.png', bulb_off='/static/assets/bulboff.png')
 
 @app.route('/unicodetest/')
 def unicodetest():
-    return render_template("unicodetest.html")
+    return render_template("minilabs/unicodetest.html")
+
+@app.route('/colorcodes')
+def colorcodes():
+    return render_template("minilabs/colorcodes.html")
 
 @app.route('/wireframe/')
 def wireframe():
@@ -99,7 +103,7 @@ def techtest():
 
 @app.route('/rgb/', methods=['GET', 'POST'])
 def rgb():
-    return render_template('rgb.html', images=image_data())
+    return render_template('minilabs/rgb.html', images=image_data())
 
 @app.route('/danielvar/', methods=['GET', 'POST'])
 def danielvar():
