@@ -93,6 +93,10 @@ def unicodetest():
 def colorcodes():
     return render_template("minilabs/colorcodes.html")
 
+@app.route('/logicgates')
+def logicgates():
+    return render_template("minilabs/logicgates.html")
+
 @app.route('/wireframe/')
 def wireframe():
     return render_template("wireframe.html")

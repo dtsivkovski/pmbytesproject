@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% extends "layouts/base.html" %}
+
+{% set project = "Logic Gates Lab" %}
+{% set subheading = "Two inputs (a,b) and change those inputs to see changes in logic gate outputs (c)." %}
+
+{% set imageurl = "/static/assets/backgrounds/deepwaterrock.jpg" %}
+
+{% block under %}
+
+    <div class="container">
+    <div class="row justify-content-md-center">
+    <table class="table">
+    <thead>
+    <tr>
+        <th>Inputs</th>
+        <th>Symbol</th>
+        <th>Logic Gate</th>
+        <th>Result</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr>
+    <td>
+        <div>armaan.jpg</div>
+        <div></div>
+    </td>
+    <td>
+
+        <img src="/static/assets/armaan.jpeg" style="height: 300px; margin: 2%; border: 5px solid white;" alt="Greeting" width="270" >
+    </td>
+    <td>
+    <div class="overflow-auto" style="height: 256px">
+        <table class="table">
+            <thead>
+            <tr>
+                <div>Result</div>
+            </tr>
+            </thead>
+            <tbody>
+
+        </table>
+    </div>
+
+
+{% endblock %}
+
+{% block background %}
+{% endblock %}
