@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f71b4af-9a59-4ba8-9b3d-0c25b134229d" name="Changes" comment="Added 'processing' type decision-making to image.py">
-      <change afterPath="$PROJECT_DIR$/static/Image-Testing/bluecityBlur.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/minilabs/logicgates.html" afterDir="false" />
+    <list default="true" id="9f71b4af-9a59-4ba8-9b3d-0c25b134229d" name="Changes" comment="Added unicode lab w/ hexa -&gt; unicode input + conversion">
+      <change afterPath="$PROJECT_DIR$/HackathonTests/TimTT7.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layouts/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/navbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -47,14 +45,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/assets/backgrounds" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/main" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -62,12 +60,35 @@
       <recent name="$PROJECT_DIR$/.idea" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\danie\IdeaProjects\flask_portfolio\HackathonTests" />
       <recent name="C:\Users\danie\IdeaProjects\flask_portfolio\static\img" />
       <recent name="C:\Users\danie\IdeaProjects\flask_portfolio\static\assets" />
       <recent name="C:\Users\danie\IdeaProjects\flask_portfolio\static\assets\backgrounds" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.TimTT7">
+    <configuration name="TimTT7" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="flask_portfolio" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/HackathonTests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HackathonTests/TimTT7.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="chrisvariablelist" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="flask_portfolio" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -103,7 +124,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/danieltesting.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\danie\IdeaProjects\flask_portfolio\HackathonTests\danieltesting.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -158,6 +179,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.TimTT7" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.image" />
         <item itemvalue="Python.chrisvariablelist" />
@@ -181,9 +203,13 @@
       <workItem from="1632690922583" duration="1274000" />
       <workItem from="1632786282720" duration="3624000" />
       <workItem from="1633039045869" duration="199000" />
-      <workItem from="1633051038958" duration="4165000" />
-      <workItem from="1633547796978" duration="1617000" />
-      <workItem from="1633549506285" duration="1523000" />
+      <workItem from="1633051038958" duration="4697000" />
+      <workItem from="1633104389376" duration="817000" />
+      <workItem from="1633108473483" duration="922000" />
+      <workItem from="1633110644666" duration="1484000" />
+      <workItem from="1633374371876" duration="4228000" />
+      <workItem from="1633379647929" duration="303000" />
+      <workItem from="1633630946878" duration="919000" />
     </task>
     <task id="LOCAL-00001" summary="Integrated jumbotron onto About Us page">
       <created>1631942022221</created>
@@ -241,7 +267,49 @@
       <option name="project" value="LOCAL" />
       <updated>1633057571377</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Small variable fix">
+      <created>1633058427038</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1633058427038</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Cleaning up image.py file">
+      <created>1633058522545</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1633058522545</updated>
+    </task>
+    <task id="LOCAL-00011" summary="commented on some of the code">
+      <created>1633122916140</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1633122916140</updated>
+    </task>
+    <task id="LOCAL-00012" summary="organized hackathon files into their own directory">
+      <created>1633409888276</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1633409888276</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added rounding to division to fix issues with odd numbers">
+      <created>1633410159442</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1633410159442</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added unicode lab w/ hexa -&gt; unicode input + conversion">
+      <created>1633416235152</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1633416235152</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,16 +336,23 @@
     <MESSAGE value="Added an Image Blur" />
     <MESSAGE value="Moved Armaan's gaussian blur filter inside the image algorithm" />
     <MESSAGE value="Added 'processing' type decision-making to image.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added 'processing' type decision-making to image.py" />
+    <MESSAGE value="Small variable fix" />
+    <MESSAGE value="Cleaning up image.py file" />
+    <MESSAGE value="commented on some of the code" />
+    <MESSAGE value="organized hackathon files into their own directory" />
+    <MESSAGE value="Added rounding to division to fix issues with odd numbers" />
+    <MESSAGE value="Added unicode lab w/ hexa -&gt; unicode input + conversion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added unicode lab w/ hexa -&gt; unicode input + conversion" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/flask_portfolio$timtest.coverage" NAME="timtest Coverage Results" MODIFIED="1633031401066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/flask_portfolio$main.coverage" NAME="main Coverage Results" MODIFIED="1633549604016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/flask_portfolio$flask_portfolio.coverage" NAME="flask_portfolio Coverage Results" MODIFIED="1632514048793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/flask_portfolio$armaan_variable.coverage" NAME="armaan-variable Coverage Results" MODIFIED="1632515553019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/flask_portfolio$chrisvariablelist.coverage" NAME="chrisvariablelist Coverage Results" MODIFIED="1632860496712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flask_portfolio$flask_portfolio.coverage" NAME="flask_portfolio Coverage Results" MODIFIED="1631927392703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/flask_portfolio$main.coverage" NAME="main Coverage Results" MODIFIED="1633416130730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flask_portfolio$TimTT7.coverage" NAME="TimTT7 Coverage Results" MODIFIED="1633631871274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/HackathonTests" />
     <SUITE FILE_PATH="coverage/flask_portfolio$chrishackathon.coverage" NAME="chrishackathon Coverage Results" MODIFIED="1632506789600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/flask_portfolio$image.coverage" NAME="image Coverage Results" MODIFIED="1631909379200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm" />
-    <SUITE FILE_PATH="coverage/flask_portfolio$danieltesting.coverage" NAME="danieltesting Coverage Results" MODIFIED="1632339187242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flask_portfolio$armaan_variable.coverage" NAME="armaan-variable Coverage Results" MODIFIED="1632515553019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flask_portfolio$Flask__main___init___py_.coverage" NAME="Flask (main/__init__.py) Coverage Results" MODIFIED="1633408763462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flask_portfolio$image.coverage" NAME="image Coverage Results" MODIFIED="1633032801930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm" />
+    <SUITE FILE_PATH="coverage/flask_portfolio$danieltesting.coverage" NAME="danieltesting Coverage Results" MODIFIED="1632284858117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flask_portfolio$chrisvariablelist.coverage" NAME="chrisvariablelist Coverage Results" MODIFIED="1632517895739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
