@@ -1,50 +1,167 @@
-<!DOCTYPE html>
 {% extends "layouts/base.html" %}
 
-{% set project = "Logic Gates Lab" %}
-{% set subheading = "Two inputs (a,b) and change those inputs to see changes in logic gate outputs (c)." %}
+{% set project = "Logic Gate Lab" %}
+{% set subheading = "Press each of the buttons(0s and 1s, NOTs and AND) to see what it does to the final result! " %}
 
 {% set imageurl = "/static/assets/backgrounds/deepwaterrock.jpg" %}
-
 {% block under %}
 
-    <div class="container">
-    <div class="row justify-content-md-center">
-    <table class="table">
-    <thead>
-    <tr>
-        <th>Inputs</th>
-        <th>Symbol</th>
-        <th>Logic Gate</th>
-        <th>Result</th>
-    </tr>
-    </thead>
-    <tbody>
+    <style>
+        /*
+        Special styling to create lines inside of the diagram. Also has specific styling for the buttons and centering elements
+        */
+        .horizontalLine {
+            border: 0;
+            background-color: #000;
+            height: 5px;
+            transform: translateX(-3em);
+        }
 
-    <tr>
-    <td>
-        <div>armaan.jpg</div>
-        <div></div>
-    </td>
-    <td>
+        .verticalLine {
+            margin-left: 1em;
+            width: 2px;
+            background: black;
+        }
 
-        <img src="/static/assets/armaan.jpeg" style="height: 300px; margin: 2%; border: 5px solid white;" alt="Greeting" width="270" >
-    </td>
-    <td>
-    <div class="overflow-auto" style="height: 256px">
-        <table class="table">
-            <thead>
-            <tr>
-                <div>Result</div>
-            </tr>
-            </thead>
-            <tbody>
+        .buttonFalse {
+            background-color: black;
+            color: white;
+            font-style: normal;
+            width: 3em;
+        }
 
-        </table>
+        .buttonTrue {
+            background-color: white;
+            color: black;
+            font-style: italic;
+            width: 4em;
+        }
+
+    </style>
+    <div class="parallax">
+        <div class="frame" style="background-color: rgba(255,0,0,0.5); padding: 5%; width: 100%; margin: auto; height: 100%">
+
+    <div class="row">
+        <div class="offset-sm-3 col-sm-1">   <!-- Two buttons to show 0 and 1 -->
+            <button class="buttonFalse" id="buttonOne" onclick="toggleBool('buttonOne')">0</button>
+            <div class="verticalLine" style="height: 15em"></div>
+        </div>
+
+        <div class="offset-sm-5 col-sm-1">
+            <button class="buttonFalse" id="buttonTwo" onclick="toggleBool('buttonTwo')">0</button>
+            <div class="verticalLine" style="height: 15em"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="offset-sm-3 col-sm-1">  <!-- NOT buttons that can be toggled; shows inverter -->
+            <p id="not1" onclick="toggleNot('not1')">NOT</p>
+        </div>
+
+        <div class="col-sm-5 horizontalLine"></div>  <!-- Horizontal line in action -->
+
+        <div class="col-sm-1">
+            <p id="not2" onclick="toggleNot('not2')">NOT</p>
+        </div>
     </div>
 
 
-{% endblock %}
+    <div class="center">
+        <div class="verticalLine" style="height: 5em; transform: translateY(-2em)"></div>
+    </div>
 
-{% block background %}
+    <div class="center" style="transform: translate(0.5em, -1.5em)">  <!-- Clickable text that can change the operator used -->
+        <p id="operator" onclick="nextOp()">AND</p>
+    </div>
+
+    <div class="center">
+        <div class="verticalLine" style="height: 5em; transform: translateY(-2em)"></div>
+    </div>
+
+    <div class="center" style="transform: translate(0.5em, -1.5em)">
+        <p id="result">true</p>
+    </div>
+    </div>
+    </div>
+
+
+    <script>
+
+        var operatorOrder = 0;
+
+        function toggleBool(id) {  // Toggles 0 and 1
+            const element = document.getElementById(id);
+
+            if (element.innerHTML == "1") {
+                element.innerHTML = "0";
+            } else {
+                element.innerHTML = "1";
+            }
+
+            element.classList.toggle("buttonTrue");
+            element.classList.toggle("buttonFalse");
+
+            result();
+        }
+
+        function toggleNot(id) {  // Toggles NOT buttons
+            const element = document.getElementById(id);
+
+            if (element.innerHTML == "NOT") {
+                element.innerHTML = "N/A";
+            } else {
+                element.innerHTML = "NOT";
+            }
+
+            result();
+        }
+
+        function nextOp() {  // Cycles through all of the operators. I used an array here to cycle and a global variable (operatorOrder) to keep track of the position
+            let operators = ["AND", "NAND", "OR", "NOR", "XOR"]
+            const element = document.getElementById("operator");
+            operatorOrder++;
+            if (operatorOrder > 4)
+                operatorOrder = 0;
+            element.innerHTML = operators[operatorOrder];
+
+            result();
+        }
+
+        function result() {  // Function that calculates the final results
+            let boolArray = [false, true];
+            let bool1 = boolArray[parseInt(document.getElementById("buttonOne").innerHTML)];
+            let bool2 = boolArray[parseInt(document.getElementById("buttonTwo").innerHTML)];  // Get the value of the two booleans via the buttons
+
+            if (document.getElementById("not1").innerHTML == "NOT") {
+                bool1 = !bool1;
+            }
+            if (document.getElementById("not2").innerHTML == "NOT") {
+                bool2 = !bool2;
+            }  // Account for NOT buttons
+
+            let result = false;
+            switch (operatorOrder) {  // Switch statement that takes into account each "case"
+                case 0:  // AND
+                    result = bool1 && bool2;
+                    break;
+                case 1:  // NAND (not AND)
+                    result = !(bool1 && bool2);
+                    break;
+                case 2:  // OR
+                    result = bool1 || bool2;
+                    break;
+                case 3:  // NOR (not OR)
+                    result = !(bool1 || bool2);
+                    break;
+                case 4:  // XOR
+                    result = bool1 != bool2;
+                    break;
+            }
+
+            document.getElementById("result").innerHTML = result; // display result
+        }
+
+        window.onload = result();
+
+    </script>
 {% endblock %}
