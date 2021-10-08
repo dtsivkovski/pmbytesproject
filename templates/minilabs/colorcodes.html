@@ -1,10 +1,404 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "layouts/base.html" %}
+{% block background %}
+{% endblock %}
 
-</body>
-</html>
+<!-- Search for all the Hack: below for hack-a-thon and mini-lab requirements -->
+<!-- need to adjust Templates to start -->
+
+<!-- Hack: Build form to drive bit size dynamic updates
+           use HTML Input Form in Frontend, ie toward top of Page
+           send initial value and updated values to form via Python render_template -->
+<!-- Hack: use 8 as default -->
+
+{% set project = "Color Codes" %}
+{% set subheading = "Color Code Binary" %}
+
+{% set BITS = 24 %}
+{% set MAX = ((2 ** BITS) - 1) %}
+
+{% set imageurl = "/static/assets/backgrounds/patrick-schneider-mountains-unsplash.jpg" %}
+
+<!-- Hack: Set bulbs and pass as variables via Python render_template
+           add new images (ie PNGs) to project -->
+<!-- use your PNGs as default -->
+
+{% set imgBulbOn = "/static/assets/bulbon.png" %}
+{% set imgBulbOff = "/static/assets/bulboff.png" %}
+{% set msgTurnOn = "Turn On" %}
+{% set msgTurnOff = "Turn Off" %}
+
+{% block body %}
+
+    <style>
+        body, html {
+            height: 100%;
+        }
+
+        .parallax {
+            /* The image used */
+            background-image: url({{ imageurl }}); background-color: #f2cac4;
+
+            /* Full height */
+            height: 100%;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        input.checkboxBig {
+            width: 20px;
+            height: 20px;
+        }
+
+        .square {
+            height: 100px;
+            width: 300px;
+            background-color: rgb(0, 0, 0);
+            margin: 1%;
+            border: 1px;
+            border-color: white;
+        }
+    </style>
+
+    <body>
+
+    <script>
+
+        const BITS = {{ BITS }}; let max = '{{ MAX }}'; let MAX = parseInt(max, 10);
+        // return string with current value of each bit
+        function getBits() {
+            let bits = "";
+            for(let i = 0; i < BITS; i++) {
+                bits = bits + document.getElementById('digit' + i).value;
+            }
+            return bits;
+        }
+        // setter for DOM values
+        function setConversions(binary) {
+            const stringDec = parseInt(binary, 2).toString(10);
+            const stringBin = String(binary)
+            const dec = parseInt(stringDec)
+            document.getElementById('binary').innerHTML = binary;
+            // DOM assignment to Octal conversion
+            document.getElementById('octal').innerHTML = parseInt(binary, 2).toString(8);
+            // DOM assignment to Hexadecimal conversion
+            document.getElementById('hexadecimal').innerHTML = parseInt(binary, 2).toString(16);
+            // DOM assignment to Decimal conversion
+            document.getElementById('decimal').innerHTML = parseInt(binary, 2).toString(10);
+            /* Hack: show ASCII printable character(s) for each 8 bits
+             DOM assignment by converting decimal https://www.w3schools.com/jsref/jsref_fromcharcode.asp
+             below ASCII for more ideas of where to make changes
+             */
+
+
+            // Takes substrings of binary values for each row
+            var binaryR = parseInt(stringBin.substring(0, 8));
+            var binaryG = parseInt(stringBin.substring(8, 16));
+            var binaryB = parseInt(stringBin.substring(16, 24));
+
+            // Converts each substring to the decimal values for each color
+            document.getElementById('decimalR').innerHTML = parseInt(binaryR, 2).toString(10);
+            document.getElementById('decimalG').innerHTML = parseInt(binaryG, 2).toString(10);
+            document.getElementById('decimalB').innerHTML = parseInt(binaryB, 2).toString(10);
+
+            // Same thing, but substring is saved in a variable
+            var decimalR = parseInt(binaryR, 2).toString(10);
+            var decimalG = parseInt(binaryG, 2).toString(10);
+            var decimalB = parseInt(binaryB, 2).toString(10);
+
+            // Created the color code in rgb format
+            var colorRGB = "rgb(" + decimalR + ', ' + decimalG + ', ' + decimalB + ")"
+
+            // Changes the colors of the divs and background to the created color
+            document.getElementById("square").style.backgroundColor = colorRGB;
+            document.getElementById("colorchange1").style.backgroundColor = colorRGB;
+            document.getElementById("colorchange2").style.backgroundColor = colorRGB;
+            document.getElementById("colorchange3").style.backgroundColor = colorRGB;
+
+
+        }
+
+        // algorithm to convert decimal to base using division and remainder
+        function decimal_2_base(decimal, base) {
+            let conversion = "";
+            // loop to convert to base
+            do {
+                let digit = decimal % base;
+                conversion = "" + digit + conversion; // what does this do? converts
+                decimal = ~~(decimal / base);         // what does this do?  what is ~~? Rounds down to integer
+            } while (decimal > 0);                  // why while at the end?
+            // loop to pad with zeros
+            if (base === 2) {                        // only pad for binary conversions
+                for (let i = 0; conversion.length < BITS; i++) {
+                    conversion = "0" + conversion;
+                }
+            }
+            return conversion;
+        }
+
+        // toggle selected bit and recalculate
+        function toggleBit(i) {
+            //alert("Digit action: " + i );
+            const dig = document.getElementById('digit' + i);
+            const image = document.getElementById('bulb' + i);
+            const butt = document.getElementById('butt' + i);
+            // Change digit and visual
+            if (image.src.match("{{ imgBulbOn }}")) {
+                dig.value = 0;
+                image.src = "{{ imgBulbOff }}";
+                butt.innerHTML = "{{ msgTurnOn }}";
+            } else {
+                dig.value = 1;
+                image.src = "{{ imgBulbOn }}";
+                butt.innerHTML = "{{ msgTurnOff }}";
+            }
+            // Binary numbers
+            const binary = getBits();
+            setConversions(binary);
+        }
+        // add is positive integer, subtract is negative integer
+        function add(n) {
+            let binary = getBits();
+            // convert to decimal and do math
+            let decimal = parseInt(binary, 2);
+            if (n > 0) {  // PLUS
+                decimal = MAX === decimal ? 0 : decimal += n; // OVERFLOW or PLUS
+            } else  {     // MINUS
+                decimal = 0 === decimal ? MAX : decimal += n; // OVERFLOW or MINUS
+            }
+            // convert the result back to binary
+            binary = decimal_2_base(decimal, 2);
+            // update conversions
+            setConversions(binary);
+            // update bits
+            for (let i = 0; i < binary.length; i++) {
+                let digit = binary.substr(i, 1);
+                document.getElementById('digit' + i).value = digit;
+                if (digit === "1") {
+                    document.getElementById('bulb' + i).src = "{{ imgBulbOn }}";
+                    document.getElementById('butt' + i).innerHTML = "{{ msgTurnOff }}";
+                } else {
+                    document.getElementById('bulb' + i).src = "{{ imgBulbOff }}";
+                    document.getElementById('butt' + i).innerHTML = "{{ msgTurnOn }}";
+                }
+            }
+        }
+        function multiply(m) {
+            let binary = getBits();
+            let decimal = parseInt(binary, 2);
+            if (m > 0) {  // multiply
+                decimal = MAX === decimal ? 0 : decimal << m; // OVERFLOW or MULTIPLY
+            } else  {     // divide
+                decimal = decimal
+            }
+            // convert the result back to binary
+            binary = decimal_2_base(decimal, 2);
+            // update conversions
+            setConversions(binary);
+            // update bits
+            for (let i = 0; i < binary.length; i++) {
+                let digit = binary.substr(i, 1);
+                document.getElementById('digit' + i).value = digit;
+                if (digit === "1") {
+                    document.getElementById('bulb' + i).src = "{{ imgBulbOn }}";
+                    document.getElementById('butt' + i).innerHTML = "{{ msgTurnOff }}";
+                } else {
+                    document.getElementById('bulb' + i).src = "{{ imgBulbOff }}";
+                    document.getElementById('butt' + i).innerHTML = "{{ msgTurnOn }}";
+                }
+            }
+        }
+
+        function divide(m) {
+            let binary = getBits();
+            let decimal = parseInt(binary, 2);
+            if (m > 0) {  // multiply
+                decimal = MAX === decimal ? 0 : decimal >> m; // OVERFLOW or DIVIDE
+            } else  {     // divide
+                decimal = decimal
+            }
+            // convert the result back to binary
+            binary = decimal_2_base(decimal, 2);
+            // update conversions
+            setConversions(binary);
+            // update bits
+            for (let i = 0; i < binary.length; i++) {
+                let digit = binary.substr(i, 1);
+                document.getElementById('digit' + i).value = digit;
+                if (digit === "1") {
+                    document.getElementById('bulb' + i).src = "{{ imgBulbOn }}";
+                    document.getElementById('butt' + i).innerHTML = "{{ msgTurnOff }}";
+                } else {
+                    document.getElementById('bulb' + i).src = "{{ imgBulbOff }}";
+                    document.getElementById('butt' + i).innerHTML = "{{ msgTurnOn }}";
+                }
+            }
+        }
+
+
+
+    </script>
+
+    <div class="parallax" style="height: max-content">
+        <div class="frame" style="background-color: rgba(0,0,0, 0.5); padding: 5%; width: 100%; margin: auto; height: max-content">
+            <div>
+
+                <div class="row justify-content-md-center" style="background-color: rgba(0, 0, 0, 0.8)">
+                <table>
+                    <td>
+                    <h1> Color Codes Lab</h1>
+                    </td>
+                    <td>
+                        <p style="visibility: hidden"> Spacer Div </p>
+                    </td>
+                    <td>
+                        <table>
+                        <tr>
+                            <td>
+                                <div class="row justify-content-md-center">
+                                    <h3 style="color: white"> Color Output </h3>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="row justify-content-md-center">
+                                    <div class="square" id="square"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        </table>
+                    </td>
+                </table>
+                </div>
+                </div>
+
+                <div class="table">
+                <tr>
+                <td>
+                    <div class="row justify-content-md-center" style="background-color: rgba(0, 0, 0, 0.8)">
+
+
+                        <div class="col-10" style="display: none">
+                            <table class="table">
+                                <tr id="table" style="color: white">
+                                    <th>Shift Left</th>
+                                    <th>Plus</th>
+                                    <th>Binary</th>
+                                    <th>Octal</th>
+                                    <th>Hexadecimal</th>
+                                    <th>Decimal</th>
+                                    <!-- Hack: display ASCII label for printable character(s) - DONE -->
+                                    <th>Ascii</th>
+                                    <th>Minus</th>
+                                    <th>Shift Right</th>
+                                </tr>
+                                <tr style="color: white">
+                                    <td><button type="button" id="multiply2" onclick="multiply(1)">*2</button></td>
+                                    <td><button type="button" id="add1" onclick="add(1)">+1</button></td>
+                                    <td id="binary">00000000</td>
+                                    <td id="octal">0</td>
+                                    <td id="hexadecimal">0</td>
+                                    <td id="decimal">0</td>
+                                    <!-- Hack: display ASCII printable character(s) - DONE -->
+                                    <td id="ascii">0</td>
+                                    <td><button type="button" id="sub1" onclick="add(-1)">-1</button></td>
+                                    <td><button type="button" id="divide2" onclick="divide(1)">/2</button></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="col-12" style="background-color: rgba(256, 256, 256, 0.75)" id="colorchange1">
+                            <div class="container-fluid" >
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <!-- On/off toggles for bulbs-->
+                                        <table class="table">
+                                            <tr>
+                                            <td style="background-color: red; color: black"> "R" Value </td>
+                                                {% for i in range(0, 8) %}
+                                                    <td><img class="img-responsive py-3" id="bulb{{i}}" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+                                                        <br>
+                                                        <button type="button" id="butt{{i}}" onclick="toggleBit('{{i}}')">{{ msgTurnOn }}</button>
+                                                    </td>
+                                                {% endfor %}
+                                            </tr>
+                                            <tr>
+                                            <td style="background-color: red; color: black" id="decimalR">000</td>
+                                                {% for i in range(0, 8) %}
+                                                    <td><input type='text' id='digit{{i}}' Value="0" size="1" readonly></td>
+                                                {% endfor %}
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12" style="background-color: rgba(256, 256, 256, 0.75)" id="colorchange2">
+                            <div class="container-fluid" >
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <!-- On/off toggles for bulbs-->
+                                        <table class="table">
+                                            <tr>
+                                                <td style="background-color: green; color: black"> "G" Value </td>
+                                                {% for i in range(8, 16) %}
+                                                    <td><img class="img-responsive py-3" id="bulb{{i}}" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+                                                        <br>
+                                                        <button type="button" id="butt{{i}}" onclick="toggleBit('{{i}}')">{{ msgTurnOn }}</button>
+                                                    </td>
+                                                {% endfor %}
+                                            </tr>
+                                            <tr>
+                                                <td style="background-color: green; color: black" id="decimalG">000</td>
+                                                {% for i in range(8, 16) %}
+                                                    <td><input type='text' id='digit{{i}}' Value="0" size="1" readonly></td>
+                                                {% endfor %}
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12" style="background-color: rgba(256, 256, 256, 0.75)" id="colorchange3">
+                            <div class="container-fluid" >
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <!-- On/off toggles for bulbs-->
+                                        <table class="table">
+                                            <tr>
+                                                <td style="background-color: blue; color: white"> "B" Value </td>
+                                                {% for i in range(16, 24) %}
+                                                    <td><img class="img-responsive py-3" id="bulb{{i}}" src="{{ imgBulbOff }}" alt="" width="40" height="Auto">
+                                                        <br>
+                                                        <button type="button" id="butt{{i}}" onclick="toggleBit('{{i}}')">{{ msgTurnOn }}</button>
+                                                    </td>
+                                                {% endfor %}
+                                            </tr>
+                                            <tr>
+                                                <td style="background-color: blue; color: white" id="decimalB">000</td>
+                                                {% for i in range(16, 24) %}
+                                                    <td><input type='text' id='digit{{i}}' Value="0" size="1" readonly></td>
+                                                {% endfor %}
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                </tr>
+
+            </div>
+        </div>
+    </div>
+    <div class="parallax" style="height: 20%"></div>
+    </body>
+{% endblock %}
