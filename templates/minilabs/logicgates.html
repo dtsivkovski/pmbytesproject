@@ -37,6 +37,11 @@
             width: 4em;
         }
 
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
     <div class="parallax">
         <div class="frame" style="background-color: rgba(255,0,0,0.5); padding: 5%; width: 100%; margin: auto; height: 100%">
@@ -65,7 +70,6 @@
         </div>
     </div>
 
-
     <div class="center">
         <div class="verticalLine" style="height: 5em; transform: translateY(-2em)"></div>
     </div>
@@ -79,14 +83,13 @@
     </div>
 
     <div class="center" style="transform: translate(0.5em, -1.5em)">
-        <p id="result">true</p>
+        <p id="result">TRUE!</p>
     </div>
     </div>
     </div>
 
 
     <script>
-
         var operatorOrder = 0;
 
         function toggleBool(id) {  // Toggles 0 and 1
@@ -117,7 +120,7 @@
         }
 
         function nextOp() {  // Cycles through all of the operators. I used an array here to cycle and a global variable (operatorOrder) to keep track of the position
-            let operators = ["AND", "NAND", "OR", "NOR", "XOR"]
+            let operators = ["AND", "N-AND", "OR", "N-OR", "X-OR"]
             const element = document.getElementById("operator");
             operatorOrder++;
             if (operatorOrder > 4)
@@ -144,16 +147,16 @@
                 case 0:  // AND
                     result = bool1 && bool2;
                     break;
-                case 1:  // NAND (not AND)
+                case 1:  // N-AND (not AND)
                     result = !(bool1 && bool2);
                     break;
                 case 2:  // OR
                     result = bool1 || bool2;
                     break;
-                case 3:  // NOR (not OR)
+                case 3:  // N-OR (not OR)
                     result = !(bool1 || bool2);
                     break;
-                case 4:  // XOR
+                case 4:  // X-OR
                     result = bool1 != bool2;
                     break;
             }
