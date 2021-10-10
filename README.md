@@ -85,7 +85,7 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
   <br>
   <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/templates/minilabs/binary.html"> Binary Shifting </a> - Added shifting bits left/right into binary.html 
   <br>
-  <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/templates/minilabs/colorcodes.html"> Color Codes Page </a> - RGB Cplor output page using configurable R,G,B bit rows. <a href="https://github.com/dtsivkovski/PMB-Portfolio/commits?author=dtsivkovski"> (Daniel's Commits for all 3 items above)</a>
+  <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/templates/minilabs/colorcodes.html"> Color Codes Page </a> - RGB Color output page using configurable R,G,B bit rows. <a href="https://github.com/dtsivkovski/PMB-Portfolio/commits?author=dtsivkovski"> (Daniel's Commits for all 3 items above)</a>
   <br>
   <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/templates/minilabs/logicgates.html"> Logic Gates</a> - Logic gates with different functionalities using different inputs. <a href="https://github.com/dtsivkovski/PMB-Portfolio/commits/main/templates/minilabs/logicgates.html">(Armaan's Commits)</a>
   <br>
