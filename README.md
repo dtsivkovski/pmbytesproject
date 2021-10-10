@@ -79,6 +79,15 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
 
 ## Time-Based Box for Grading
 
+#### Week 7
+<p>
+  <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/templates/minilabs/unicodetest.html"> ASCII Unicode Value </a> - Integrated a unicode type alongside the ascii value with proper hexadecimal inputs.
+  <br>
+  <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/templates/minilabs/binary.html"> Binary Shifting </a> - Added shifting bits left/right into binary.html 
+  <br>
+  <a href-"https://github.com/dtsivkovski/PMB-Portfolio/blob/main/templates/minilabs/colorcodes.html"> Color Codes Page </a> - RGB Cplor output page using configurable R,G,B bit rows.
+</p>
+
 #### Week 6
 <p> 
 <a href="https://docs.google.com/document/d/1jFLS5jeQhK12o_Rs_DI7AaXEJOB0in9GovtWKdRnumc/edit#bookmark=id.vzklzrgapv5l"> Base64 Research </a> - Research of Base64 compared to Base2, Base8, Base16.
