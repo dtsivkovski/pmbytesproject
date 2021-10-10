@@ -85,7 +85,10 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
   <br>
   <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/templates/minilabs/binary.html"> Binary Shifting </a> - Added shifting bits left/right into binary.html 
   <br>
-  <a href-"https://github.com/dtsivkovski/PMB-Portfolio/blob/main/templates/minilabs/colorcodes.html"> Color Codes Page </a> - RGB Cplor output page using configurable R,G,B bit rows.
+  <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/templates/minilabs/colorcodes.html"> Color Codes Page </a> - RGB Cplor output page using configurable R,G,B bit rows.
+  <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/templates/minilabs/logicgates.html"> Logic Gates</a> - Logic gates with different functionalities using different inputs.
+  <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/templates/minilabs/signedaddition.html"> Signed Addition </a> - Signed addition page with the 8th bit being a subtraction/addition operator.
+  <a href=""> Unsigned Addition </a> - Unsigned addition page with the addition/subtraction toggle being a button.
 </p>
 
 #### Week 6
