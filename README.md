@@ -79,7 +79,7 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
 
 ## Time-Based Box for Grading
 
-#### Week 7 - [Runtime Video](https://youtu.be/Kmnye1Vfzqk)
+#### Week 7 - [Runtime Videos](https://youtube.com/playlist?list=PLIYRwL-UKBI-xFdhuEs6L0wEsYDwT5CDf)
 <p>
   <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/templates/minilabs/unicodetest.html"> ASCII Unicode Value </a> - Integrated a unicode type alongside the ascii value with proper hexadecimal inputs.
   <br>
@@ -93,6 +93,23 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
   <br>
   <a href=""> Unsigned Addition </a> - Unsigned addition page with the addition/subtraction toggle being a button. <a href="">(Timmy Commits)</a>
 </p>
+<table>
+  <tr>
+    <th>Week 7 Hackathons</th>
+    <td>
+    <a href="">Chris</a>
+    </td>
+    <td>
+    <a href="">Armaan</a>
+    </td>
+    <td>
+    <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/HackathonTests/daniel_week7.py">Daniel</a>
+    </td>
+    <td>
+    <a href="">Timmy</a>
+    </td>
+  </tr>
+</table>
 
 #### Week 6
 <p> 
