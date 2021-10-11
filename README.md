@@ -97,10 +97,10 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
   <tr>
     <th>Week 7 Hackathons</th>
     <td>
-    <a href="">Chris</a>
+    <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/HackathonTests/ChrisWeek7.py">Chris</a>
     </td>
     <td>
-    <a href="">Armaan</a>
+    <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/HackathonTests/armaan_week7.py">Armaan</a>
     </td>
     <td>
     <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/HackathonTests/daniel_week7.py">Daniel</a>
