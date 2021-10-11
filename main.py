@@ -97,6 +97,10 @@ def colorcodes():
 def logicgates():
     return render_template("minilabs/logicgates.html")
 
+@app.route('/signedaddition/')
+def signedaddition():
+    return render_template("minilabs/signedaddition.html")
+
 @app.route('/wireframe/')
 def wireframe():
     return render_template("wireframe.html")

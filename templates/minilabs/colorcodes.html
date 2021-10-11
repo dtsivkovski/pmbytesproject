@@ -118,6 +118,7 @@
             document.getElementById("colorchange1").style.backgroundColor = colorRGB;
             document.getElementById("colorchange2").style.backgroundColor = colorRGB;
             document.getElementById("colorchange3").style.backgroundColor = colorRGB;
+            document.getElementById("coloroutput").innerHTML = colorRGB;
 
 
         }
@@ -247,9 +248,9 @@
         <div class="frame" style="background-color: rgba(0,0,0, 0.5); padding: 5%; width: 100%; margin: auto; height: max-content">
             <div>
 
-                <div class="row justify-content-md-center" style="background-color: rgba(0, 0, 0, 0.8)">
+                <div class="d-flex justify-content-center" style="background-color: rgba(0, 0, 0, 0.8)">
                 <table>
-                    <td>
+                    <td >
                     <h1> Color Codes Lab</h1>
                     </td>
                     <td>
@@ -267,7 +268,16 @@
                         <tr>
                             <td>
                                 <div class="row justify-content-md-center">
-                                    <div class="square" id="square"></div>
+                                    <h5 id="coloroutput">rgb(0, 0, 0)</h5>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="row justify-content-md-center">
+                                    <div class="square" id="square">
+
+                                    </div>
                                 </div>
                             </td>
                         </tr>
@@ -312,7 +322,7 @@
                             </table>
                         </div>
 
-                        <div class="col-12" style="background-color: rgba(256, 256, 256, 0.75)" id="colorchange1">
+                        <div class="col-12" style="background-color: rgba(0, 0, 0, 0.75)" id="colorchange1">
                             <div class="container-fluid" >
                                 <div class="row">
                                     <div class="col-sm">
@@ -339,7 +349,7 @@
                             </div>
                         </div>
 
-                        <div class="col-12" style="background-color: rgba(256, 256, 256, 0.75)" id="colorchange2">
+                        <div class="col-12" style="background-color: rgba(0, 0, 0, 0.75)" id="colorchange2">
                             <div class="container-fluid" >
                                 <div class="row">
                                     <div class="col-sm">
@@ -366,7 +376,7 @@
                             </div>
                         </div>
 
-                        <div class="col-12" style="background-color: rgba(256, 256, 256, 0.75)" id="colorchange3">
+                        <div class="col-12" style="background-color: rgba(0, 0, 0, 0.75)" id="colorchange3">
                             <div class="container-fluid" >
                                 <div class="row">
                                     <div class="col-sm">

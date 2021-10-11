@@ -79,6 +79,38 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
 
 ## Time-Based Box for Grading
 
+#### Week 7 - [Runtime Videos](https://youtube.com/playlist?list=PLIYRwL-UKBI-xFdhuEs6L0wEsYDwT5CDf)
+<p>
+  <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/templates/minilabs/unicodetest.html"> ASCII Unicode Value </a> - Integrated a unicode type alongside the ascii value with proper hexadecimal inputs.
+  <br>
+  <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/templates/minilabs/binary.html"> Binary Shifting </a> - Added shifting bits left/right into binary.html 
+  <br>
+  <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/templates/minilabs/colorcodes.html"> Color Codes Page </a> - RGB Color output page using configurable R,G,B bit rows. <a href="https://github.com/dtsivkovski/PMB-Portfolio/commits?author=dtsivkovski"> (Daniel's Commits for all 3 items above)</a>
+  <br>
+  <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/templates/minilabs/logicgates.html"> Logic Gates</a> - Logic gates with different functionalities using different inputs. <a href="https://github.com/dtsivkovski/PMB-Portfolio/commits/main/templates/minilabs/logicgates.html">(Armaan's Commits)</a>
+  <br>
+  <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/templates/minilabs/signedaddition.html"> Signed Addition </a> - Signed addition page with the 8th bit being a subtraction/addition operator. <a href="https://github.com/dtsivkovski/PMB-Portfolio/commit/1b8d7ff8d8fa0f687a2eaff52acdee3281c9589b">(Chris's Commits)</a>
+  <br>
+  <a href=""> Unsigned Addition </a> - Unsigned addition page with the addition/subtraction toggle being a button. <a href="">(Timmy Commits)</a>
+</p>
+<table>
+  <tr>
+    <th>Week 7 Hackathons</th>
+    <td>
+    <a href="">Chris</a>
+    </td>
+    <td>
+    <a href="">Armaan</a>
+    </td>
+    <td>
+    <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/HackathonTests/daniel_week7.py">Daniel</a>
+    </td>
+    <td>
+    <a href="">Timmy</a>
+    </td>
+  </tr>
+</table>
+
 #### Week 6
 <p> 
 <a href="https://docs.google.com/document/d/1jFLS5jeQhK12o_Rs_DI7AaXEJOB0in9GovtWKdRnumc/edit#bookmark=id.vzklzrgapv5l"> Base64 Research </a> - Research of Base64 compared to Base2, Base8, Base16.

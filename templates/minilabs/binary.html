@@ -205,22 +205,25 @@
 
 <div class="parallax" style="height:95%">
 <div class="frame" style="background-color: rgba(0,0,0, 0.5); padding: 5%; width: 100%; margin: auto; height: 100%">
-    <div class="container" >
+    <div class="container">
 
-        <div class="row justify-content-md-center" style="background-color: rgba(0, 0, 0, 0.8)">
+        <div class="d-flex justify-content-center" style="background-color: rgba(0, 0, 0, 0.8)">
             <h1> Binary Mini-Lab </h1>
         </div>
 
-        <div class="row justify-content-md-center" style="background-color: rgba(0, 0, 0, 0.8)">
+        <div class="d-flex justify-content-center" style="background-color: rgba(0, 0, 0, 0.8)">
             <!-- Submission form for bits and checkbox for bulb type-->
-            <form action="/binary/" method="POST" >
-                <label for="bits"> How many bits? </label>
-                <input type="number" id="bits" name="bits">
-                <label for="bulb" value="Lizards"> with lizard bulbs? </label>
-                <input type="checkbox" name="bulbs" value="Lizards" class="checkboxBig">
-                <input type="submit" value="Submit">
-            </form>
-
+            <div class="row align-items-center justify-content-center" style="background-color: rgba(0, 0, 0, 0.8)">
+                <form action="/binary/" method="POST" >
+                    <label for="bits"> How many bits? </label>
+                    <input type="number" id="bits" name="bits">
+                    <label for="bulb" value="Lizards"> with lizard bulbs? </label>
+                    <input type="checkbox" name="bulbs" value="Lizards" class="checkboxBig">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <div class="row align-items-center justify-content-center" style="background-color: rgba(0, 0, 0, 0.8)">
             <div class="col-8">
                 <table class="table">
                     <tr id="table" style="color: white">
