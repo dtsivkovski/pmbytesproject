@@ -93,6 +93,10 @@ def unicodetest():
 def colorcodes():
     return render_template("minilabs/colorcodes.html")
 
+@app.route('/unsignedaddition')
+def unsignedaddition():
+    return render_template("minilabs/unsignedaddition.html")
+
 @app.route('/logicgates')
 def logicgates():
     return render_template("minilabs/logicgates.html")

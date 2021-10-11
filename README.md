@@ -91,22 +91,22 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
   <br>
   <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/templates/minilabs/signedaddition.html"> Signed Addition </a> - Signed addition page with the 8th bit being a subtraction/addition operator. <a href="https://github.com/dtsivkovski/PMB-Portfolio/commit/1b8d7ff8d8fa0f687a2eaff52acdee3281c9589b">(Chris's Commits)</a>
   <br>
-  <a href=""> Unsigned Addition </a> - Unsigned addition page with the addition/subtraction toggle being a button. <a href="">(Timmy Commits)</a>
+  <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/templates/minilabs/unsignedaddition.html"> Unsigned Addition </a> - Unsigned addition page with the addition/subtraction toggle being a button. <a href="https://github.com/dtsivkovski/PMB-Portfolio/commit/e30c6d88f11abb9b028683384775880d38410b53">(Timmy Commits)</a>
 </p>
 <table>
   <tr>
     <th>Week 7 Hackathons</th>
     <td>
-    <a href="">Chris</a>
+    <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/HackathonTests/ChrisWeek7.py">Chris</a>
     </td>
     <td>
-    <a href="">Armaan</a>
+    <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/HackathonTests/armaan_week7.py">Armaan</a>
     </td>
     <td>
     <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/HackathonTests/daniel_week7.py">Daniel</a>
     </td>
     <td>
-    <a href="">Timmy</a>
+    <a href="https://github.com/dtsivkovski/PMB-Portfolio/commit/d58e4694c256495fc6331fe5414a76d9d729ac0d">Timmy</a>
     </td>
   </tr>
 </table>
