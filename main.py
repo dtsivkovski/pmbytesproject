@@ -132,7 +132,9 @@ def danielvar():
             average = 'nothing'
         return render_template("danielvar.html", var1=var1, var2=var2, var3=var3, var4=var4, var5=var5, var6=var6, average=average)
 
-
+@app.route('/animalgallery/')
+def animalgallery():
+    return render_template("mainsite/animalgallery.html")
 
 # runs the application on the development server
 if __name__ == "__main__":

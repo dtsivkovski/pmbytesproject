@@ -1,31 +1,27 @@
 <!-- Extending the predefined project layout -->
 {% extends "layouts/base.html" %}
 
-{% set project = "TITLE" %}
-{% set subheading = "SUBHEADING" %}
+{% set project = "Animal Gallery" %}
+{% set subheading = "Gallery with different categories." %}
 
 <!-- Change "imageurl" to a directory or link
     This is the background image, so if you add any new images,
     make sure to add them to the backgrounds folder -->
-{% set imageurl = "/static/assets/backgrounds/deepwaterrock.jpg" %}
+{% set imageurl = "/static/assets/backgrounds/shubham-dhage-renderpillars-unsplash.jpg" %}
 
 <!-- Add code inside the "block under" to add items below the block -->
-{% block under %}
-
 {% block under %}
 
 <div class="parallax" style="height: 25%"></div>
 
 <div class="parallax" style="height:max-content">
-    <div class="frame" style="background-color: rgba(0,0,0, 0.5); padding: 5%; width: 80%; margin: auto; height:max-content">
-        <!-- New stuff goes here -->
+    <div class="frame" style="background-color: rgba(0,0,0, 0.5); padding: 5%; width: 80%; margin: auto; height: max-content">
+            <!-- New stuff goes here -->
 
 
 
     </div>
 </div>
-
-{% endblock %}
 
 {% endblock %}
 
