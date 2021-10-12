@@ -86,7 +86,7 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
   <a href="https://github.com/dtsivkovski/PMB-Portfolio/commit/44abe03076421932a6ef27d97b14409ee47550f0#diff-e8c62b1a71f9da4a53e478e371233bd4ad6ee6795a0f4cfe22a2679290b5ca04"> Page Loading Spinner </a> - Using loading spinner system to notify user when a page is taking time to load (Daniel)
 </p>
 
-#### Week 7 - [Runtime Videos](https://youtube.com/playlist?list=PLIYRwL-UKBI-xFdhuEs6L0wEsYDwT5CDf)
+#### Week 7 - [Runtime Videos](https://youtube.com/playlist?list=PLIYRwL-UKBI-xFdhuEs6L0wEsYDwT5CDf) - and [Review Ticket for Crossover Team](https://github.com/dtsivkovski/PMB-Portfolio/issues/33)
 <p>
   <a href="https://github.com/dtsivkovski/PMB-Portfolio/blob/main/templates/minilabs/unicodetest.html"> ASCII Unicode Value </a> - Integrated a unicode type alongside the ascii value with proper hexadecimal inputs.
   <br>
