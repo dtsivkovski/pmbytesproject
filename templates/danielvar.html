@@ -8,11 +8,63 @@
 {% set project = "Daniel's Test Page" %}
 {% set subheading = "Variable Input Testing Page" %}
 <!-- Change "imageurl" to a directory or link -->
-{% set imageurl = "/static/assets/rgbimages/bluetree.jpg" %}
+{% set imageurl = "/static/assets/backgrounds/shubham-dhage-renderpillars-unsplash.jpg" %}
 
 
 <!-- Add code inside the "block under" to add items below the block -->
 {% block under %}
+
+    <script>
+
+        window.onload = randomImage;
+
+        const imagelist = ["bigtree.jpg",
+            "coloredclouds.jpg",
+            "deepwaterrock.jpg",
+            "forest1.jpg",
+            "spacerock.jpg",
+            "lizard1.jpg",
+            "jungle.jpg",
+            "redbluesmoke.jpg",
+            "treesriver1.jpg",
+            "patrick-schneider-mountains-unsplash.jpg"
+        ]
+
+        const ILLength = imagelist.length;
+
+        function randomImage(){
+            var numgen = Math.floor(Math.random() * ILLength);
+            var imagepick = imagelist[numgen];
+            var path = "/static/assets/backgrounds/";
+
+            var selectpath = path + imagepick;
+            document.getElementById('randomimage').src = selectpath;
+
+        }
+
+    </script>
+
+    <div class="parallax" style="height:20%"></div>
+    <div class="parallax" style="height:max-content">
+    <div class="frame" style="background-color: rgba(0,0,0, 0.5); width: 80%; margin: auto; align-items: center; ">
+        <div class="d-flex justify-content-center">
+            <div class="card" style="width: 35rem;">
+                <div class="card-img-top">
+                    <div class="d-flex justify-content-center">
+                    <img id="randomimage" class="card-img-top" src="/static/assets/backgrounds/spacerock.jpg" style="width: 34.8rem; height: 34.8rem; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title" style="color: black">Image Randomizer</h5>
+                    <p class="card-text" style="color: black"> This randomizes images from an image list. </p>
+                    <a onclick="randomImage()" class="btn btn-primary"> Randomize! </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
 
     <!-- Uncomment the line below to leave gap between main title area and body -->
     <div class="parallax" style="height:20%"></div>
