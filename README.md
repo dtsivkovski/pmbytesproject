@@ -1,6 +1,6 @@
 
 
-# Pac-Man Bytes - [Scrum Board](https://github.com/dtsivkovski/flask_portfolio/projects/1) and [Contributors](https://github.com/dtsivkovski/flask_portfolio/graphs/contributors)
+# Pac-Man Bytes - [Scrum Board](https://github.com/dtsivkovski/pmbytesproject/projects/1) and [Contributors](https://github.com/dtsivkovski/pmbytesproject/graphs/contributors)
 
 
 
@@ -12,13 +12,13 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
 <tr>
 <th>Daniel Tsivkovski</th>
 <td>
-<a href="https://github.com/dtsivkovski/flask_portfolio/issues/assigned/dtsivkovski">Tasks</a>
+<a href="https://github.com/dtsivkovski/pmbytesproject/issues/assigned/dtsivkovski">Tasks/Issues</a>
 </td>
 <td>
-<a href="https://github.com/dtsivkovski/flask_portfolio/projects/1?card_filter_query=assignee%3Adtsivkovski">Scrumboard</a>
+<a href="https://github.com/dtsivkovski/pmbytesproject/projects/1?card_filter_query=assignee%3Adtsivkovski">Scrumboard</a>
 </td>
 <td>
-<a href="https://github.com/dtsivkovski/flask_portfolio/commits?author=dtsivkovski">Commits</a>
+<a href="https://github.com/dtsivkovski/pmbytesproject/commits?author=dtsivkovski">Commits</a>
 </td>
 <td>
 <a href="https://github.com/dtsivkovski">Profile</a>
@@ -28,13 +28,13 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
 <tr>
 <th>Chris Hom</th>
 <td>
-<a href="https://github.com/dtsivkovski/flask_portfolio/issues/assigned/Chom642">Tasks</a>
+<a href="https://github.com/dtsivkovski/pmbytesproject/issues/assigned/Chom642">Tasks/Issues</a>
 </td>
 <td>
-<a href="https://github.com/dtsivkovski/flask_portfolio/projects/1?card_filter_query=assignee%3Achom642">Scrumboard</a>
+<a href="https://github.com/dtsivkovski/pmbytesproject/projects/1?card_filter_query=assignee%3Achom642">Scrumboard</a>
 </td>
 <td>
-<a href="https://github.com/dtsivkovski/flask_portfolio/commits?author=Chom642">Commits</a>
+<a href="https://github.com/dtsivkovski/pmbytesproject/commits?author=Chom642">Commits</a>
 </td>
 <td>
 <a href="https://github.com/Chom642">Profile</a>
@@ -44,13 +44,13 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
 <tr>
 <th>Timothy Lin</th>
 <td>
-<a href="https://github.com/dtsivkovski/flask_portfolio/issues?q=assignee%3ATimL1n+is%3Aopen">Tasks</a>
+<a href="https://github.com/dtsivkovski/pmbytesproject/issues?q=assignee%3ATimL1n+is%3Aopen">Tasks/Issues</a>
 </td>
 <td>
-<a href="https://github.com/dtsivkovski/flask_portfolio/projects/1?card_filter_query=assignee%3Atiml1n">Scrumboard</a>
+<a href="https://github.com/dtsivkovski/pmbytesproject/projects/1?card_filter_query=assignee%3Atiml1n">Scrumboard</a>
 </td>
 <td>
-<a href="https://github.com/dtsivkovski/flask_portfolio/commits?author=TimL1n">Commits</a>
+<a href="https://github.com/dtsivkovski/pmbytesproject/commits?author=TimL1n">Commits</a>
 </td>
 <td>
 <a href="https://github.com/TimL1n">Profile</a>
@@ -60,13 +60,13 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
 <tr>
 <th>Armaan Shamsaasef</th>
 <td>
-<a href="https://github.com/dtsivkovski/flask_portfolio/issues/assigned/xXAASXx">Tasks</a>
+<a href="https://github.com/dtsivkovski/pmbytesproject/issues/assigned/xXAASXx">Tasks/Issues</a>
 </td>
 <td>
-<a href="https://github.com/dtsivkovski/flask_portfolio/projects/1?card_filter_query=assignee%3Axxaasxx">Scrumboard</a>
+<a href="https://github.com/dtsivkovski/pmbytesproject/projects/1?card_filter_query=assignee%3Axxaasxx">Scrumboard</a>
 </td>
 <td>
-<a href="https://github.com/dtsivkovski/flask_portfolio/commits?author=xXAASXx">Commits</a>
+<a href="https://github.com/dtsivkovski/pmbytesproject/commits?author=xXAASXx">Commits</a>
 </td>
 <td>
 <a href="https://github.com/xXAASXx">Profile</a>
@@ -79,12 +79,51 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
 
 ## Time-Based Box for Grading
 
-#### Week 8
-<p>
-  <a href="https://github.com/dtsivkovski/PMB-Portfolio/commit/8c5d7ffdf4f795c2314452a1cd36833e38644f93#diff-e8c62b1a71f9da4a53e478e371233bd4ad6ee6795a0f4cfe22a2679290b5ca04"> Offcanvas Bootstrap Integration </a> - Using offcanvas to better organize our pages and links to these pages to reduce clutter (Daniel)
-  <br>
-  <a href="https://github.com/dtsivkovski/PMB-Portfolio/commit/44abe03076421932a6ef27d97b14409ee47550f0#diff-e8c62b1a71f9da4a53e478e371233bd4ad6ee6795a0f4cfe22a2679290b5ca04"> Page Loading Spinner </a> - Using loading spinner system to notify user when a page is taking time to load (Daniel)
-</p>
+### Week 8 - [Review Ticket](https://github.com/dtsivkovski/pmbytesproject/issues/7)
+
+- ##### [Hackathon and TPT/TTT/Video Notes Link](https://github.com/dtsivkovski/pmbytesproject/issues/8)
+
+
+<table>
+
+  <tr>
+    <th>Name</th>
+    <th>Assignment</th>
+    <th>Ticket Links</th>    
+  </tr>
+  <tr>
+    <td> Daniel </td>
+    <td> Working on bootstrap offcanvas categories, spinner page loading, and randomize images button.</td>
+    <td> 
+      <a href="https://github.com/dtsivkovski/pmbytesproject/issues/3">Bootstrap Offcanvas Ticket</a>, 
+      <a href="https://github.com/dtsivkovski/pmbytesproject/issues/2">Loading Ticket</a>, 
+      <a href="https://github.com/dtsivkovski/pmbytesproject/issues/4">Randomize Image Ticket</a>.
+    </td>
+  </tr>
+  <tr>
+    <td> Chris </td>
+    <td> Working on creating bootstrap "toasts" to notify a user of an action being performed. </td>
+    <td> 
+      <a href="https://github.com/dtsivkovski/pmbytesproject/issues/5">Bootstrap Toast Ticket</a>. 
+    </td>
+  </tr>
+  <tr>
+    <td> Armaan </td>
+    <td> Working on creating a share button with premade share text.</td>
+    <td> 
+      <a href="https://github.com/dtsivkovski/pmbytesproject/issues/1">Share Button Ticket</a>. 
+    </td>
+  </tr>
+  <tr>
+    <td> Timothy </td>
+    <td> Working on using bootstrap carousels to display different image categories.</td>
+    <td> 
+      <a href="https://github.com/dtsivkovski/pmbytesproject/issues/6">Image Carousel Ticket</a>.
+    </td>
+  </tr>
+  
+</table>
+
 
 #### Week 7 - [Runtime Videos](https://youtube.com/playlist?list=PLIYRwL-UKBI-xFdhuEs6L0wEsYDwT5CDf) - and [Review Ticket for Crossover Team](https://github.com/dtsivkovski/PMB-Portfolio/issues/33)
 <p>
