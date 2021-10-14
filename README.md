@@ -79,7 +79,10 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
 
 ## Time-Based Box for Grading
 
-#### Week 8 - [Review Ticket](https://github.com/dtsivkovski/pmbytesproject/issues/7)
+### Week 8 - [Review Ticket](https://github.com/dtsivkovski/pmbytesproject/issues/7)
+
+- ##### [Hackathon and TPT/TTT/Video Notes Link](https://github.com/dtsivkovski/pmbytesproject/issues/8)
+
 
 <table>
 
