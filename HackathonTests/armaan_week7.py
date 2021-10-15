@@ -7,10 +7,10 @@ print(student_list[2:5])
 print(student_list[5:6])
 print(student_list[0:6])
 
-if 'rob' in student_list:
-    print("Yes, rob is in the student list.")
+if 'Rob' in student_list:
+    print("Yes, Rob is in the student list.")
 else:
-    print("No, rob is not in the student list.")
+    print("No, Rob is not in the student list.")
 
 print(' ')
 print(' Challenge 2 ')
