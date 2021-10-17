@@ -97,8 +97,8 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
     <td> 
       <a href="https://github.com/dtsivkovski/pmbytesproject/issues/3">Bootstrap Offcanvas Ticket</a>, 
       <a href="https://github.com/dtsivkovski/pmbytesproject/issues/2">Loading Ticket</a>, 
-      <a href="https://github.com/dtsivkovski/pmbytesproject/issues/4">Randomize Image Ticket</a>.
-      <a href="https://github.com/dtsivkovski/pmbytesproject/issues/9">API Integration</a>
+      <a href="https://github.com/dtsivkovski/pmbytesproject/issues/4">Randomize Image Ticket</a>, 
+      <a href="https://github.com/dtsivkovski/pmbytesproject/issues/9">API Integration</a>.
     </td>
   </tr>
   <tr>
