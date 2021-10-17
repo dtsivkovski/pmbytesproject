@@ -5,10 +5,9 @@
 {% endblock %}
 
 <!-- Setting up variables to customize "project" details to be specific to index page -->
-{% set project = "Home" %}
-{% set subheading = "Welcome to the Pac-Man Bytes homepage!" %}
+{% set project = "Home Page" %}
 <!-- Change "imageurl" to a directory or link -->
-{% set imageurl = "/static/assets/backgrounds/coloredclouds.jpg" %}
+{% set imageurl = "/static/assets/backgrounds/lizard1.jpg" %}
 
 
 <!-- Add code inside the "block under" to add items below the block -->
@@ -22,8 +21,13 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm" style="text-align: center; padding-top: 0">
-                        <div class="img-wrap">
-                            <img src="/static/assets/minimg/pacman1.png" style="height: 100%;">
+                        <h4> Welcome to the Pac-Man Bytes and RandAnimal homepage!</h4>
+                        <div class="d-flex justify-content-center" style="padding: 2rem">
+                            <img src="/static/assets/minimg/pacman1.png" style="height: 18rem;">
+                            <p style="visibility: hidden"> Spacer </p>
+                            <div class="d-flex justify-content-center" style="background-color: #1da1f2; border-radius: 25px; height: 18rem; width: 18rem; padding: 1.6rem">
+                                <img src="/static/assets/lizardicon-nicepng.png" style="background-color: #1da1f2; border-radius: 25px; height: 16rem;">
+                            </div>
                         </div>
                     </div>
                 </div>

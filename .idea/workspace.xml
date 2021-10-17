@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f71b4af-9a59-4ba8-9b3d-0c25b134229d" name="Changes" comment="Added JS code for randomizing images.">
-      <change afterPath="$PROJECT_DIR$/templates/mainsite/apitesting.html" afterDir="false" />
+    <list default="true" id="9f71b4af-9a59-4ba8-9b3d-0c25b134229d" name="Changes" comment="Moved randomJS, added API Pull Test">
+      <change afterPath="$PROJECT_DIR$/static/assets/lizardicon-nicepng.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/danielvar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/danielvar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/layouts/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/layouts/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/navbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,9 +68,10 @@
       <recent name="$PROJECT_DIR$/.idea" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\danie\IdeaProjects\flask_portfolio\static\assets" />
+      <recent name="C:\Users\danie\IdeaProjects\flask_portfolio\static\assets\minimg" />
       <recent name="C:\Users\danie\IdeaProjects\flask_portfolio\templates\mainsite" />
       <recent name="C:\Users\danie\IdeaProjects\flask_portfolio\static\img" />
-      <recent name="C:\Users\danie\IdeaProjects\flask_portfolio\static\assets" />
       <recent name="C:\Users\danie\IdeaProjects\flask_portfolio\static\assets\backgrounds" />
     </key>
   </component>
@@ -191,7 +192,10 @@
       <workItem from="1634238521799" duration="3081000" />
       <workItem from="1634246107833" duration="1834000" />
       <workItem from="1634262287461" duration="3260000" />
-      <workItem from="1634317215147" duration="1720000" />
+      <workItem from="1634317215147" duration="2096000" />
+      <workItem from="1634319386642" duration="23000" />
+      <workItem from="1634328830760" duration="3411000" />
+      <workItem from="1634429927088" duration="1014000" />
     </task>
     <task id="LOCAL-00001" summary="Integrated jumbotron onto About Us page">
       <created>1631942022221</created>
@@ -277,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634154291270</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Moved randomJS, added API Pull Test">
+      <created>1634319139228</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1634319139228</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,7 +319,8 @@
     <MESSAGE value="Added my week 7 hackathon" />
     <MESSAGE value="small fix to unsignedaddition.html" />
     <MESSAGE value="Added JS code for randomizing images." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added JS code for randomizing images." />
+    <MESSAGE value="Moved randomJS, added API Pull Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved randomJS, added API Pull Test" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/flask_portfolio$chrisvariablelist.coverage" NAME="chrisvariablelist Coverage Results" MODIFIED="1632517895739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -320,7 +332,7 @@
     <SUITE FILE_PATH="coverage/PMB_Portfolio$main.coverage" NAME="main Coverage Results" MODIFIED="1633891412779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flask_portfolio$danielvar_html.dat" NAME="danielvar.html Coverage Results" MODIFIED="1634146240976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/flask_portfolio$flask_portfolio.coverage" NAME="flask_portfolio Coverage Results" MODIFIED="1631927392703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/flask_portfolio$main.coverage" NAME="main Coverage Results" MODIFIED="1634318943139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flask_portfolio$main.coverage" NAME="main Coverage Results" MODIFIED="1634430945731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flask_portfolio$timtest.coverage" NAME="timtest Coverage Results" MODIFIED="1633031401066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flask_portfolio$chrishackathon.coverage" NAME="chrishackathon Coverage Results" MODIFIED="1632506789600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
