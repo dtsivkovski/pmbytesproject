@@ -3,7 +3,10 @@
 
 {% set project = "Animal Gallery" %}
 {% set subheading = "Gallery with different categories." %}
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Change "imageurl" to a directory or link
     This is the background image, so if you add any new images,
     make sure to add them to the backgrounds folder -->
@@ -12,16 +15,206 @@
 <!-- Add code inside the "block under" to add items below the block -->
 {% block under %}
 
-<div class="parallax" style="height: 25%"></div>
+    <div class="parallax" style="height: 25%"></div>
 
 <div class="parallax" style="height:max-content">
     <div class="frame" style="background-color: rgba(0,0,0, 0.5); padding: 5%; width: 80%; margin: auto; height: max-content">
-            <!-- New stuff goes here -->
+        <!-- Carousel -->
+        <div id="lizard" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#lizard" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#lizard" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#lizard" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#lizard" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#lizard" data-bs-slide-to="4"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <h1>Lizards</h1>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/static/assets/animalgallery/lizards/verdian-chua-lizard-unsplash.jpg" alt="Verdian" class="d-block w-100 h-75" style="object-fit: cover">
+                    <div class="carousel-caption">
+                        <h3>Veridian Chua Lizard</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/assets/animalgallery/lizards/chameleon.jpg" alt="Chameleon" class="d-block w-100 h-75" style="object-fit: cover">
+                    <div class="carousel-caption">
+                        <h3>Chameleon</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/assets/animalgallery/lizards/FrilledL.jpg" alt="Frilled Lizard" class="d-block w-100 h-75" style="object-fit: cover">
+                    <div class="carousel-caption">
+                        <h3>Frilled Lizard</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/assets/animalgallery/lizards/Tegu.jpg" alt="Tegu" class="d-block w-100 h-75" style="object-fit: cover">
+                    <div class="carousel-caption">
+                        <h3>Tegu</h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/assets/animalgallery/lizards/Water Monitor.jpg" alt="Water Monitor" class="d-block w-100 h-75" style="object-fit: cover">
+                    <div class="carousel-caption">
+                        <h3>Water Monitor</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#lizard" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#lizard" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
 
 
 
     </div>
 </div>
+
+    <div class="parallax" style="height: 25%"></div>
+
+    <div class="parallax" style="height:max-content">
+        <div class="frame" style="background-color: rgba(0,0,0, 0.5); padding: 5%; width: 80%; margin: auto; height: max-content">
+            <!-- Carousel -->
+            <div id="bird" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#bird" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#bird" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#bird" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#bird" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#bird" data-bs-slide-to="4"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <h1>Birds</h1>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/static/assets/animalgallery/birds/flamingo.jpg" alt="flamingo" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h3>Flamingo</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/assets/animalgallery/birds/kookaburra.jpg" alt="kookaburra" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h3>Kookaburra</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/assets/animalgallery/birds/Ostrich.jpg" alt="ostrich" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h3>Ostrich</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/assets/animalgallery/birds/parrot.jpg" alt="parrot" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h3>Parrot</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/assets/animalgallery/birds/toucan.jpg" alt="Toucan" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h3>Toucan</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#bird" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#bird" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <div class="parallax" style="height: 25%"></div>
+
+    <div class="parallax" style="height:max-content">
+        <div class="frame" style="background-color: rgba(0,0,0, 0.5); padding: 5%; width: 80%; margin: auto; height: max-content">
+            <!-- Carousel -->
+            <div id="ape" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#ape" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#ape" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#ape" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#ape" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#ape" data-bs-slide-to="4"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <h1>Apes</h1>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/static/assets/animalgallery/apes/chimpanzee.jpg" alt="Chimpanzee" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h3>Chimpanzee</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/assets/animalgallery/apes/gibbon.jpg" alt="gibbon" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h3>Gibbon</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/assets/animalgallery/apes/gorilla.jpg" alt="gorilla" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h3>Gorilla</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/assets/animalgallery/apes/orangutan.jpg" alt="orangutan" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h3>Orangutan</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/static/assets/animalgallery/apes/siamang.jpg" alt="siamang" class="d-block w-100">
+                        <div class="carousel-caption">
+                            <h3>Siamang</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#ape" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#ape" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+
+
+
+        </div>
+    </div>
 
 {% endblock %}
 
