@@ -103,9 +103,9 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
   </tr>
   <tr>
     <td> Chris </td>
-    <td> Working on creating bootstrap "toasts" to notify a user of an action being performed. </td>
+    <td> Working on creating bootstrap "toasts" to notify a user of an action being performed through JavaScript changing the DOM. </td>
     <td> 
-      <a href="https://github.com/dtsivkovski/pmbytesproject/issues/5">Bootstrap Toast Ticket</a>. 
+      <a href="https://github.com/dtsivkovski/pmbytesproject/issues/5">Bootstrap Toast Ticket (JS DOM)</a>. 
     </td>
   </tr>
   <tr>
