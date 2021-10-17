@@ -9,6 +9,23 @@
 <!-- Change "imageurl" to a directory or link -->
 {% set imageurl = "/static/assets/backgrounds/lizard1.jpg" %}
 
+{% block above %}
+
+
+<div class="parallax" style="height: 5%">
+<div class="row justify-content-end" style="padding: 2%;">
+    <div class="frame" style="border-radius: 25px; padding: 5px; width: 80px; height: 50px;">
+        <img type="button" title="Share to e-mail" style="height:60px;  background-color: #1da1f2; padding: 5px;border-radius: 30px;" src="/static/assets/emailicon.png" alt="Mail-Icon" onclick="location.href= 'mailto:?subject=Check%20out%20this%20website!&body=You%20should%20check%20out%20the%20Pac-Man%20Bytes%20Website!%20Here%20is%20their%20github%3A%20https%3A%2F%2Fgithub.com%2Fdtsivkovski%2Fpmbytesproject'">
+    </div>
+    <div class="frame" style="border-radius: 25px; padding: 5px; width: 80px; height: 50px">
+        <a download="pacman.png" href="/static/assets/pacman.png" title="Download Image">
+            <img src="/static/assets/minimg/pacman1.png" style="height:60px;  background-color: #1da1f2; padding: 5px;border-radius: 30px;" alt="Download">
+        </a>
+    </div>
+</div>
+</div>
+{% endblock %}
+
 
 <!-- Add code inside the "block under" to add items below the block -->
 {% block under %}
