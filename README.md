@@ -117,9 +117,9 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
   </tr>
   <tr>
     <td> Timothy </td>
-    <td> Working on using bootstrap carousels to display different image categories.</td>
+    <td> Working on using bootstrap carousels to display different image categories with JavaScript changing the DOM.</td>
     <td> 
-      <a href="https://github.com/dtsivkovski/pmbytesproject/issues/6">Image Carousel Ticket</a>.
+      <a href="https://github.com/dtsivkovski/pmbytesproject/issues/6">Image Carousel Ticket (JS DOM)</a>.
     </td>
   </tr>
   
