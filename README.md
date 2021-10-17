@@ -110,9 +110,9 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
   </tr>
   <tr>
     <td> Armaan </td>
-    <td> Working on creating a share button with premade share text.</td>
+    <td> Working on creating share and download buttons with premade share text.</td>
     <td> 
-      <a href="https://github.com/dtsivkovski/pmbytesproject/issues/1">Share Button Ticket</a>. 
+      <a href="https://github.com/dtsivkovski/pmbytesproject/issues/1">Share/DL Button Ticket</a>. 
     </td>
   </tr>
   <tr>
