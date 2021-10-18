@@ -26,19 +26,30 @@
             document.getElementById("apebtn").style.display="none";
             document.getElementById("birdbtn").style.display="none";
             document.getElementById("lizardbtn").style.display="block";
+            var element = document.getElementById("liveToast");
+            var myToast = new bootstrap.Toast(element);
+            myToast.show();
         }
 
         function btnbird(){
             document.getElementById("apebtn").style.display="none";
             document.getElementById("birdbtn").style.display="block";
             document.getElementById("lizardbtn").style.display="none";
+            var element = document.getElementById("liveToast2");
+            var myToast = new bootstrap.Toast(element);
+            myToast.show();
         }
 
         function btnape(){
             document.getElementById("apebtn").style.display="block";
             document.getElementById("birdbtn").style.display="none";
             document.getElementById("lizardbtn").style.display="none";
+            var element = document.getElementById("liveToast3");
+            var myToast = new bootstrap.Toast(element);
+            myToast.show();
         }
+
+
 
     </script>
 
@@ -49,9 +60,11 @@
 <div class="parallax" style="height:max-content">
     <div class="frame" style="background-color: rgba(0,0,0, 0.5); padding: 5%; width: 80%; margin: auto; height: max-content">
         <div class="d-flex justify-content-center">
+            <div class="btn-group" role="group" aria-label="Button Group">
             <button class="btn btn-primary"  onclick="btnlizard()">Lizards</button>
             <button class="btn btn-primary"  onclick="btnbird()">Birds</button>
             <button class="btn btn-primary"  onclick="btnape()">Apes</button>
+            </div>
         </div>
         <!-- Carousel -->
         <div id="lizardbtn">
@@ -230,10 +243,51 @@
     </div>
     </div>
 </div>
-
-
-
-
+<div>
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+            <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="/static/assets/lizardicon-nicepng.png" height="15px" width="15px" class="rounded me-2" alt="...">
+                <strong class="me-auto">Animal Gallery</strong>
+                <small>Just now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body" style="color: black">
+                Switched to Lizards.
+            </div>
+        </div>
+    </div>
+</div>
+    <div>
+        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+            <div id="liveToast2" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <img src="/static/assets/lizardicon-nicepng.png" height="15px" width="15px" class="rounded me-2" alt="...">
+                    <strong class="me-auto">Animal Gallery</strong>
+                    <small>Just now</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body" style="color: black">
+                    Switched to Birds.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+            <div id="liveToast3" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <img src="/static/assets/lizardicon-nicepng.png" height="15px" width="15px" class="rounded me-2" alt="...">
+                    <strong class="me-auto">Animal Gallery</strong>
+                    <small>Just now</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body" style="color: black">
+                    Switched to Apes.
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
 
 <!- This is turning off birds background from base.html -->
