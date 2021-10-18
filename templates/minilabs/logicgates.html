@@ -1,94 +1,5 @@
-{% extends "layouts/base.html" %}
 
-{% set project = "Logic Gate Lab" %}
-{% set subheading = "Press each of the buttons(0s and 1s, NOTs and AND) to see what it does to the final result! " %}
-
-{% set imageurl = "/static/assets/backgrounds/deepwaterrock.jpg" %}
 {% block under %}
-
-    <style>
-        /*
-        Special styling to create lines inside of the diagram. Also has specific styling for the buttons and centering elements
-        */
-        .horizontalLine {
-            border: 0;
-            background-color: #000;
-            height: 5px;
-            transform: translateX(-3em);
-        }
-
-        .verticalLine {
-            margin-left: 1em;
-            width: 2px;
-            background: black;
-        }
-
-        .buttonFalse {
-            background-color: black;
-            color: white;
-            font-style: normal;
-            width: 3em;
-        }
-
-        .buttonTrue {
-            background-color: white;
-            color: black;
-            font-style: italic;
-            width: 4em;
-        }
-
-        .center {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
-    <div class="parallax">
-        <div class="frame" style="background-color: rgba(128,0,128,0.5); padding: 5%; width: 100%; margin: auto; height: 100%">
-
-    <div class="row">
-        <div class="offset-sm-3 col-sm-1">   <!-- Two buttons to show 0 and 1 -->
-            <button class="buttonFalse" id="buttonOne" onclick="toggleBool('buttonOne')">0</button>
-            <div class="verticalLine" style="height: 15em"></div>
-        </div>
-
-        <div class="offset-sm-5 col-sm-1">
-            <button class="buttonFalse" id="buttonTwo" onclick="toggleBool('buttonTwo')">0</button>
-            <div class="verticalLine" style="height: 15em"></div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="offset-sm-3 col-sm-1">  <!-- NOT buttons that can be toggled; shows inverter -->
-            <p id="not1" onclick="toggleNot('not1')">NOT</p>
-        </div>
-
-        <div class="col-sm-5 horizontalLine"></div>  <!-- Horizontal line in action -->
-
-        <div class="col-sm-1">
-            <p id="not2" onclick="toggleNot('not2')">NOT</p>
-        </div>
-    </div>
-
-    <div class="center">
-        <div class="verticalLine" style="height: 5em; transform: translateY(-2em)"></div>
-    </div>
-
-    <div class="center" style="transform: translate(0.5em, -1.5em)">  <!-- Clickable text that can change the operator used -->
-        <p id="operator" onclick="nextOp()">AND</p>
-    </div>
-
-    <div class="center">
-        <div class="verticalLine" style="height: 5em; transform: translateY(-2em)"></div>
-    </div>
-
-    <div class="center" style="transform: translate(0.5em, -1.5em)">
-        <p id="result">TRUE!</p>
-    </div>
-    </div>
-    </div>
-
-
     <script>
         var operatorOrder = 0;
 
@@ -167,4 +78,103 @@
         window.onload = result();
 
     </script>
+    <div style="text-align: center">
+        <br>
+        <h1>Logic Gates</h1>
+        <input type="checkbox" id="A" name="optionA" value="A" onclick="logic(this)">
+        <label for="optionA">A</label>
+        <input type="checkbox" id="B" name="optionB" value="B" onclick="logic(this)">
+        <label for="optionA">B</label>
+        <p style="font-size: 12px">Checked = 1 Unchecked = 0</p>
+
+        <table>
+            <tr>
+                <th>SYMBOL</th>
+                <th>LOGIC GATE</th>
+                <th>RESULT</th>
+            </tr>
+            <tr id="AND">
+                <td><img src="/static/assets/armaan.jpeg"></td>
+                <td><p>AND</p></td>
+                <td id="AND-result">0</td>
+            </tr>
+
+            <tr id="NAND">
+                <td><img src="/static/assets/armaan.jpeg"></td>
+                <td><p>N-AND</p></td>
+                <td id="NAND-result">1</td>
+            </tr>
+
+            <tr id="OR">
+                <td><img src="/static/assets/armaan.jpeg"></td>
+                <td><p>OR</p></td>
+                <td id="OR-result">0</td>
+            </tr>
+
+            <tr id="NOR">
+                <td><img src="/static/assets/armaan.jpeg"></td>
+                <td><p>N-OR</p></td>
+                <td id="NOR-result">1</td>
+            </tr>
+
+            <tr id="XOR">
+                <td><img src="/static/assets/armaan.jpeg"></td>
+                <td><p>X-OR</p></td>
+                <td id="XOR-result">0</td>
+            </tr>
+
+            <tr id="XNOR">
+                <td><img src="/static/assets/armaan.jpeg"></td>
+                <td><p>X-NOR</p></td>
+                <td id="XNOR-result">0</td>
+            </tr>
+
+        </table>
+    </div>
+    <!--
+    <div class="parallax">
+        <div class="frame" style="background-color: rgba(128,0,128,0.5); padding: 5%; width: 100%; margin: auto; height: 100%">
+
+    <div class="row">
+        <div class="offset-sm-3 col-sm-1">
+            <button class="buttonFalse" id="buttonOne" onclick="toggleBool('buttonOne')">0</button>
+            <div class="verticalLine" style="height: 15em"></div>
+        </div>
+
+        <div class="offset-sm-5 col-sm-1">
+            <button class="buttonFalse" id="buttonTwo" onclick="toggleBool('buttonTwo')">0</button>
+            <div class="verticalLine" style="height: 15em"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="offset-sm-3 col-sm-1">
+            <p id="not1" onclick="toggleNot('not1')">NOT</p>
+        </div>
+
+        <div class="col-sm-5 horizontalLine"></div>
+
+        <div class="col-sm-1">
+            <p id="not2" onclick="toggleNot('not2')">NOT</p>
+        </div>
+    </div>
+
+    <div class="center">
+        <div class="verticalLine" style="height: 5em; transform: translateY(-2em)"></div>
+    </div>
+
+    <div class="center" style="transform: translate(0.5em, -1.5em)">
+        <p id="operator" onclick="nextOp()">AND</p>
+    </div>
+
+    <div class="center">
+        <div class="verticalLine" style="height: 5em; transform: translateY(-2em)"></div>
+    </div>
+
+    <div class="center" style="transform: translate(0.5em, -1.5em)">
+        <p id="result">TRUE!</p>
+    </div>
+    </div>
+    </div> -->
+
 {% endblock %}
