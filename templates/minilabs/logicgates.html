@@ -1,83 +1,49 @@
-
-{% block under %}
-    <!--<script>
-        var operatorOrder = 0;
-
-        function toggleBool(id) {  // Toggles 0 and 1
-            const element = document.getElementById(id);
-
-            if (element.innerHTML == "1") {
-                element.innerHTML = "0";
+{% extends "layouts/base.html" %}
+{% set imageurl = "/static/assets/backgrounds/deepwaterrock.jpg" %}
+{% block body %}
+    <script>
+        function logic() {
+            var Atoggled = document.getElementById("A").checked
+            var Btoggled = document.getElementById("B").checked
+            if ( Atoggled && Btoggled ) { // AND bitwise
+                document.getElementById("AND-result").innerHTML = "1"; // AND
+                document.getElementById("NAND-result").innerHTML = "0"; // NAND
             } else {
-                element.innerHTML = "1";
+                document.getElementById("AND-result").innerHTML = "0"; // AND
+                document.getElementById("NAND-result").innerHTML = "1"; // NAND
             }
-
-            element.classList.toggle("buttonTrue");
-            element.classList.toggle("buttonFalse");
-
-            result();
-        }
-
-        function toggleNot(id) {  // Toggles NOT buttons
-            const element = document.getElementById(id);
-
-            if (element.innerHTML == "NOT") {
-                element.innerHTML = "N/A";
+            if ( Atoggled || Btoggled ) { // OR bitwise
+                document.getElementById("OR-result").innerHTML = "1"; // OR
+                document.getElementById("NOR-result").innerHTML = "0"; // NOR
             } else {
-                element.innerHTML = "NOT";
+                document.getElementById("OR-result").innerHTML = "0"; // OR
+                document.getElementById("NOR-result").innerHTML = "1"; // NOR
             }
-
-            result();
-        }
-
-        function nextOp() {  // Cycles through all of the operators. I used an array here to cycle and a global variable (operatorOrder) to keep track of the position
-            let operators = ["AND", "N-AND", "OR", "N-OR", "X-OR"]
-            const element = document.getElementById("operator");
-            operatorOrder++;
-            if (operatorOrder > 4)
-                operatorOrder = 0;
-            element.innerHTML = operators[operatorOrder];
-
-            result();
-        }
-
-        function result() {  // Function that calculates the final results
-            let boolArray = [false, true];
-            let bool1 = boolArray[parseInt(document.getElementById("buttonOne").innerHTML)];
-            let bool2 = boolArray[parseInt(document.getElementById("buttonTwo").innerHTML)];  // Get the value of the two booleans via the buttons
-
-            if (document.getElementById("not1").innerHTML == "NOT") {
-                bool1 = !bool1;
+            if ( Atoggled ^ Btoggled ) { // XOR bitwise
+                document.getElementById("XOR-result").innerHTML = "1"; // XOR
+                document.getElementById("XNOR-result").innerHTML = "0"; // XNOR
+            } else {
+                document.getElementById("XOR-result").innerHTML = "0"; // XOR
+                document.getElementById("XNOR-result").innerHTML = "1"; // XNOR
             }
-            if (document.getElementById("not2").innerHTML == "NOT") {
-                bool2 = !bool2;
-            }  // Account for NOT buttons
-
-            let result = false;
-            switch (operatorOrder) {  // Switch statement that takes into account each "case"
-                case 0:  // AND
-                    result = bool1 && bool2;
-                    break;
-                case 1:  // N-AND (not AND)
-                    result = !(bool1 && bool2);
-                    break;
-                case 2:  // OR
-                    result = bool1 || bool2;
-                    break;
-                case 3:  // N-OR (not OR)
-                    result = !(bool1 || bool2);
-                    break;
-                case 4:  // X-OR
-                    result = bool1 != bool2;
-                    break;
-            }
-
-            document.getElementById("result").innerHTML = result; // display result
         }
+    </script>
 
-        window.onload = result();-->
+    <style>
+        html, body{
+            background-color: blueviolet;
+        }
+        h1 {
+            font-family: "Times New Roman";
+            font-size: 200px;
+            text-align: center;
+
+    </style>
 
     </script>
+    <div class="parallax">
+        <div class="frame" style="background-color: rgba(0,0,0, 0.5); padding: 5%; width: 80%; margin: auto; height:max-content">
+
     <div style="text-align: center">
         <br>
         <h1>Logic Gates</h1>
@@ -131,50 +97,7 @@
 
         </table>
     </div>
-    <!--
-    <div class="parallax">
-        <div class="frame" style="background-color: rgba(128,0,128,0.5); padding: 5%; width: 100%; margin: auto; height: 100%">
-
-    <div class="row">
-        <div class="offset-sm-3 col-sm-1">
-            <button class="buttonFalse" id="buttonOne" onclick="toggleBool('buttonOne')">0</button>
-            <div class="verticalLine" style="height: 15em"></div>
-        </div>
-
-        <div class="offset-sm-5 col-sm-1">
-            <button class="buttonFalse" id="buttonTwo" onclick="toggleBool('buttonTwo')">0</button>
-            <div class="verticalLine" style="height: 15em"></div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="offset-sm-3 col-sm-1">
-            <p id="not1" onclick="toggleNot('not1')">NOT</p>
-        </div>
-
-        <div class="col-sm-5 horizontalLine"></div>
-
-        <div class="col-sm-1">
-            <p id="not2" onclick="toggleNot('not2')">NOT</p>
-        </div>
-    </div>
-
-    <div class="center">
-        <div class="verticalLine" style="height: 5em; transform: translateY(-2em)"></div>
-    </div>
-
-    <div class="center" style="transform: translate(0.5em, -1.5em)">
-        <p id="operator" onclick="nextOp()">AND</p>
-    </div>
-
-    <div class="center">
-        <div class="verticalLine" style="height: 5em; transform: translateY(-2em)"></div>
-    </div>
-
-    <div class="center" style="transform: translate(0.5em, -1.5em)">
-        <p id="result">TRUE!</p>
     </div>
     </div>
-    </div> -->
 
 {% endblock %}
