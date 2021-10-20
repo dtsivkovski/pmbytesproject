@@ -5,6 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f71b4af-9a59-4ba8-9b3d-0c25b134229d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/static/Logic-Gate/AND_LG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Logic-Gate/N-AND_LG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Logic-Gate/N-OR_LG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Logic-Gate/OR_LG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Logic-Gate/X-NOR_LG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Logic-Gate/X-OR_LG.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/minilabs/logicgates.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/minilabs/logicgates.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,11 +71,11 @@
       <recent name="$PROJECT_DIR$/.idea" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/Logic-Gate" />
+      <recent name="$PROJECT_DIR$/static/assets" />
       <recent name="C:\Users\danie\IdeaProjects\flask_portfolio\static\assets" />
       <recent name="C:\Users\danie\IdeaProjects\flask_portfolio\static\assets\minimg" />
       <recent name="C:\Users\danie\IdeaProjects\flask_portfolio\templates\mainsite" />
-      <recent name="C:\Users\danie\IdeaProjects\flask_portfolio\static\img" />
-      <recent name="C:\Users\danie\IdeaProjects\flask_portfolio\static\assets\backgrounds" />
     </key>
   </component>
   <component name="RunManager" selected="Python.main">
@@ -199,7 +206,9 @@
       <workItem from="1634319386642" duration="23000" />
       <workItem from="1634328830760" duration="3411000" />
       <workItem from="1634429927088" duration="2010000" />
-      <workItem from="1634666482977" duration="1755000" />
+      <workItem from="1634666482977" duration="4123000" />
+      <workItem from="1634747139483" duration="25000" />
+      <workItem from="1634747246011" duration="292000" />
     </task>
     <task id="LOCAL-00001" summary="Integrated jumbotron onto About Us page">
       <created>1631942022221</created>
@@ -320,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634674822604</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Logic Gate Finished added Table&#10;Kept all the Booleans the same.&#10;Changed the Height of the pictures to look nicer.">
+      <created>1634675031986</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1634675031986</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,11 +372,12 @@
     <MESSAGE value="Changed Up Logic Gate&#10;Not fully finished" />
     <MESSAGE value="Changed Up Logic Gate More&#10;Still Not fully finished" />
     <MESSAGE value="Logic Gate Finished added Table&#10;Kept all the Booleans the same." />
-    <option name="LAST_COMMIT_MESSAGE" value="Logic Gate Finished added Table&#10;Kept all the Booleans the same." />
+    <MESSAGE value="Logic Gate Finished added Table&#10;Kept all the Booleans the same.&#10;Changed the Height of the pictures to look nicer." />
+    <option name="LAST_COMMIT_MESSAGE" value="Logic Gate Finished added Table&#10;Kept all the Booleans the same.&#10;Changed the Height of the pictures to look nicer." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PMB_Portfolio$main.coverage" NAME="main Coverage Results" MODIFIED="1633891412779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/flask_portfolio$main.coverage" NAME="main Coverage Results" MODIFIED="1634667199063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flask_portfolio$main.coverage" NAME="main Coverage Results" MODIFIED="1634747456428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flask_portfolio$armaan_week7.coverage" NAME="armaan_week7 Coverage Results" MODIFIED="1633983196397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/HackathonTests" />
     <SUITE FILE_PATH="coverage/flask_portfolio$armaan_variable.coverage" NAME="armaan-variable Coverage Results" MODIFIED="1632515553019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flask_portfolio$chrishackathon.coverage" NAME="chrishackathon Coverage Results" MODIFIED="1632506789600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
