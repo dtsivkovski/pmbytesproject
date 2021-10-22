@@ -1,0 +1,68 @@
+<!-- Extending the predefined project layout -->
+{% extends "layouts/base.html" %}
+
+{% set project = "Animal Gallery" %}
+{% set subheading = "Gallery with different categories." %}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+
+{% set imageurl = "/static/assets/backgrounds/forest1.jpg" %}
+
+{% block under %}
+
+    <script>
+        window.onload = function btnlizard(){
+            document.getElementById("apebtn").style.display="none";
+            document.getElementById("birdbtn").style.display="none";
+            document.getElementById("lizardbtn").style.display="block";
+        };
+
+        function btnlizard(){
+            document.getElementById("apebtn").style.display="none";
+            document.getElementById("birdbtn").style.display="none";
+            document.getElementById("lizardbtn").style.display="block";
+            var element = document.getElementById("liveToast");
+            var myToast = new bootstrap.Toast(element);
+            myToast.show();
+        }
+
+        function btnbird(){
+            document.getElementById("apebtn").style.display="none";
+            document.getElementById("birdbtn").style.display="block";
+            document.getElementById("lizardbtn").style.display="none";
+            var element = document.getElementById("liveToast2");
+            var myToast = new bootstrap.Toast(element);
+            myToast.show();
+        }
+
+        function btnape(){
+            document.getElementById("apebtn").style.display="block";
+            document.getElementById("birdbtn").style.display="none";
+            document.getElementById("lizardbtn").style.display="none";
+            var element = document.getElementById("liveToast3");
+            var myToast = new bootstrap.Toast(element);
+            myToast.show();
+        }
+
+    </script>
+
+
+    <div class="parallax" style="height: 25%"></div>
+
+
+    <div class="parallax" style="height:max-content">
+        <div class="frame" style="background-color: rgba(0,0,0, 0.5); padding: 5%; width: 80%; margin: auto; height: max-content">
+            <div class="d-flex justify-content-center">
+                <div class="btn-group" role="group" aria-label="Button Group">
+                    <button class="btn btn-primary"  onclick="btnlizard()">Lizards</button>
+                    <button class="btn btn-primary"  onclick="btnbird()">Birds</button>
+                    <button class="btn btn-primary"  onclick="btnape()">Apes</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+{% endblock %}

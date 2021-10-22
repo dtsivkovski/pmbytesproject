@@ -141,23 +141,23 @@ def animalgallery():
 
 @app.route('/apitesting/', methods=['GET', 'POST'])
 def apitesting():
-    url = "https://mlemapi.p.rapidapi.com/randommlem"
+    # url = "https://mlemapi.p.rapidapi.com/randommlem"
+    #
+    # headers = {
+    #     'x-rapidapi-host': "mlemapi.p.rapidapi.com",
+    #
+    # }
+    #
+    # response = requests.request("GET", url, headers=headers)
+    #
+    # mlemdict = json.loads(response.text)
+    # mlemurl = mlemdict['url']
+    #
+    # print(mlemdict)
+    # print(mlemurl)
+    # mlemdict=mlemdict, mlemurl=mlemurl
 
-    headers = {
-        'x-rapidapi-host': "mlemapi.p.rapidapi.com",
-        'x-rapidapi-key': "cd81236483mshbc05c3041f1ca4cp1cfad3jsnb28e0b499ace"
-    }
-
-    response = requests.request("GET", url, headers=headers)
-
-    mlemdict = json.loads(response.text)
-    mlemurl = mlemdict['url']
-
-    print(mlemdict)
-    print(mlemurl)
-
-
-    return render_template("mainsite/apitesting.html", mlemdict=mlemdict, mlemurl=mlemurl)
+    return render_template("mainsite/apitesting.html")
 
 # runs the application on the development server
 if __name__ == "__main__":

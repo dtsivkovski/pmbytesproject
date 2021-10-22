@@ -68,6 +68,55 @@
         </div>
         <!-- Carousel -->
         <div id="lizardbtn">
+
+            <div class="d-flex justify-content-center mb-3">
+                <h1>Lizards</h1>
+            </div>
+
+
+
+
+            <script>
+
+                const imagelistLizard = ["chameleon.jpg",
+                    "FrilledL.jpg",
+                    "Tegu.jpg",
+                    "verdian-chua-lizard-unsplash.jpg",
+                    "Water Monitor.jpg"
+                ]
+
+                const ILLLength = imagelistLizard.length;
+
+                function randomImageLizard(){
+                    var numgen = Math.floor(Math.random() * ILLLength);
+                    var imagepick = imagelistLizard[numgen];
+                    var path = "/static/assets/animalgallery/lizards/";
+
+                    document.getElementById('randomImageLizard').src = path + imagepick;
+                    document.getElementById('filenameLizard').innerHTML = imagepick;
+                }
+
+            </script>
+
+
+            <div class="container" style="margin-bottom: 35%">
+                <div class="row justify-content-md-center">
+                    <div class="col-7 p-3">
+                        <div class="d-flex justify-content-center">
+                            <img id="randomImageLizard" class="card-img-top" src="/static/assets/animalgallery/lizards/chameleon.jpg" style="width: 100%; height: 30rem; object-fit: cover; filter: blur(0px); border-radius: 25px" alt="Randomized Ape Image">
+                        </div>
+                    </div>
+
+                    <div class="col-4 m-3 p-3" style="background-color: white; border-radius: 25px">
+                        <h5 class="card-title" style="color: black">Lizard Randomizer</h5>
+                        <p class="card-text" style="color: black"> This randomizes lizard images</p>
+                        <p class="card-text" style="color:black"> File name: <b id="filenameLizard">chameleon.jpg</b></p>
+                        <a onclick="randomImageLizard()" class="btn btn-primary" style="margin-bottom: 5%"> Randomize! </a>
+                        <p class="card-text" style="color: dimgrey"> Or browse all images in the gallery below.</p>
+                    </div>
+                </div>
+            </div>
+
         <div id="lizard" class="carousel slide" data-bs-ride="carousel">
 
             <!-- Indicators/dots -->
@@ -126,7 +175,58 @@
         </div>
 
         <div id="birdbtn">
+
+            <div class="d-flex justify-content-center mb-3">
+                <h1>Birds</h1>
+            </div>
+
+
+
+
+            <script>
+
+                const imagelistBird = ["flamingo.jpg",
+                    "jan-meeus-bird-unsplash.jpg",
+                    "kookaburra.jpg",
+                    "Ostrich.jpg",
+                    "parrot.jpg",
+                    "toucan.jpg"
+                ]
+
+                const ILBLength = imagelistBird.length;
+
+                function randomImageBird(){
+                    var numgen = Math.floor(Math.random() * ILBLength);
+                    var imagepick = imagelistBird[numgen];
+                    var path = "/static/assets/animalgallery/birds/";
+
+                    document.getElementById('randomImageBird').src = path + imagepick;
+                    document.getElementById('filenameBird').innerHTML = imagepick;
+                }
+
+            </script>
+
+
+            <div class="container" style="margin-bottom: 35%">
+                <div class="row justify-content-md-center">
+                    <div class="col-7 p-3">
+                        <div class="d-flex justify-content-center">
+                            <img id="randomImageBird" class="card-img-top" src="/static/assets/animalgallery/birds/flamingo.jpg" style="width: 100%; height: 30rem; object-fit: cover; filter: blur(0px); border-radius: 25px" alt="Randomized Ape Image">
+                        </div>
+                    </div>
+
+                    <div class="col-4 m-3 p-3" style="background-color: white; border-radius: 25px">
+                        <h5 class="card-title" style="color: black">Bird Randomizer</h5>
+                        <p class="card-text" style="color: black"> This randomizes bird images</p>
+                        <p class="card-text" style="color:black"> File name: <b id="filenameBird">flamingo.jpg</b></p>
+                        <a onclick="randomImageBird()" class="btn btn-primary" style="margin-bottom: 5%"> Randomize! </a>
+                        <p class="card-text" style="color: dimgrey"> Or browse all images in the gallery below.</p>
+                    </div>
+                </div>
+            </div>
+
         <div id="bird" class="carousel slide" data-bs-ride="carousel">
+
 
             <!-- Indicators/dots -->
             <div class="carousel-indicators">
@@ -138,7 +238,6 @@
             </div>
 
             <!-- The slideshow/carousel -->
-            <h1>Birds</h1>
 
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -184,6 +283,55 @@
         </div>
 
         <div id="apebtn">
+
+            <div class="d-flex justify-content-center mb-3">
+                <h1>Apes</h1>
+            </div>
+
+
+
+
+            <script>
+
+                const imagelistApe = ["chimpanzee.jpg",
+                    "gibbon.jpg",
+                    "gorilla.jpg",
+                    "orangutan.jpg",
+                    "siamang.jpg"
+                ]
+
+                const ILALength = imagelistApe.length;
+
+                function randomImageApe(){
+                    var numgen = Math.floor(Math.random() * ILALength);
+                    var imagepick = imagelistApe[numgen];
+                    var path = "/static/assets/animalgallery/apes/";
+
+                    document.getElementById('randomImageApe').src = path + imagepick;
+                    document.getElementById('filenameApe').innerHTML = imagepick;
+                }
+
+            </script>
+
+
+            <div class="container" style="margin-bottom: 35%">
+                <div class="row justify-content-md-center">
+                    <div class="col-7 p-3">
+                    <div class="d-flex justify-content-center">
+                        <img id="randomImageApe" class="card-img-top" src="/static/assets/animalgallery/apes/chimpanzee.jpg" style="width: 100%; height: 30rem; object-fit: cover; filter: blur(0px); border-radius: 25px" alt="Randomized Ape Image">
+                    </div>
+                    </div>
+
+                    <div class="col-4 m-3 p-3" style="background-color: white; border-radius: 25px">
+                        <h5 class="card-title" style="color: black">Ape Randomizer</h5>
+                        <p class="card-text" style="color: black"> This randomizes ape images</p>
+                        <p class="card-text" style="color:black"> File name: <b id="filenameApe">chimpanzee.jpg</b></p>
+                        <a onclick="randomImageApe()" class="btn btn-primary" style="margin-bottom: 5%"> Randomize! </a>
+                        <p class="card-text" style="color: dimgrey"> Or browse all images in the gallery below.</p>
+                    </div>
+                </div>
+            </div>
+
         <!-- Carousel -->
         <div id="ape" class="carousel slide" data-bs-ride="carousel">
 
@@ -197,7 +345,6 @@
             </div>
 
             <!-- The slideshow/carousel -->
-            <h1>Apes</h1>
 
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -240,6 +387,7 @@
                 <span class="carousel-control-next-icon"></span>
             </button>
         </div>
+
     </div>
     </div>
 </div>
