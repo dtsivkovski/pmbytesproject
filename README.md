@@ -89,7 +89,7 @@ Pair 2 - Armaan and Timothy: <a href="https://docs.google.com/document/d/1fukOyk
     <th> Week 9 Individual Review </th>
     <td> Everyone is working on this issue this week </td>
     <td> 
-      <a href="https://github.com/dtsivkovski/pmbytesproject/issues/11"> Videos Issue Link</a>
+      <a href="https://github.com/dtsivkovski/pmbytesproject/issues/10"> Videos Issue Link</a>
     </td>
   </tr>
   
