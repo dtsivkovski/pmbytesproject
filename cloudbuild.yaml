@@ -1,10 +1,8 @@
 # cloudbuild.yaml
 steps:
-- name: node:10.15.1
-  entrypoint: npm
+- name: "gcr.io/cloud-builders/git"
   args: ["install"]
-- name: node:10.15.1
-  entrypoint: npm
+- name: "gcr.io/cloud-builders/git"
   args: ["run", "build"]
 - name: "gcr.io/cloud-builders/gcloud"
   args: ["app", "deploy"]
