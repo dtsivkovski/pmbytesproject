@@ -8,4 +8,3 @@ flask_migrate
 flask_restful
 numpy
 Pillow~=8.2.0
-pytest
