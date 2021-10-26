@@ -8,20 +8,21 @@ steps:
     - 'PROJECT_ID=$PROJECT_ID'
     - 'PROJECT_NUMBER=$PROJECT_NUMBER'
     - 'REV=$REVISION_ID'
+    - '_BUCKET_NAME=$_BUCKET_NAME'
 
   # Docker Build
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 
-           'us-central1-docker.pkg.dev/$PROJECT_ID/$_REPO_NAME-myimage:$SHORT_SHA', '.']
+           'us-central1-docker.pkg.dev/$PROJECT_ID/$_REPO_NAMEmyimage:$SHORT_SHA', '.']
 
   # Docker push to Google Artifact Registry
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push',  'us-central1-docker.pkg.dev/$PROJECT_ID/$_REPO_NAME-myimage:$SHORT_SHA']
+    args: ['push',  'us-central1-docker.pkg.dev/$PROJECT_ID/$_REPO_NAMEmyimage:$SHORT_SHA']
 
   # Deploy to Cloud Run
   - name: google/cloud-sdk
     args: ['gcloud', 'run', 'deploy', 'helloworld', 
-           '--image=us-central1-docker.pkg.dev/$PROJECT_ID/$_REPO_NAME-myimage:$SHORT_SHA', 
+           '--image=us-central1-docker.pkg.dev/$PROJECT_ID/$_REPO_NAMEmyimage:$SHORT_SHA', 
            '--region', 'us-central1', '--platform', 'managed', 
            '--allow-unauthenticated']
 
