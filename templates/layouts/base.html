@@ -159,18 +159,19 @@ This HTML is setup as as a Jinja2 layout, coders use layouts for:
         </div>
     -->
 
-    <div class="frame" style="background-color: rgba(0,0,0, 0.5); height: max-content; width: 50%; margin: auto;">
-        <div class="product" style="text-align: center">
-            <div class="row" style="padding: 10%; padding-top: 5%; padding-bottom: 5%;">
-
-                <div class="col-sm" style="text-align: center">
-                    <h1 style="text-align: center">{{ project }}</h1>
+    <div class="frame" style="background-color: rgba(0,0,0, 0.5); height: max-content; width: 80%; margin: auto">
+        <div class="d-flex justify-content-md-center">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col justify-content-md-center">
+                        <h1 style="text-align: center">{{ project }}</h1>
+                    </div>
                 </div>
-            </div>
 
-            <div class="row" style="padding: 1%">
-                <div class="col-sm">
-                    <h4 style="text-align: center; padding-bottom: 5%" id="Subheading"> {{ subheading }} </h4>
+                <div class="row" style="padding: 1%">
+                    <div class="col justify-content-md-center">
+                        <h4 style="text-align: center" id="Subheading"> {{ subheading }} </h4>
+                    </div>
                 </div>
             </div>
         </div>

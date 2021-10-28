@@ -9,9 +9,6 @@ import os
 app = Flask(__name__)
 from algorithm.image import image_data
 
-if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
-
 # connects default URL to render index.html
 @app.route('/')
 def index():
