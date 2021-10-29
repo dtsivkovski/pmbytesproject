@@ -1,18 +1,20 @@
 # import "packages" from flask
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 import random
 import requests
-import json
 import os
 
 # create a Flask instance
 app = Flask(__name__)
 from algorithm.image import image_data
+from algorithm.bgimglist import bgimg_list
 
 # connects default URL to render index.html
 @app.route('/')
 def index():
-    return render_template("index.html")
+    bgimage = background()
+
+    return render_template("index.html", bgimage=bgimage)
 
 
 # connects /kangaroos path to render timmy.html
@@ -140,9 +142,18 @@ def danielvar():
 def animalgallery():
     return render_template("mainsite/animalgallery.html")
 
+def background():
+    bgpath = "/static/assets/animalbackgrounds/"
+
+    rng_bg_pick = random.randint(0, len(bgimg_list) - 1)
+    bgimage = bgpath + bgimg_list[rng_bg_pick]
+    return bgimage
+
 @app.route('/apitesting/', methods=['GET', 'POST'])
 def apitesting():
-    return render_template("mainsite/apitesting.html")
+    bgimage = background()
+
+    return render_template("mainsite/apitesting.html", bgimage=bgimage)
 
 # runs the application on the development server
 if __name__ == "__main__":
