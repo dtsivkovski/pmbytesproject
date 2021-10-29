@@ -7,86 +7,18 @@
 <!-- Change "imageurl" to a directory or link
     This is the background image, so if you add any new images,
     make sure to add them to the backgrounds folder -->
-{% set imageurl = "static/assets/backgrounds/treesriver1.jpg" %}
+{% set imageurl = "/static/assets/animalbackgrounds/lizard1.jpg" %}
 
 <!-- Add code inside the "block under" to add items below the block -->
-{% block body %}
-
-<!--
-        <div class="parallax" style="height: 10%"></div>
-
-        <div class="parallax" style="height:max-content">
-            <div class="frame" style="background-color: rgba(0,0,0, 0.5); padding: 1%; width: 80%; margin: auto; height:max-content">
-                <div class="d-flex justify-content-center">
-
-                    <div class="card" style="width: 25rem;">
-                        <div class="card-img-top">
-                            <div class="d-flex justify-content-center">
-                                <img src="" style="width: 25rem; height: 25rem; object-fit: cover;" alt="MlemImage">
-                            </div>
-                        </div>
-                        <div class="card-body" style="color: black">
-                            <p class="card-text"> Width: , Height: , Tags: </p>
-                            <p class="card-text"> URL: </p>
-                            <h3 class="card-title" style="color: black"> Random "Mlem" API</h3>
-                            <p class="card-text" style="color: black"> This takes images from an API called "MlemAPI" that shows pictures of animals doing a "mlem" face. This is done through python and jsonify.</p>
-                            <a onclick="window.location.reload();" class="btn btn-primary" style="color:white"> Refresh Page </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
--->
-
-    <script>
-
-        window.onload = randomImage;
-
-        const imagelist = ["bigtree.jpg",
-            "coloredclouds.jpg",
-            "deepwaterrock.jpg",
-            "forest1.jpg",
-            "spacerock.jpg",
-            "lizard1.jpg",
-            "jungle.jpg",
-            "redbluesmoke.jpg",
-            "treesriver1.jpg",
-            "patrick-schneider-mountains-unsplash.jpg",
-            "shubham-dhage-renderpillars-unsplash.jpg",
-            "ruan-richard-sand-unsplash.jpg",
-            "greek.jpg"
-        ]
-
-        const ILLength = imagelist.length;
-
-        function randomImage(){
-            const numgen = Math.floor(Math.random() * ILLength);
-            const imagepick = imagelist[numgen];
-            const path = "/static/assets/backgrounds/";
-
-            document.getElementById('randomimage').src = path + imagepick;
-            document.getElementById('filename').innerHTML = imagepick;
-        }
-
-    </script>
+{% block under %}
 
     <div class="parallax" style="height:20%"></div>
     <div class="parallax" style="height:max-content">
         <div class="frame" style="background-color: rgba(0,0,0, 0.5); width: 80%; margin: auto; padding: 1%;align-items: center; ">
             <div class="d-flex justify-content-center">
-                <div class="card" style="width: 35rem;">
-                    <div class="card-img-top">
-                        <div class="d-flex justify-content-center">
-                            <img id="randomimage" class="card-img-top" src="/static/assets/backgrounds/spacerock.jpg" style="width: 34.8rem; height: 34.8rem; object-fit: cover; filter: blur(0px)" alt="Randomized Image">
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title" style="color: black">Image Randomizer</h5>
-                        <p class="card-text" style="color: black"> This randomizes images from an image list. This one uses Javascript and the list is contained within JS (which is why you don't need to refresh for this one).</p>
-                        <p class="card-text" style="color:black"> File name: <b id="filename"></b></p>
-                        <a onclick="randomImage()" class="btn btn-primary"> Randomize! </a>
-                    </div>
-                </div>
+                <h3>
+                    This page is for testing the API image background changer upon refresh (CURRENTLY WIP)
+                </h3>
             </div>
         </div>
     </div>
