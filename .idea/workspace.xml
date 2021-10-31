@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f71b4af-9a59-4ba8-9b3d-0c25b134229d" name="Changes" comment="mobile optimization test">
+    <list default="true" id="9f71b4af-9a59-4ba8-9b3d-0c25b134229d" name="Changes" comment="added fixes to animalgallery.html and navbar.html">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/animalgallery/apes/chimpanzee.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/animalgallery/apes/chimpanzee.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/animalgallery/birds/flamingo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/animalgallery/birds/flamingo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layouts/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layouts/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layouts/navbar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/mainsite/animalgallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainsite/animalgallery.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -211,6 +207,7 @@
       <workItem from="1634876119460" duration="3900000" />
       <workItem from="1634933601232" duration="2634000" />
       <workItem from="1635378811285" duration="3422000" />
+      <workItem from="1635717825311" duration="760000" />
     </task>
     <task id="LOCAL-00001" summary="Integrated jumbotron onto About Us page">
       <created>1631942022221</created>
@@ -331,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634935799528</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="added fixes to animalgallery.html and navbar.html">
+      <created>1635717187850</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1635717187850</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,7 +371,8 @@
     <MESSAGE value="small fix to unicodetest.html" />
     <MESSAGE value="basename and title fix" />
     <MESSAGE value="Added random images to animalgallery.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added random images to animalgallery.html" />
+    <MESSAGE value="added fixes to animalgallery.html and navbar.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="added fixes to animalgallery.html and navbar.html" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/flask_portfolio$chrisvariablelist.coverage" NAME="chrisvariablelist Coverage Results" MODIFIED="1632517895739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -383,6 +388,6 @@
     <SUITE FILE_PATH="coverage/flask_portfolio$flask_portfolio.coverage" NAME="flask_portfolio Coverage Results" MODIFIED="1631927392703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/PMB_Portfolio$main.coverage" NAME="main Coverage Results" MODIFIED="1633891412779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flask_portfolio$danieltesting.coverage" NAME="danieltesting Coverage Results" MODIFIED="1632284858117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/pmbytesproject$main.coverage" NAME="main Coverage Results" MODIFIED="1635716192024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pmbytesproject$main.coverage" NAME="main Coverage Results" MODIFIED="1635717897175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
