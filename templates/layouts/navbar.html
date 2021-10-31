@@ -1,7 +1,7 @@
 <!-- Navigation Bar from bootstrap
 This HTML is setup as a fragment allowing it to be "included" by other HTML files via Jinja2
 -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-md navbar-light bg-light">
     <img src="/static/assets/pacman.png" width="46" style="padding-right: 7px; padding-top: 5px" class="align-center" alt="">
     <a class="navbar-brand" href="/" style="font-family: Georgia">{{basename}}</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,6 +12,15 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
             <!-- url_for is a Jinja2 pre-processor that finds route from function name (def) -->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarStarters" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Main Site
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/animalgallery">Animal Gallery</a>
+                    <a class="dropdown-item" href="/wireframe">Goal and Wireframe</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarStarters" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Pac-Man Bytes Team
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -19,17 +28,6 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
                     <a class="dropdown-item" href="/daniel">Daniel</a>
                     <a class="dropdown-item" href="/chris">Chris</a>
                     <a class="dropdown-item" href="/timmy">Timmy</a>
-                    <a class="dropdown-item" href="/about-us">About Us</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarStarters" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Main Site
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/apitesting">API </a>
-                    <a class="dropdown-item" href="/animalgallery">Animal Gallery</a>
-                    <a class="dropdown-item" href="/techtest">Technical Tests</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
@@ -37,10 +35,10 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
                     Testing
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/apitesting">API </a>
+                    <a class="dropdown-item" href="/techtest">Technical Tests</a>
                     <a class="dropdown-item" href="/stub">Stub</a>
                     <a class="dropdown-item" href="/danielvar">Daniel's Test Page</a>
-                    <a class="dropdown-item" href="/wireframe">Wireframe</a>
-                    <a class="dropdown-item" href="/techtest">Tech Test</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
