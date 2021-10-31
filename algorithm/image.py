@@ -43,7 +43,7 @@ def image_data(path="static/img/", img_list=None):  # path of static images is d
             # CIRCLE DRAWING IMAGE OPERATION
             origImage = Image.open(file)
             d1 = ImageDraw.Draw(origImage)
-            d1.ellipse((28, 36, 300, 300), fill=(255, 0, 0))
+            d1.ellipse((14, 18, 150, 150), fill=(255, 0, 0))
             origImage.save("static/TestImages/drawn/" + img_dict['file'])
             drawnFile = "static/TestImages/drawn/" + img_dict['file']
             img_reference = Image.open(drawnFile)
