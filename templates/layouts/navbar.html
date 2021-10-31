@@ -8,16 +8,13 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto">
             <!-- url_for is a Jinja2 pre-processor that finds route from function name (def) -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarStarters" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Main Site
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="/animalgallery">Animal Gallery</a>
-                    <a class="dropdown-item" href="/wireframe">Goal and Wireframe</a>
-                </div>
+            <li class="nav-item">
+                <a class="nav-link" href="/animalgallery">Animal Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/wireframe">Goal/Wireframe</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarStarters" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -56,7 +53,7 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
             <a class="nav-link" href="/binary">Binary</a>
             <a class="nav-link" href="/stub">Stub</a>
             -->
-        </div>
+        </ul>
     </div>
 </nav>
 
