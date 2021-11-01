@@ -18,26 +18,10 @@
     <style>
 
         .bigImage {
-            width: 80%;
+            width: 99%;
             height: 40vw;
             object-fit: cover;
-            border-radius: 2vw;
-        }
-
-        .imgbtn {
-            position: absolute;
-            width: 200vw;
-            height: 50px;
-            top: 80%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            background-color: #0d6efd;
-            color: white;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
+            border-radius: 4%;
         }
 
     </style>
@@ -124,19 +108,21 @@
 
             </script>
 
-
-            <div class="d-flex justify-content-md-center">
-                <img class="bigImage" id="randomImageLizard" src="/static/assets/animalgallery/lizards/chameleon.jpg" alt="Lizards">
-                <button class="btn btn-primary" onclick="randomImageLizard()">Randomize!</button>
-            </div>
-            <div class="d-flex justify-content-md-center mb-5">
-                <div class="card-body" style="background-color: white; border-radius: 1vw">
-                    <p class="card-text" style="color: black; font-weight: 700">Lizard Randomizer</p>
-                    <p class="card-text" style="color:black"> This randomizes lizard images</p>
-                    <p class="card-text" style="color:black"> File name: <b id="filenameLizard">chameleon.jpg</b></p>
-                    <p class="card-text" style="color: dimgrey"> Or browse all images in the gallery below.</p>
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <img class="bigImage" id="randomImageLizard" src="/static/assets/animalgallery/lizards/chameleon.jpg" alt="Apes">
+                    <button class="btn btn-primary m-3" onclick="randomImageLizard()">Randomize!</button>
+                </div>
+                <div class="row justify-content-md-center mb-5">
+                    <div class="card-body" style="background-color: white; border-radius: 1vw">
+                        <p class="card-text" style="color: black; font-weight: 700">Lizard Randomizer</p>
+                        <p class="card-text" style="color:black"> This randomizes lizard images</p>
+                        <p class="card-text" style="color:black"> File name: <b id="filenameLizard">chameleon.jpg</b></p>
+                        <p class="card-text" style="color: dimgrey"> Or browse all images in the gallery below.</p>
+                    </div>
                 </div>
             </div>
+
 
         <div id="lizard" class="carousel slide" data-bs-ride="carousel"">
 
@@ -226,16 +212,18 @@
 
             </script>
 
-            <div class="d-flex justify-content-md-center">
-                <img class="bigImage" id="randomImageBird" src="/static/assets/animalgallery/birds/flamingo.jpg" alt="Birds">
-                <button class="btn btn-primary" onclick="randomImageBird()">Randomize!</button>
-            </div>
-            <div class="d-flex justify-content-md-center mb-5">
-                <div class="card-body" style="background-color: white; border-radius: 1vw">
-                    <p class="card-text" style="color: black; font-weight: 700">Bird Randomizer</p>
-                    <p class="card-text" style="color: black"> This randomizes bird images</p>
-                    <p class="card-text" style="color:black"> File name: <b id="filenameBird">flamingo.jpg</b></p>
-                    <p class="card-text" style="color: dimgrey"> Or browse all images in the gallery below.</p>
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <img class="bigImage" id="randomImageBird" src="/static/assets/animalgallery/birds/flamingo.jpg" alt="Apes">
+                    <button class="btn btn-primary m-3" onclick="randomImageBird()">Randomize!</button>
+                </div>
+                <div class="row justify-content-md-center mb-5">
+                    <div class="card-body" style="background-color: white; border-radius: 1vw">
+                        <p class="card-text" style="color: black; font-weight: 700">Bird Randomizer</p>
+                        <p class="card-text" style="color: black"> This randomizes bird images</p>
+                        <p class="card-text" style="color:black"> File name: <b id="filenameBird">flamingo.jpg</b></p>
+                        <p class="card-text" style="color: dimgrey"> Or browse all images in the gallery below.</p>
+                    </div>
                 </div>
             </div>
 
@@ -330,7 +318,7 @@
             <div class="container">
             <div class="row justify-content-md-center">
                 <img class="bigImage" id="randomImageApe" src="/static/assets/animalgallery/apes/chimpanzee.jpg" alt="Apes">
-                <button class="btn btn-primary" onclick="randomImageApe()">Randomize!</button>
+                <button class="btn btn-primary m-3" onclick="randomImageApe()">Randomize!</button>
             </div>
             <div class="row justify-content-md-center mb-5">
                 <div class="card-body" style="background-color: white; border-radius: 1vw">
