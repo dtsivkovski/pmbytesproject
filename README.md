@@ -2,6 +2,8 @@
 
 # Pac-Man Bytes - [Scrum Board](https://github.com/dtsivkovski/pmbytesproject/projects/1) and [Contributors](https://github.com/dtsivkovski/pmbytesproject/graphs/contributors)
 
+## [Deployed Website Link](http://randanimal.pmbytes.org/)
+
 
 
 Pair 1 - Daniel and Chris: <a href="https://docs.google.com/document/d/1jFLS5jeQhK12o_Rs_DI7AaXEJOB0in9GovtWKdRnumc/edit?usp=sharing">Journal</a>
