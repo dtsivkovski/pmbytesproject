@@ -1,5 +1,6 @@
 # import "packages" from flask
 from flask import Flask, render_template, request, jsonify
+from imgix import UrlBuilder
 import random
 import requests
 import os
@@ -154,6 +155,18 @@ def apitesting():
     bgimage = background()
 
     return render_template("mainsite/apitesting.html", bgimage=bgimage)
+
+# TESTING THIS ONE AT THE MOMENT
+@app.route('/imageapi/')
+def imageapi():
+    bgpath = "/static/assets/animalbackgrounds/"
+
+    rng_bg_pick = random.randint(0, len(bgimg_list) - 1)
+    bgimage = bgpath + bgimg_list[rng_bg_pick]
+
+    ub = UrlBuilder("randanimal.pmbytes.org", use_https=False, include_library_param=False)
+    url = ub.create_url(bgimage)
+    return url
 
 # runs the application on the development server
 if __name__ == "__main__":
