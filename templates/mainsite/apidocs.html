@@ -1,0 +1,66 @@
+<!-- Extending the predefined project layout -->
+{% extends "layouts/base.html" %}
+
+{% set project = "API Docs" %}
+{% set subheading = "Developer Documentation" %}
+
+<!-- Change "imageurl" to a directory or link
+    This is the background image, so if you add any new images,
+    make sure to add them to the backgrounds folder -->
+{% set imageurl = bgimage %}
+
+<!-- Add code inside the "block under" to add items below the block -->
+{% block under %}
+
+    <style>
+
+        pre code {
+            background-color: #eee;
+            border: 1px solid #999;
+            display: flex;
+            text-align: left;
+        }
+
+    </style>
+
+    <div class="parallax" style="height:max-content">
+        <div class="frame" style="background-color: rgba(0,0,0, 0.5); width: 80%; margin: auto; align-items: center; ">
+
+            <div class="container-fluid" style="padding-bottom: 3%">
+                <div class="row">
+                    <div class="col-sm" style="text-align: center; padding-top: 0">
+                        <div>
+                            <h4 style="padding: 2%">
+                                Our image API allows for random generation of nature and animal images that are best used as background images but can be used for anything else
+                            </h4>
+                            <h5 style="padding: 5%">
+                                To use our Image API (example in the background), use the code below in your Python file or use the linked url for any other api "GET" method.
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="background-color: white; padding: 2%; margin-left: 2%; margin-right: 2%;">
+                    <div class="d-flex justify-content-left">
+                        <code style="color: black">
+                            import requests
+                        </code>
+                    </div>
+                    <div class="d-flex justify-content-left">
+                        <code style="color: black">
+                            response = requests.get(<code onclick="location.href='https://randanimal.pmbytes.org/imageapi/'" style="cursor:pointer; color:blue; text-decoration:underline;">"https://randanimal.pmbytes.org/imageapi/"</code>)
+                        </code>
+                    </div>
+                    <div class="d-flex justify-content-left">
+                        <code style="color: black">
+                            print(response.text)
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+<!- This is turning off birds background from base.html -->
+{% block background %}
+{% endblock %}

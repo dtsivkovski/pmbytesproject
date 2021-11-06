@@ -168,6 +168,11 @@ def imageapi():
     url = ub.create_url(bgimage)
     return url
 
+@app.route('/apidocs/')
+def apidocs():
+    bgimage = background()
+    return render_template("mainsite/apidocs.html", bgimage=bgimage)
+
 # runs the application on the development server
 if __name__ == "__main__":
     app.run(debug=True)
