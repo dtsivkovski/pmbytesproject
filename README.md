@@ -6,7 +6,7 @@
 
 ### [How to use our Image API](https://randanimal.pmbytes.org/apidocs/)
 
-
+-----
 
 Pair 1 - Daniel and Chris: <a href="https://docs.google.com/document/d/1jFLS5jeQhK12o_Rs_DI7AaXEJOB0in9GovtWKdRnumc/edit?usp=sharing">Journal</a>
 <br>
