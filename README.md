@@ -2,7 +2,9 @@
 
 # Pac-Man Bytes - [Scrum Board](https://github.com/dtsivkovski/pmbytesproject/projects/1) and [Contributors](https://github.com/dtsivkovski/pmbytesproject/graphs/contributors)
 
-## [Deployed Website Link](http://randanimal.pmbytes.org/)
+### [Deployed Website Link](https://randanimal.pmbytes.org/)
+
+### [How to use our Image API](https://randanimal.pmbytes.org/apidocs/)
 
 
 
