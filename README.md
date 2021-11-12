@@ -1,10 +1,17 @@
 
 
-# Pac-Man Bytes - [Scrum Board](https://github.com/dtsivkovski/pmbytesproject/projects/1) and [Contributors](https://github.com/dtsivkovski/pmbytesproject/graphs/contributors)
+# Pac-Man Bytes / Randanimal - [Scrum Board](https://github.com/dtsivkovski/pmbytesproject/projects/1) and [Contributors](https://github.com/dtsivkovski/pmbytesproject/graphs/contributors)
 
+This website is meant to generate random images of animals. There is a section to randomly generate images through categories as well as generate random images throughout. Additionally, this website includes an image API that anybody can use.
 ### [Deployed Website Link](https://randanimal.pmbytes.org/)
-
 ### [How to use our Image API](https://randanimal.pmbytes.org/apidocs/)
+
+![Randanimal Website Image](https://i.imgur.com/kbHQJxR.png)
+![Randanimal Website Image](https://i.imgur.com/F7jyW3m.png)
+
+
+
+
 
 -----
 
